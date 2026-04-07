@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Regístrate en LinguaPro Academy - Crea tu cuenta y comienza a aprender idiomas hoy mismo.">
+  <title>Registro | LinguaPro Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/pages/auth.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232563eb' rx='15' width='100' height='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='50' fill='white'%3E🎓%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="auth-page">
+    <!-- Sidebar (desktop only) -->
+    <aside class="auth-page__sidebar">
+      <div class="auth-page__sidebar-content">
+        <a href="../index.html" class="auth-page__logo">
+          <div class="auth-page__logo-icon">🎓</div>
+          <span>LinguaPro</span>
+        </a>
+        
+        <h2 class="auth-page__sidebar-title">Únete a LinguaPro</h2>
+        <p class="auth-page__sidebar-text">
+          Crea tu cuenta y comienza tu viaje hacia el dominio de nuevos idiomas con los mejores profesores.
+        </p>
+        
+        <div class="auth-page__sidebar-features">
+          <div class="auth-page__sidebar-feature">
+            <span class="auth-page__sidebar-feature-icon">✓</span>
+            <span>Prueba gratuita de 7 días</span>
+          </div>
+          <div class="auth-page__sidebar-feature">
+            <span class="auth-page__sidebar-feature-icon">✓</span>
+            <span>Acceso a todos los niveles</span>
+          </div>
+          <div class="auth-page__sidebar-feature">
+            <span class="auth-page__sidebar-feature-icon">✓</span>
+            <span>Certificado al completar</span>
+          </div>
+        </div>
+      </div>
+      
+      <p class="auth-page__sidebar-footer">© 2024 LinguaPro Academy</p>
+    </aside>
+    
+    <!-- Main content -->
+    <main class="auth-page__main">
+      <div class="auth-page__container">
+        <!-- Mobile logo -->
+        <div class="auth-page__header-logo hide-desktop">
+          <div class="auth-page__header-logo-icon">🎓</div>
+          <span>LinguaPro</span>
+        </div>
+        
+        <div class="auth-page__header">
+          <h1 class="auth-page__title">Crear cuenta</h1>
+          <p class="auth-page__subtitle">Completa tus datos para registrarte</p>
+        </div>
+        
+        <!-- Social register -->
+        <div class="auth-form__social">
+          <button type="button" class="auth-form__social-btn" id="googleRegister">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Google
+          </button>
+          <button type="button" class="auth-form__social-btn" id="microsoftRegister">
+            <svg width="20" height="20" viewBox="0 0 23 23"><path fill="#f25022" d="M1 1h10v10H1z"/><path fill="#00a4ef" d="M12 1h10v10H12z"/><path fill="#7fba00" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg>
+            Microsoft
+          </button>
+        </div>
+        
+        <div class="auth-form__divider">
+          <span class="auth-form__divider-line"></span>
+          <span>o</span>
+          <span class="auth-form__divider-line"></span>
+        </div>
+        
+        <!-- Register form -->
+        <form id="registerForm" class="auth-form">
+          <div id="registerAlert" class="alert alert--error hidden" role="alert">
+            <span>⚠️</span>
+            <span id="registerAlertMessage">Error en el registro</span>
+          </div>
+          
+          <!-- Role selector -->
+          <div class="form-group">
+            <label class="form-label">Tipo de cuenta</label>
+            <div class="role-selector">
+              <label class="role-option role-option--selected">
+                <input type="radio" name="role" value="student" class="role-option__input" checked>
+                <div class="role-option__icon">🎓</div>
+                <div>
+                  <div class="role-option__label">Estudiante</div>
+                  <div class="role-option__description">Quiero aprender</div>
+                </div>
+              </label>
+              <label class="role-option">
+                <input type="radio" name="role" value="teacher" class="role-option__input">
+                <div class="role-option__icon">👨‍🏫</div>
+                <div>
+                  <div class="role-option__label">Profesor</div>
+                  <div class="role-option__description">Quiero enseñar</div>
+                </div>
+              </label>
+              <label class="role-option">
+                <input type="radio" name="role" value="admin" class="role-option__input">
+                <div class="role-option__icon">⚙️</div>
+                <div>
+                  <div class="role-option__label">Admin</div>
+                  <div class="role-option__description">Gestión</div>
+                </div>
+              </label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="firstName" class="form-label form-label--required">Nombre</label>
+            <input 
+              type="text" 
+              id="firstName" 
+              name="firstName" 
+              class="form-input" 
+              placeholder="Tu nombre"
+              autocomplete="given-name"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName" class="form-label form-label--required">Apellidos</label>
+            <input 
+              type="text" 
+              id="lastName" 
+              name="lastName" 
+              class="form-input" 
+              placeholder="Tu apellido"
+              autocomplete="family-name"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label form-label--required">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              placeholder="tu@email.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="password" class="form-label form-label--required">Contraseña</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              class="form-input" 
+              placeholder="Mínimo 8 caracteres"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
+            <div class="password-strength">
+              <div class="password-strength__bar">
+                <div class="password-strength__fill" id="passwordStrength"></div>
+              </div>
+              <p class="password-strength__text" id="passwordStrengthText">La contraseña debe tener al menos 8 caracteres</p>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="confirmPassword" class="form-label form-label--required">Confirmar contraseña</label>
+            <input 
+              type="password" 
+              id="confirmPassword" 
+              name="confirmPassword" 
+              class="form-input" 
+              placeholder="Repite tu contraseña"
+              autocomplete="new-password"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label class="form-check">
+              <input type="checkbox" name="terms" class="form-check__input" required>
+              <span class="form-check__label">
+                Acepto los <a href="#" class="text-blue hover:underline">términos de servicio</a> 
+                y la <a href="#" class="text-blue hover:underline">política de privacidad</a>
+              </span>
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn--primary btn--full" id="registerBtn">
+            <span class="spinner spinner--sm hidden" id="registerSpinner"></span>
+            <span id="registerBtnText">Crear cuenta</span>
+          </button>
+        </form>
+        
+        <div class="auth-form__footer">
+          <p class="auth-form__footer-text">
+            ¿Ya tienes cuenta? 
+            <a href="login.html" class="auth-form__footer-link">Inicia sesión</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../js/main.js" type="module"></script>
+  <script src="../js/auth.js" type="module"></script>
+</body>
+</html>

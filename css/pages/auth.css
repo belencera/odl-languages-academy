@@ -1,0 +1,364 @@
+/**
+ * AUTH PAGES CSS - Academia de Idiomas
+ * Estilos para login.html y register.html
+ */
+
+/* ========== AUTH LAYOUT ========== */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+.auth-page__sidebar {
+  flex: 1;
+  display: none;
+  background: linear-gradient(135deg, var(--color-primary-800), var(--color-primary-600));
+  color: var(--text-on-primary);
+  padding: var(--space-12);
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-page__sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.auth-page__sidebar-content {
+  position: relative;
+  z-index: 1;
+}
+
+.auth-page__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-12);
+}
+
+.auth-page__logo-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+
+.auth-page__sidebar-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-4);
+}
+
+.auth-page__sidebar-text {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  line-height: var(--line-height-relaxed);
+}
+
+.auth-page__sidebar-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+
+.auth-page__sidebar-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-base);
+}
+
+.auth-page__sidebar-feature-icon {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+}
+
+.auth-page__sidebar-footer {
+  position: relative;
+  z-index: 1;
+  font-size: var(--font-size-sm);
+  opacity: 0.7;
+}
+
+.auth-page__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  background-color: var(--bg-primary);
+}
+
+.auth-page__container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-page__header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.auth-page__header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary-700);
+  margin-bottom: var(--space-6);
+}
+
+.auth-page__header-logo-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--color-primary-600), var(--color-primary-800));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.auth-page__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.auth-page__subtitle {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+}
+
+/* ========== AUTH FORM ========== */
+.auth-form {
+  background-color: var(--bg-primary);
+}
+
+.auth-form__social {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.auth-form__social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: var(--border-width-thin) solid var(--color-neutral-300);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.auth-form__social-btn:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--color-neutral-400);
+}
+
+.auth-form__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth-form__divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-neutral-200);
+}
+
+.auth-form__footer {
+  text-align: center;
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: var(--border-width-thin) solid var(--color-neutral-200);
+}
+
+.auth-form__footer-text {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+}
+
+.auth-form__footer-link {
+  color: var(--color-primary-600);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.auth-form__footer-link:hover {
+  color: var(--color-primary-700);
+  text-decoration: underline;
+}
+
+/* ========== ROLE SELECTOR (Register) ========== */
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.role-option {
+  position: relative;
+  padding: var(--space-4);
+  border: var(--border-width-thin) solid var(--color-neutral-300);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.role-option:hover {
+  border-color: var(--color-primary-400);
+  background-color: var(--color-primary-50);
+}
+
+.role-option--selected {
+  border-color: var(--color-primary-600);
+  background-color: var(--color-primary-50);
+}
+
+.role-option__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.role-option__icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--space-3);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+}
+
+.role-option--selected .role-option__icon {
+  background-color: var(--color-primary-600);
+  color: white;
+}
+
+.role-option__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.role-option__description {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-1);
+}
+
+/* ========== PASSWORD STRENGTH ========== */
+.password-strength {
+  margin-top: var(--space-2);
+}
+
+.password-strength__bar {
+  height: 4px;
+  background-color: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.password-strength__fill {
+  height: 100%;
+  width: 0;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.password-strength__fill--weak {
+  width: 33%;
+  background-color: var(--color-accent-500);
+}
+
+.password-strength__fill--medium {
+  width: 66%;
+  background-color: var(--color-warning);
+}
+
+.password-strength__fill--strong {
+  width: 100%;
+  background-color: var(--color-success);
+}
+
+.password-strength__text {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-1);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (min-width: 1024px) {
+  .auth-page__sidebar {
+    display: flex;
+    flex: 0 0 45%;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-page__main {
+    padding: var(--space-6);
+  }
+  
+  .auth-page__title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .role-selector {
+    grid-template-columns: 1fr;
+  }
+  
+  .role-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: left;
+  }
+  
+  .role-option__icon {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}

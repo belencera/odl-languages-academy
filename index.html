@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Academia de Idiomas - Aprende inglés, español, francés y alemán con los mejores profesores. Cursos para todos los niveles y capacitación empresarial.">
+  <title>Academia de Idiomas | Aprende con los Mejores</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/pages/landing.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232563eb' rx='15' width='100' height='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='50' fill='white'%3E🎓%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <img src="./assets/logo-navbar2.png" alt="Logo On Demand Languages">
+      </a>
+
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link navbar__link--active">Inicio</a></li>
+        <li><a href="#cursos" class="navbar__link">Cursos</a></li>
+        <li><a href="#ventajas" class="navbar__link">Ventajas</a></li>
+        <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <a href="pages/login.html" class="btn btn--ghost">Iniciar Sesión</a>
+        <a href="pages/register.html" class="btn btn--primary">Registrarse</a>
+      </div>
+
+      <button class="navbar__toggle" id="navbarToggle" aria-label="Menú">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html" class="navbar__link navbar__link--active">Inicio</a>
+      <a href="#cursos" class="navbar__link">Cursos</a>
+      <a href="#ventajas" class="navbar__link">Ventajas</a>
+      <a href="#contacto" class="navbar__link">Contacto</a>
+      <div class="mt-4">
+        <a href="pages/login.html" class="btn btn--ghost btn--full mb-2">Iniciar Sesión</a>
+        <a href="pages/register.html" class="btn btn--primary btn--full">Registrarse</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+
+        <h1 class="hero__title">
+          Domina nuevos idiomas con <span class="hero__title-accent">On Demand</span>
+        </h1>
+
+        <p class="hero__description">
+          Aprende con profesores nativos certificados.
+          Clases presenciales y online adaptadas a tu ritmo y objetivos.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#cursos" class="btn btn--accent btn--lg">Explorar Cursos</a>
+          <a href="#contacto" class="btn btn--outline-light btn--lg">Contactar</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-value">500+</div>
+            <div class="hero__stat-label">Estudiantes</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">15+</div>
+            <div class="hero__stat-label">Profesores</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">98%</div>
+            <div class="hero__stat-label">Satisfacción</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Illustration hero -->
+    <svg class="hero__image" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+      <!-- background glow -->
+      <circle cx="420" cy="150" r="120" fill="rgba(255,255,255,0.05)" />
+      <circle cx="200" cy="380" r="140" fill="rgba(255,255,255,0.04)" />
+
+      <!-- globe -->
+      <circle cx="350" cy="250" r="90" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+      <ellipse cx="350" cy="250" rx="90" ry="35" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+      <ellipse cx="350" cy="250" rx="45" ry="90" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+
+      <!-- orbit lines -->
+      <circle cx="350" cy="250" r="140" stroke="rgba(239,68,68,0.3)" stroke-width="2" stroke-dasharray="6 6" />
+      <circle cx="350" cy="250" r="170" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-dasharray="4 6" />
+
+      <!-- 🇬🇧 UK circular badge -->
+      <g transform="translate(460,150)" style="filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));">
+        <circle cx="0" cy="0" r="28" fill="rgba(255,255,255,0.15)" />
+        <image x="-24" y="-16" width="48" height="32" href="assets/flags/GB.png" />
+      </g>
+
+      <!-- 🇮🇹 Italy circular badge -->
+      <g transform="translate(200,210)" style="filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));">
+        <circle cx="0" cy="0" r="28" fill="rgba(255,255,255,0.12)" />
+        <image x="-24" y="-16" width="48" height="32" href="assets/flags/IT.png" />
+      </g>
+
+      <!-- 🇧🇷 Brazil circular badge -->
+      <g transform="translate(300,410)" style="filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));">
+        <circle cx="0" cy="0" r="28" fill="rgba(255,255,255,0.12)" />
+        <image x="-24" y="-16" width="48" height="32" href="assets/flags/BR.png" />
+      </g>
+
+      <!-- learning card -->
+      <rect x="80" y="120" width="180" height="220" rx="20" fill="rgba(255,255,255,0.08)" />
+      <rect x="110" y="160" width="120" height="10" rx="5" fill="rgba(255,255,255,0.25)" />
+      <rect x="110" y="190" width="90" height="10" rx="5" fill="rgba(255,255,255,0.15)" />
+      <rect x="110" y="220" width="100" height="10" rx="5" fill="rgba(255,255,255,0.15)" />
+
+      <!-- chat bubble -->
+      <rect x="420" y="350" width="80" height="50" rx="14" fill="rgba(239,68,68,0.25)" />
+
+    </svg>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section class="section section--secondary courses" id="cursos">
+    <div class="container">
+      <div class="courses__header">
+        <h2 class="courses__title">Nuestros Cursos</h2>
+        <p class="courses__description">
+          Ofrecemos una amplia variedad de cursos de idiomas para todos los niveles,
+          desde principiantes hasta avanzados, incluyendo programas corporativos.
+        </p>
+      </div>
+
+      <div class="courses__grid">
+        <!-- English Course -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--english">🇬🇧</div>
+            <div>
+              <h3 class="course-card__title">Inglés</h3>
+              <p class="course-card__level">A1 - C2</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              Domina el idioma global por excelencia. Preparación para TOEFL, IELTS y Cambridge.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Clases presenciales y online
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Profesores nativos certificados
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Material didáctico incluido
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">€199<span class="course-card__price-period">/mes</span></span>
+            <a href="pages/register.html" class="btn btn--primary btn--sm">Inscribirse</a>
+          </div>
+        </article>
+
+        <!-- Spanish Course -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--spanish">🇪🇸</div>
+            <div>
+              <h3 class="course-card__title">Español</h3>
+              <p class="course-card__level">A1 - C2</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              Aprende el segundo idioma más hablado del mundo con profesores nativos.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Inmersión cultural
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Grupos reducidos
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                DELE preparación
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">€179<span class="course-card__price-period">/mes</span></span>
+            <a href="pages/register.html" class="btn btn--primary btn--sm">Inscribirse</a>
+          </div>
+        </article>
+
+        <!-- French Course -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--french">🇫🇷</div>
+            <div>
+              <h3 class="course-card__title">Francés</h3>
+              <p class="course-card__level">A1 - C2</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              El idioma del amor y la diplomacia. Preparación para DELF y DALF.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Método comunicativo
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Conversación práctica
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Recursos multimedia
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">€189<span class="course-card__price-period">/mes</span></span>
+            <a href="pages/register.html" class="btn btn--primary btn--sm">Inscribirse</a>
+          </div>
+        </article>
+
+        <!-- German Course -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--german">🇩🇪</div>
+            <div>
+              <h3 class="course-card__title">Alemán</h3>
+              <p class="course-card__level">A1 - C2</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              Aprende el idioma de la ingeniería y la economía europea.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Enfoque en gramática
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Preparación Goethe
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Ejercicios prácticos
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">€209<span class="course-card__price-period">/mes</span></span>
+            <a href="pages/register.html" class="btn btn--primary btn--sm">Inscribirse</a>
+          </div>
+        </article>
+
+        <!-- Corporate Training -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--corporate">🏢</div>
+            <div>
+              <h3 class="course-card__title">Capacitación Empresarial</h3>
+              <p class="course-card__level">Personalizado</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              Programas a medida para empresas. Mejora la comunicación internacional de tu equipo.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Programas personalizados
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Flexible scheduling
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Reporting y métricas
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">A medida</span>
+            <a href="#contacto" class="btn btn--accent btn--sm">Consultar</a>
+          </div>
+        </article>
+
+        <!-- Online Classes -->
+        <article class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__icon course-card__icon--online">💻</div>
+            <div>
+              <h3 class="course-card__title">Clases Online</h3>
+              <p class="course-card__level">Todos los niveles</p>
+            </div>
+          </div>
+          <div class="course-card__content">
+            <p class="course-card__description">
+              Aprende desde cualquier lugar con nuestra plataforma virtual interactiva.
+            </p>
+            <ul class="course-card__features">
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Plataforma interactiva
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Horarios flexibles
+              </li>
+              <li class="course-card__feature">
+                <svg class="course-card__feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Grabaciones disponibles
+              </li>
+            </ul>
+          </div>
+          <div class="course-card__footer">
+            <span class="course-card__price">€149<span class="course-card__price-period">/mes</span></span>
+            <a href="pages/register.html" class="btn btn--primary btn--sm">Inscribirse</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES SECTION -->
+  <section class="section advantages" id="ventajas">
+    <div class="container">
+      <div class="advantages__header">
+        <h2 class="advantages__title">¿Por qué elegir LinguaPro?</h2>
+        <p class="advantages__description">
+          Nos diferenciamos por nuestra metodología probada y nuestro compromiso con el éxito de nuestros estudiantes.
+        </p>
+      </div>
+
+      <div class="advantages__grid">
+        <article class="advantage-card">
+          <div class="advantage-card__icon">👨‍🏫</div>
+          <h3 class="advantage-card__title">Profesores Expertos</h3>
+          <p class="advantage-card__description">
+            Nuestros profesores son nativos certificados con años de experiencia en la enseñanza de idiomas.
+          </p>
+        </article>
+
+        <article class="advantage-card">
+          <div class="advantage-card__icon">📚</div>
+          <h3 class="advantage-card__title">Material Actualizado</h3>
+          <p class="advantage-card__description">
+            Utilizamos los últimos recursos didácticos y tecnologías para un aprendizaje efectivo.
+          </p>
+        </article>
+
+        <article class="advantage-card">
+          <div class="advantage-card__icon">⏰</div>
+          <h3 class="advantage-card__title">Horarios Flexibles</h3>
+          <p class="advantage-card__description">
+            Clases en la mañana, tarde o noche. Adaptamos los horarios a tu disponibilidad.
+          </p>
+        </article>
+
+        <article class="advantage-card">
+          <div class="advantage-card__icon">🎯</div>
+          <h3 class="advantage-card__title">Metodología Probada</h3>
+          <p class="advantage-card__description">
+            Sistema basado en el Marco Común Europeo de Referencia para las Lenguas.
+          </p>
+        </article>
+
+        <article class="advantage-card">
+          <div class="advantage-card__icon">🏆</div>
+          <h3 class="advantage-card__title">Certificación Oficial</h3>
+          <p class="advantage-card__description">
+            Preparación para exámenes oficiales: Cambridge, TOEFL, IELTS, DELE, DELF, Goethe.
+          </p>
+        </article>
+
+        <article class="advantage-card">
+          <div class="advantage-card__icon">💬</div>
+          <h3 class="advantage-card__title">Práctica Constante</h3>
+          <p class="advantage-card__description">
+            Sesiones de conversación grupales y actividades prácticas para afianzar el aprendizaje.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact" id="contacto">
+    <div class="container contact__container">
+      <div class="contact__info">
+        <h2 class="contact__title">¿Tienes preguntas?</h2>
+        <p class="contact__description">
+          Estamos aquí para ayudarte. Contáctanos y te responderemos en menos de 24 horas.
+        </p>
+
+        <div class="contact__details">
+          <div class="contact__detail">
+            <div class="contact__detail-icon">📍</div>
+            <div class="contact__detail-content">
+              <h4>Dirección</h4>
+              <p>Calle Principal 123, 28001 Madrid, España</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">📞</div>
+            <div class="contact__detail-content">
+              <h4>Teléfono</h4>
+              <p>+34 912 345 678</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">✉️</div>
+            <div class="contact__detail-content">
+              <h4>Email</h4>
+              <p>info@linguapro.es</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">🕐</div>
+            <div class="contact__detail-content">
+              <h4>Horario</h4>
+              <p>Lun - Vie: 8:00 - 20:00<br>Sáb: 9:00 - 14:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrapper">
+        <h3 class="contact__form-title">Envíanos un mensaje</h3>
+        <form id="contactForm" class="auth-form">
+          <div class="form-group">
+            <label for="contactName" class="form-label form-label--required">Nombre completo</label>
+            <input type="text" id="contactName" name="name" class="form-input" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail" class="form-label form-label--required">Email</label>
+            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">Asunto</label>
+            <select id="contactSubject" name="subject" class="form-select">
+              <option value="">Selecciona un asunto</option>
+              <option value="info">Información general</option>
+              <option value="courses">Cursos disponibles</option>
+              <option value="corporate">Capacitación empresarial</option>
+              <option value="pricing">Precios y pagos</option>
+              <option value="other">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage" class="form-label form-label--required">Mensaje</label>
+            <textarea id="contactMessage" name="message" class="form-textarea" rows="4"
+              placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon">🎓</div>
+            <span>LinguaPro</span>
+          </a>
+          <p class="footer__description">
+            Academia de idiomas líder con más de 10 años de experiencia formando estudiantes y profesionales.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Cursos</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Inglés</a></li>
+            <li><a href="#" class="footer__link">Español</a></li>
+            <li><a href="#" class="footer__link">Francés</a></li>
+            <li><a href="#" class="footer__link">Alemán</a></li>
+            <li><a href="#" class="footer__link">Empresas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Empresa</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Sobre nosotros</a></li>
+            <li><a href="#" class="footer__link">Profesores</a></li>
+            <li><a href="#" class="footer__link">Instalaciones</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__column-title">Soporte</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Centro de ayuda</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Contacto</a></li>
+            <li><a href="#" class="footer__link">Política de privacidad</a></li>
+            <li><a href="#" class="footer__link">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 LinguaPro Academy. Todos los derechos reservados.
+        </p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacidad</a>
+          <a href="#" class="footer__legal-link">Términos</a>
+          <a href="#" class="footer__legal-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

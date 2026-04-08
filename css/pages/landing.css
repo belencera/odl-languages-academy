@@ -174,28 +174,14 @@
   font-size: var(--font-size-2xl);
 }
 
-.course-card__icon--english {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-}
-
-.course-card__icon--spanish {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-}
-
-.course-card__icon--french {
-  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-}
-
-.course-card__icon--german {
-  background: linear-gradient(135deg, #10b981, #059669);
-}
-
 .course-card__icon--corporate {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background: rgb(255, 187, 142);
+  border-radius: 50%;
 }
 
 .course-card__icon--online {
-  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  background: rgb(202, 223, 255);
+  border-radius: 50%;
 }
 
 .course-card__title {
@@ -244,22 +230,10 @@
 .course-card__footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--space-4) var(--space-6);
   border-top: var(--border-width-thin) solid var(--color-neutral-200);
   background-color: var(--bg-secondary);
-}
-
-.course-card__price {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary-700);
-}
-
-.course-card__price-period {
-  font-size: var(--font-size-sm);
-  color: var(--text-muted);
-  font-weight: var(--font-weight-normal);
 }
 
 /* ========== ADVANTAGES SECTION ========== */
@@ -269,7 +243,7 @@
 
 .advantages__header {
   text-align: center;
-  max-width: 640px;
+  max-width: 750px;
   margin: 0 auto var(--space-12);
 }
 

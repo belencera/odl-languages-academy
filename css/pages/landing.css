@@ -9,9 +9,11 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-700) 50%, var(--color-primary-600) 100%);
   color: var(--text-on-primary);
   padding-top: 72px;
+  padding-bottom: var(--space-16);
   overflow: hidden;
 }
 
@@ -533,19 +535,92 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 120px var(--space-6) var(--space-8);
+    min-height: 90vh;
+    justify-content: flex-start;
+  }
+  
+  .hero__content {
+    margin-top: var(--space-8);
+  }
+  
   .hero__title {
     font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-8);
+    line-height: 1.2;
+  }
+  
+  .hero__description {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-8);
+  }
+  
+  .hero__badge {
+    padding: var(--space-3) var(--space-5);
+    margin-bottom: var(--space-6);
+    font-size: var(--font-size-base);
+  }
+  
+  .hero__actions {
+    gap: var(--space-3);
+  }
+  
+  .btn--lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-base);
   }
   
   .hero__stats {
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--space-6);
+    flex-wrap: wrap;
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+  }
+  
+  .hero__stat {
+    padding: 0;
+  }
+  
+  .hero__stat-value {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .hero__stat-label {
+    font-size: var(--font-size-sm);
+  }
+  
+  .contact__form-wrapper {
+    padding: var(--space-8);
+  }
+  
+  .contact__form-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-6);
   }
   
   .courses__title,
   .advantages__title,
   .contact__title {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
+  }
+  
+  .form-group {
+    margin-bottom: var(--space-5);
+  }
+  
+  .contact__info {
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .contact__details {
+    align-items: flex-start;
+  }
+  
+  .contact__detail {
+    text-align: left;
   }
   
   .footer__grid {
@@ -569,5 +644,115 @@
   .footer__bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 90px var(--space-5) var(--space-6);
+    min-height: 85vh;
+    justify-content: flex-start;
+  }
+  
+  .hero__content {
+    margin-top: var(--space-4);
+  }
+  
+  .hero__title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-6);
+    line-height: 1.2;
+  }
+  
+  .hero__description {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-6);
+    line-height: 1.6;
+  }
+  
+  .hero__actions {
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+  }
+  
+  .btn--lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--font-size-base);
+    width: 100%;
+  }
+  
+  .hero__badge {
+    font-size: var(--font-size-sm);
+    padding: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-4);
+  }
+  
+  .hero__stats {
+    flex-direction: row;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    padding-top: var(--space-3);
+    font-size: var(--font-size-sm);
+  }
+  
+  .hero__stat {
+    padding: 0;
+  }
+  
+  .hero__stat-value {
+    font-size: var(--font-size-lg);
+  }
+  
+  .hero__stat-label {
+    font-size: var(--font-size-xs);
+  }
+  
+  .contact__form-wrapper {
+    padding: var(--space-6);
+  }
+  
+  .contact__form-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-5);
+  }
+  
+  .contact__title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .form-group {
+    margin-bottom: var(--space-4);
+  }
+  
+  .form-label {
+    font-size: var(--font-size-sm);
+  }
+  
+  .contact__info {
+    max-width: 100%;
+    text-align: left;
+  }
+  
+  .contact__details {
+    align-items: flex-start;
+  }
+  
+  .contact__detail {
+    text-align: left;
+  }
+  
+  .contact__detail-icon {
+    width: 44px;
+    height: 44px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .contact__detail-content h4 {
+    font-size: var(--font-size-base);
+  }
+  
+  .contact__detail-content p {
+    font-size: var(--font-size-sm);
   }
 }

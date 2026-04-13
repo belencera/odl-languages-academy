@@ -71,23 +71,58 @@ const initLandingPage = () => {
   // Formulario de contacto
   const contactForm = $('#contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
-      // Mostrar mensaje de éxito (simulado)
-      const btn = contactForm.querySelector('button[type="submit"]');
+
+      const btn = $('#submitBtn');
       const originalText = btn.textContent;
-      
-      btn.textContent = '¡Mensaje enviado!';
+
+      // Mostrar loading
+      btn.textContent = 'Enviando...';
       btn.disabled = true;
-      btn.classList.add('btn--success');
-      
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.classList.remove('btn--success');
-        contactForm.reset();
-      }, 3000);
+
+      try {
+        // Preparar datos del formulario
+        const formData = new FormData(contactForm);
+        formData.set('email', document.getElementById('contactEmail').value);
+
+        // Enviar con fetch
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // Éxito
+          btn.textContent = '¡Mensaje enviado!';
+          btn.classList.add('btn--success');
+          contactForm.reset();
+
+          // Resetear después de 3 segundos
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            btn.classList.remove('btn--success');
+          }, 3000);
+        } else {
+          throw new Error('Error en el envío');
+        }
+
+      } catch (error) {
+        console.error('Error:', error);
+        btn.textContent = 'Error - Inténtalo de nuevo';
+        btn.classList.add('btn--error');
+
+        // Resetear después de 3 segundos
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.classList.remove('btn--error');
+        }, 3000);
+      }
     });
   }
   

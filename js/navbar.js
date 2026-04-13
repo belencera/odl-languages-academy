@@ -60,6 +60,11 @@ const initScrollSpy = () => {
   const handleScrollSpy = throttle(() => {
     const scrollPos = window.scrollY + 100;
     
+    // Remover clase active de todos los enlaces primero
+    navLinks.forEach(link => {
+      link.classList.remove('navbar__link--active');
+    });
+    
     sections.forEach(section => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
@@ -67,7 +72,6 @@ const initScrollSpy = () => {
       
       if (scrollPos >= top && scrollPos < top + height) {
         navLinks.forEach(link => {
-          link.classList.remove('navbar__link--active');
           if (link.getAttribute('href') === `#${id}`) {
             link.classList.add('navbar__link--active');
           }

@@ -324,6 +324,12 @@
   gap: var(--space-4);
 }
 
+/* Bloquear TEMPORALMENTE el menú y acciones en móvil de inicio de sesión y resgistro */
+.navbar__actions,
+.navbar__mobile-menu .mt-4 {
+  visibility: hidden;
+}
+
 /* Mobile menu toggle */
 .navbar__toggle {
   display: none;

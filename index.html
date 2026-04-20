@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -544,7 +544,11 @@
 
       <div class="contact__form-wrapper">
         <h3 class="contact__form-title">Envíanos un mensaje</h3>
-        <form id="contactForm" class="auth-form" action="https://formspree.io/f/xojponen" method="POST">
+        <form id="contactForm" class="auth-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f10d913d-df83-42d7-a25b-b501957186bd">
+          
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
           <div class="form-group">
             <label for="contactName" class="form-label form-label--required">Nombre completo</label>
             <input type="text" id="contactName" name="name" class="form-input" placeholder="Tu nombre" required>
@@ -552,15 +556,14 @@
 
           <div class="form-group">
             <label for="contactEmail" class="form-label form-label--required">Email</label>
-            <input type="email" id="contactEmail" name="_replyto" class="form-input" placeholder="tu@email.com"
+            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="tu@email.com"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
             <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - On Demand Languages">
-            <input type="hidden" name="email" id="emailCopy">
           </div>
 
           <div class="form-group">
             <label for="contactSubject" class="form-label">Asunto</label>
-            <select id="contactSubject" name="contactSubject" class="form-select">
+            <select id="contactSubject" name="subject_selection" class="form-select">
               <option value="">Selecciona un asunto</option>
               <option value="Información general">Información general</option>
               <option value="Cursos disponibles">Cursos disponibles</option>

@@ -15,10 +15,10 @@ import { $, getStorage, smoothScroll } from './utils.js';
 const initApp = () => {
   // Inicializar navbar en todas las páginas
   initNavbar();
-  
+
   // Inicializar funcionalidad específica según la página
   initPageSpecific();
-  
+
   // Inicializar utilidades globales
   initGlobalUtils();
 };
@@ -29,22 +29,22 @@ const initApp = () => {
 const initPageSpecific = () => {
   const path = window.location.pathname;
   const page = path.split('/').pop() || 'index.html';
-  
+
   switch (page) {
     case 'index.html':
     case '':
       initLandingPage();
       break;
-      
+
     case 'login.html':
     case 'register.html':
       initAuth();
       break;
-      
+
     case 'dashboard.html':
       initDashboard();
       break;
-      
+
     case 'class.html':
       initClassPage();
       break;
@@ -57,7 +57,7 @@ const initPageSpecific = () => {
 const initLandingPage = () => {
   // Smooth scroll para enlaces de ancla
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  
+
   anchorLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
@@ -67,8 +67,8 @@ const initLandingPage = () => {
       }
     });
   });
-  
-  // Formulario de contacto
+
+  // Formulario de contacto optimizado para Web3Forms
   const contactForm = $('#contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
@@ -77,16 +77,14 @@ const initLandingPage = () => {
       const btn = $('#submitBtn');
       const originalText = btn.textContent;
 
-      // Mostrar loading
+      // Mostrar estado de carga
       btn.textContent = 'Enviando...';
       btn.disabled = true;
 
       try {
-        // Preparar datos del formulario
         const formData = new FormData(contactForm);
-        formData.set('email', document.getElementById('contactEmail').value);
 
-        // Enviar con fetch
+        // Enviar con fetch a Web3Forms
         const response = await fetch(contactForm.action, {
           method: 'POST',
           body: formData,
@@ -95,20 +93,23 @@ const initLandingPage = () => {
           }
         });
 
-        if (response.ok) {
-          // Éxito
+        const result = await response.json();
+
+        if (result.success) {
+          // Éxito: Web3Forms devuelve success: true
           btn.textContent = '¡Mensaje enviado!';
           btn.classList.add('btn--success');
           contactForm.reset();
 
-          // Resetear después de 3 segundos
+          // Resetear botón después de 3 segundos
           setTimeout(() => {
             btn.textContent = originalText;
             btn.disabled = false;
             btn.classList.remove('btn--success');
           }, 3000);
         } else {
-          throw new Error('Error en el envío');
+          // Error controlado del servidor
+          throw new Error(result.message || 'Error en el envío');
         }
 
       } catch (error) {
@@ -116,7 +117,7 @@ const initLandingPage = () => {
         btn.textContent = 'Error - Inténtalo de nuevo';
         btn.classList.add('btn--error');
 
-        // Resetear después de 3 segundos
+        // Resetear botón después de 3 segundos
         setTimeout(() => {
           btn.textContent = originalText;
           btn.disabled = false;
@@ -125,7 +126,6 @@ const initLandingPage = () => {
       }
     });
   }
-  
   // Animación de entrada para elementos
   initScrollAnimations();
 };
@@ -135,7 +135,7 @@ const initLandingPage = () => {
  */
 const initScrollAnimations = () => {
   const animatedElements = document.querySelectorAll('.course-card, .advantage-card');
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -148,7 +148,7 @@ const initScrollAnimations = () => {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   });
-  
+
   animatedElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -166,7 +166,7 @@ const initGlobalUtils = () => {
     const navbar = $('#navbar');
     const mobileMenu = $('#mobileMenu');
     const toggle = $('#navbarToggle');
-    
+
     if (navbar && mobileMenu && toggle) {
       const isClickInside = navbar.contains(e.target);
       if (!isClickInside && mobileMenu.classList.contains('navbar__mobile-menu--open')) {
@@ -176,7 +176,7 @@ const initGlobalUtils = () => {
       }
     }
   });
-  
+
   // Manejar errores de imágenes
   document.addEventListener('error', (e) => {
     if (e.target.tagName === 'IMG') {

@@ -291,13 +291,13 @@
 .odl-test-quiz-description {
   margin: 24px 0 0;
   color: var(--odl-test-muted);
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 
 .odl-test-progress-header h1 {
-  font-size: clamp(1.9rem, 3.5vw, 2.3rem);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
 .odl-test-progress-header p {
@@ -319,7 +319,9 @@
   grid-column: 1;
   grid-row: 2;
   margin-top: 0;
+  font-size: 1.05rem;
   font-weight: 400;
+  line-height: 1.5;
   text-align: justify;
 }
 

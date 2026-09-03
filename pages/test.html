@@ -54,20 +54,32 @@
     <section id="quizView" class="odl-test-view" aria-labelledby="quizTitle" hidden>
       <div class="odl-test-progress-header">
         <div>
-          <span class="odl-test-eyebrow">Nivel actual</span>
-          <h1 id="quizTitle">A1</h1>
+          <span class="odl-test-eyebrow">Test de nivel</span>
+          <h1 id="quizTitle">Inglés general</h1>
         </div>
-        <p id="quizProgress">Pregunta 0 de 30</p>
+        <p id="quizDescription" class="odl-test-quiz-description">Elige solo una opción por pregunta.</p>
+        <p id="quizProgress">Página 1 de 6</p>
       </div>
       <div class="odl-test-progress-track" aria-hidden="true"><span id="quizProgressBar"></span></div>
-      <div class="odl-test-placeholder">
-        <p>La estructura de preguntas está preparada.</p>
-        <p>La carga de los seis niveles y la navegación se incorporarán en la siguiente fase.</p>
-      </div>
+      <div id="questionList" class="odl-test-question-list"></div>
+      <p id="quizError" class="odl-test-inline-error" role="alert" hidden></p>
       <div class="odl-test-actions">
-        <button class="odl-test-button odl-test-button--secondary" type="button" disabled>Anterior</button>
-        <button class="odl-test-button" type="button" disabled>Siguiente</button>
+        <button id="previousButton" class="odl-test-button odl-test-button--secondary" type="button">Anterior</button>
+        <button id="nextButton" class="odl-test-button" type="button">Siguiente</button>
       </div>
+    </section>
+
+    <section id="resultView" class="odl-test-view odl-test-result" aria-labelledby="resultTitle" hidden>
+      <span class="odl-test-eyebrow">Resultado de la evaluación</span>
+      <h1 id="resultTitle">Test completado</h1>
+      <p id="resultName" class="odl-test-result-name"></p>
+      <p id="resultTest" class="odl-test-result-test"></p>
+      <div class="odl-test-result-score">
+        <strong id="resultScore">0 / 30</strong>
+        <span id="resultPercentage">0%</span>
+      </div>
+      <p class="odl-test-result-label">Tu nivel estimado es:</p>
+      <strong id="resultLevel" class="odl-test-result-level">Sin nivel</strong>
     </section>
 
     <footer class="odl-test-footer">

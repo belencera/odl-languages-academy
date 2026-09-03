@@ -1,13 +1,27 @@
 [
-  {
-    "id": "a1-demo-001",
-    "question": "[PLACEHOLDER] Pregunta A1 de demostración.",
-    "options": [
-      "[PLACEHOLDER] Opción 1",
-      "[PLACEHOLDER] Opción 2",
-      "[PLACEHOLDER] Opción 3",
-      "[PLACEHOLDER] Opción 4"
-    ],
-    "correctAnswer": 0
-  }
+  { "id": "a1-001", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-002", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-003", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-004", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-005", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-006", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-007", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-008", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-009", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-010", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-011", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-012", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-013", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-014", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-015", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-016", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-017", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-018", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-019", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-020", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-021", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-022", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-023", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-024", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
+  { "id": "a1-025", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 }
 ]

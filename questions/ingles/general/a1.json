@@ -1,0 +1,13 @@
+[
+  {
+    "id": "a1-demo-001",
+    "question": "[PLACEHOLDER] Pregunta A1 de demostración.",
+    "options": [
+      "[PLACEHOLDER] Opción 1",
+      "[PLACEHOLDER] Opción 2",
+      "[PLACEHOLDER] Opción 3",
+      "[PLACEHOLDER] Opción 4"
+    ],
+    "correctAnswer": 0
+  }
+]

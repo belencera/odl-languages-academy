@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Evalúa tu nivel de idiomas de On Demand Languages.">
+  <title>Evalúa tu nivel | On Demand Languages</title>
+  <link rel="icon" href="../assets/mini-logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/pages/test.css">
+</head>
+
+<body class="odl-test-body">
+  <main class="odl-test-shell">
+    <header class="odl-test-header">
+      <a class="odl-test-brand" href="../index.html" aria-label="Volver a On Demand Languages">
+        <img src="../assets/logo-blue.png" alt="On Demand Languages">
+      </a>
+      <span class="odl-test-kicker">Test de nivel</span>
+    </header>
+
+    <div id="testError" class="odl-test-alert odl-test-alert--error" role="alert" hidden></div>
+
+    <section id="startView" class="odl-test-view" aria-labelledby="testTitle">
+      <div class="odl-test-intro">
+        <span class="odl-test-eyebrow">On Demand Languages</span>
+        <h1 id="testTitle">Test de nivel</h1>
+        <p id="testDescription">Completa esta evaluación para obtener una estimación orientativa de tu nivel.</p>
+      </div>
+
+      <form id="testStartForm" class="odl-test-form" novalidate>
+        <div class="odl-test-field">
+          <label for="testName">Nombre completo <span aria-hidden="true">*</span></label>
+          <input id="testName" name="name" type="text" autocomplete="name" required>
+          <p class="odl-test-field-error" data-error-for="name" hidden></p>
+        </div>
+
+        <div class="odl-test-field">
+          <label for="testEmail">Email <span aria-hidden="true">*</span></label>
+          <input id="testEmail" name="email" type="email" autocomplete="email" required>
+          <p class="odl-test-field-error" data-error-for="email" hidden></p>
+        </div>
+
+        <label class="odl-test-consent" for="privacyConsent">
+          <input id="privacyConsent" name="privacyConsent" type="checkbox" required>
+          <span>Acepto el uso de mis datos personales para fines comerciales y estadísticos.</span>
+        </label>
+        <p class="odl-test-field-error" data-error-for="privacy" hidden></p>
+
+        <button class="odl-test-button" type="submit">Comenzar test</button>
+      </form>
+    </section>
+
+    <section id="quizView" class="odl-test-view" aria-labelledby="quizTitle" hidden>
+      <div class="odl-test-progress-header">
+        <div>
+          <span class="odl-test-eyebrow">Nivel actual</span>
+          <h1 id="quizTitle">A1</h1>
+        </div>
+        <p id="quizProgress">Pregunta 0 de 30</p>
+      </div>
+      <div class="odl-test-progress-track" aria-hidden="true"><span id="quizProgressBar"></span></div>
+      <div class="odl-test-placeholder">
+        <p>La estructura de preguntas está preparada.</p>
+        <p>La carga de los seis niveles y la navegación se incorporarán en la siguiente fase.</p>
+      </div>
+      <div class="odl-test-actions">
+        <button class="odl-test-button odl-test-button--secondary" type="button" disabled>Anterior</button>
+        <button class="odl-test-button" type="button" disabled>Siguiente</button>
+      </div>
+    </section>
+
+    <footer class="odl-test-footer">
+      <span>© 2026 On Demand Languages</span>
+      <a href="../index.html">Volver a la web</a>
+    </footer>
+  </main>
+
+  <script src="../js/test.js" type="module"></script>
+</body>
+
+</html>

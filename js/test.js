@@ -9,6 +9,8 @@ const TOTAL_PREGUNTAS = NIVELES.length * PREGUNTAS_POR_NIVEL;
 const TOTAL_PAGINAS = Math.ceil(TOTAL_PREGUNTAS / PREGUNTAS_POR_NIVEL);
 const testError = document.querySelector('#testError');
 const quizError = document.querySelector('#quizError');
+const selectionView = document.querySelector('#selectionView');
+const testSelectionGrid = document.querySelector('#testSelectionGrid');
 const startView = document.querySelector('#startView');
 const quizView = document.querySelector('#quizView');
 const resultView = document.querySelector('#resultView');
@@ -84,7 +86,38 @@ const showFieldError = (name, message) => {
 
 const getSelectedTest = () => {
   const testId = new URLSearchParams(window.location.search).get('test');
-  return testId ? TESTS[testId] : null;
+  return testId && TESTS[testId] ? { id: testId, ...TESTS[testId] } : null;
+};
+
+const renderTestSelection = () => {
+  Object.entries(TESTS).forEach(([testId, test]) => {
+    const card = document.createElement('a');
+    card.className = 'odl-test-selection-card';
+    card.href = `test.html?test=${testId}`;
+
+    const flag = document.createElement('img');
+    flag.src = test.idioma === 'Portugués' ? '../assets/flags/BR.png' : '../assets/flags/GB.png';
+    flag.alt = `Bandera de ${test.idioma}`;
+    flag.className = 'odl-test-selection-flag';
+
+    const content = document.createElement('span');
+    content.className = 'odl-test-selection-content';
+
+    const title = document.createElement('strong');
+    title.textContent = test.nombre;
+
+    const details = document.createElement('span');
+    details.textContent = `${test.idioma} · ${test.tipo}`;
+
+    const arrow = document.createElement('span');
+    arrow.className = 'odl-test-selection-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '→';
+
+    content.append(title, details);
+    card.append(flag, content, arrow);
+    testSelectionGrid.append(card);
+  });
 };
 
 const loadQuestions = async () => {
@@ -222,9 +255,16 @@ const startQuiz = async () => {
 selectedTest = getSelectedTest();
 
 if (!selectedTest) {
-  showError('No se ha encontrado el test solicitado. Comprueba el enlace e inténtalo de nuevo.');
+  const hasTestParameter = new URLSearchParams(window.location.search).has('test');
+  if (hasTestParameter) {
+    showError('No se ha encontrado el test solicitado. Comprueba el enlace e inténtalo de nuevo.');
+  } else {
+    renderTestSelection();
+    selectionView.hidden = false;
+  }
   startView.hidden = true;
 } else {
+  selectionView.hidden = true;
   document.title = `${selectedTest.nombre} | On Demand Languages`;
   testTitle.textContent = selectedTest.nombre;
   quizTitle.textContent = selectedTest.nombre;

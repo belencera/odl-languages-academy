@@ -1,35 +1,25 @@
-# 🎓 On Demand Languages Academy 
+# On Demand Languages Academy
 
-## 📁 Estructura del Proyecto
+Landing page estática de On Demand Languages con cursos, ventajas y formulario de contacto conectado a Web3Forms.
 
 ```
-academia-idiomas/
-├── index.html              # Landing page principal
+odl-languages-academy/
+├── index.html              # Página principal
 ├── css/
-│   ├── variables.css       # Variables CSS (colores, tipografía, espaciado)
-│   ├── reset.css           # Reset/normalize CSS
-│   ├── layout.css          # Layouts y grids reutilizables
-│   ├── components.css      # Componentes UI (botones, cards, forms, navbar)
-│   ├── utilities.css       # Clases utilitarias
-│   └── pages/
-│       ├── landing.css     # Estilos específicos de la landing
-│       ├── auth.css        # Estilos de login/register
-│       ├── dashboard.css   # Estilos del dashboard
-│       └── class.css       # Estilos de la página de clase
+│   ├── variables.css
+│   ├── reset.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── utilities.css
+│   └── pages/landing.css
 ├── js/
-│   ├── main.js             # Punto de entrada principal
-│   ├── utils.js            # Funciones utilitarias generales
-│   ├── navbar.js           # Funcionalidad del navbar responsive
-│   ├── auth.js             # Autenticación (login/register)
-│   ├── dashboard.js        # Dashboard con soporte multi-rol
-│   └── class.js            # Funcionalidad de la página de clase
-├── pages/
-│   ├── login.html          # Página de inicio de sesión
-│   ├── register.html       # Página de registro
-│   ├── dashboard.html      # Dashboard principal
-│   └── class.html          # Página de clase individual
+│   ├── main.js
+│   ├── utils.js
+│   └── navbar.js
 ├── assets/
-│   ├── images/             # Imágenes del proyecto
-│   └── icons/              # Iconos SVG
-└── README.md               # Este archivo
+│   ├── flags/
+│   └── imágenes y logos
+└── README.md
 ```
+
+Abre `index.html` directamente en el navegador o sirve la carpeta con cualquier servidor estático.

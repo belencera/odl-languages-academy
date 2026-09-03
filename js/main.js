@@ -4,10 +4,7 @@
  */
 
 import { initNavbar } from './navbar.js';
-import { initAuth } from './auth.js';
-import { initDashboard } from './dashboard.js';
-import { initClassPage } from './class.js';
-import { $, getStorage, smoothScroll } from './utils.js';
+import { $, smoothScroll } from './utils.js';
 
 /**
  * Inicializa la aplicación
@@ -16,39 +13,11 @@ const initApp = () => {
   // Inicializar navbar en todas las páginas
   initNavbar();
 
-  // Inicializar funcionalidad específica según la página
-  initPageSpecific();
+  // Inicializar la página principal
+  initLandingPage();
 
   // Inicializar utilidades globales
   initGlobalUtils();
-};
-
-/**
- * Inicializa funcionalidad específica según la página actual
- */
-const initPageSpecific = () => {
-  const path = window.location.pathname;
-  const page = path.split('/').pop() || 'index.html';
-
-  switch (page) {
-    case 'index.html':
-    case '':
-      initLandingPage();
-      break;
-
-    case 'login.html':
-    case 'register.html':
-      initAuth();
-      break;
-
-    case 'dashboard.html':
-      initDashboard();
-      break;
-
-    case 'class.html':
-      initClassPage();
-      break;
-  }
 };
 
 /**
@@ -193,7 +162,4 @@ if (document.readyState === 'loading') {
 }
 
 // Exportar funciones globales para uso en HTML inline
-window.LinguaPro = {
-  getStorage,
-  smoothScroll
-};
+window.LinguaPro = { smoothScroll };

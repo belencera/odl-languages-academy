@@ -97,47 +97,6 @@ export const throttle = (func, limit = 300) => {
 };
 
 /**
- * Guarda datos en localStorage
- * @param {string} key - Clave
- * @param {*} value - Valor a guardar
- */
-export const setStorage = (key, value) => {
-  try {
-    localStorage.setItem(key, JSON.stringify(value));
-  } catch (e) {
-    console.error('Error saving to localStorage:', e);
-  }
-};
-
-/**
- * Obtiene datos de localStorage
- * @param {string} key - Clave
- * @param {*} defaultValue - Valor por defecto
- * @returns {*}
- */
-export const getStorage = (key, defaultValue = null) => {
-  try {
-    const item = localStorage.getItem(key);
-    return item ? JSON.parse(item) : defaultValue;
-  } catch (e) {
-    console.error('Error reading from localStorage:', e);
-    return defaultValue;
-  }
-};
-
-/**
- * Elimina datos de localStorage
- * @param {string} key - Clave
- */
-export const removeStorage = (key) => {
-  try {
-    localStorage.removeItem(key);
-  } catch (e) {
-    console.error('Error removing from localStorage:', e);
-  }
-};
-
-/**
  * Formatea una fecha
  * @param {Date|string} date - Fecha
  * @param {Object} options - Opciones de formato
@@ -193,37 +152,6 @@ export const generateId = () => {
 export const isValidEmail = (email) => {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
-};
-
-/**
- * Valida una contraseña (mínimo 8 caracteres)
- * @param {string} password - Contraseña a validar
- * @returns {boolean}
- */
-export const isValidPassword = (password) => {
-  return password && password.length >= 8;
-};
-
-/**
- * Calcula la fortaleza de una contraseña
- * @param {string} password - Contraseña
- * @returns {Object}
- */
-export const getPasswordStrength = (password) => {
-  if (!password) return { score: 0, label: '' };
-  
-  let score = 0;
-  if (password.length >= 8) score++;
-  if (password.length >= 12) score++;
-  if (/[a-z]/.test(password) && /[A-Z]/.test(password)) score++;
-  if (/\d/.test(password)) score++;
-  if (/[^a-zA-Z0-9]/.test(password)) score++;
-  
-  const labels = ['Muy débil', 'Débil', 'Media', 'Fuerte', 'Muy fuerte'];
-  return {
-    score,
-    label: labels[Math.min(score, 4)]
-  };
 };
 
 /**
@@ -305,21 +233,6 @@ export const escapeHtml = (str) => {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
-};
-
-/**
- * Obtiene las iniciales de un nombre
- * @param {string} name - Nombre completo
- * @returns {string}
- */
-export const getInitials = (name) => {
-  if (!name) return '';
-  return name
-    .split(' ')
-    .map(n => n[0])
-    .join('')
-    .toUpperCase()
-    .slice(0, 2);
 };
 
 /**

@@ -51,7 +51,6 @@ export const seleccionarPreguntas = (questions, amount = PREGUNTAS_POR_NIVEL) =>
 };
 
 export const calcularNivel = (correctAnswers) => {
-  if (correctAnswers >= 30) return 'C2';
   if (correctAnswers >= 25) return 'C1';
   if (correctAnswers >= 20) return 'B2';
   if (correctAnswers >= 15) return 'B1';
@@ -269,7 +268,7 @@ if (!selectedTest) {
   testTitle.textContent = selectedTest.nombre;
   quizTitle.textContent = selectedTest.nombre;
   quizDescription.textContent = 'Lee cada pregunta con atención, sólo hay una respuesta correcta. ¡Tranquilo! No hay límite de tiempo. Al finalizar, recibirás un resultado orientativo de tu nivel.';
-  testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()} en modalidad ${selectedTest.tipo.toLowerCase()}. Completa el test para obtener una estimación orientativa de tu nivel.`;
+  testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completa el test para obtener una estimación orientativa de tu nivel.`;
 }
 
 startForm.addEventListener('submit', async (event) => {

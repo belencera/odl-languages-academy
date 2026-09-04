@@ -7,7 +7,7 @@
   <meta name="description" content="Evalúa tu nivel de idiomas de On Demand Languages.">
   <title>Evalúa tu nivel | On Demand Languages</title>
   <link rel="icon" href="../assets/mini-logo.png" type="image/png">
-  <link rel="stylesheet" href="../css/pages/test.css">
+  <link rel="stylesheet" href="../css/pages/test.css?v=instructions-style">
 </head>
 
 <body class="odl-test-body">
@@ -39,9 +39,15 @@
 
       <form id="testStartForm" class="odl-test-form" novalidate>
         <div class="odl-test-field">
-          <label for="testName">Nombre completo <span aria-hidden="true">*</span></label>
-          <input id="testName" name="name" type="text" autocomplete="name" required>
+          <label for="testName">Nombre <span aria-hidden="true">*</span></label>
+          <input id="testName" name="name" type="text" autocomplete="given-name" required>
           <p class="odl-test-field-error" data-error-for="name" hidden></p>
+        </div>
+
+        <div class="odl-test-field">
+          <label for="testSurname">Apellido <span aria-hidden="true">*</span></label>
+          <input id="testSurname" name="surname" type="text" autocomplete="family-name" required>
+          <p class="odl-test-field-error" data-error-for="surname" hidden></p>
         </div>
 
         <div class="odl-test-field">
@@ -50,14 +56,38 @@
           <p class="odl-test-field-error" data-error-for="email" hidden></p>
         </div>
 
+        <div class="odl-test-field">
+          <label for="testPhone">Teléfono <span aria-hidden="true">*</span></label>
+          <input id="testPhone" name="phone" type="tel" autocomplete="tel" required>
+          <p class="odl-test-field-error" data-error-for="phone" hidden></p>
+        </div>
+
         <label class="odl-test-consent" for="privacyConsent">
           <input id="privacyConsent" name="privacyConsent" type="checkbox" required>
-          <span>Acepto el uso de mis datos personales para fines comerciales y estadísticos.</span>
+          <span>Acepto la política de privacidad y el uso de mis datos para fines comerciales.</span>
         </label>
         <p class="odl-test-field-error" data-error-for="privacy" hidden></p>
 
-        <button class="odl-test-button" type="submit">Comenzar test</button>
+        <button class="odl-test-button" type="submit">Continuar</button>
       </form>
+    </section>
+
+    <section id="instructionsView" class="odl-test-view odl-test-instructions" aria-labelledby="instructionsTitle" hidden>
+      <div class="odl-test-intro">
+        <span class="odl-test-eyebrow">Antes de comenzar</span>
+        <h1 id="instructionsTitle">Instrucciones del test</h1>
+        <p id="instructionsDescription">Lee estas indicaciones antes de iniciar la evaluación.</p>
+      </div>
+
+      <ul class="odl-test-instructions-list">
+        <li>El test tiene 25 preguntas en total.</li>
+        <li>¡Tranquilo! No hay tiempo límite.</li>
+        <li>Solo hay una respuesta correcta por pregunta.</li>
+        <li>Puedes volver atrás para revisar tus respuestas.</li>
+        <li>Al finalizar podrás ver tu puntuación y tu nivel estimado.</li>
+      </ul>
+
+      <button id="startQuizButton" class="odl-test-button" type="button">Comenzar test</button>
     </section>
 
     <section id="quizView" class="odl-test-view" aria-labelledby="quizTitle" hidden>
@@ -67,7 +97,7 @@
           <h1 id="quizTitle">Inglés general</h1>
         </div>
         <p id="quizDescription" class="odl-test-quiz-description">Elige solo una opción por pregunta.</p>
-        <p id="quizProgress">Página 1 de 6</p>
+        <p id="quizProgress">Página 1 de 5</p>
       </div>
       <div class="odl-test-progress-track" aria-hidden="true"><span id="quizProgressBar"></span></div>
       <div id="questionList" class="odl-test-question-list"></div>

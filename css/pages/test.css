@@ -3,6 +3,7 @@
   --odl-test-blue-700: #1d4ed8;
   --odl-test-blue-600: #2563eb;
   --odl-test-blue-100: #dbeafe;
+  --odl-test-blue-50: #eff6ff;
   --odl-test-red-600: #dc2626;
   --odl-test-ink: #171717;
   --odl-test-muted: #525252;
@@ -173,6 +174,24 @@
 .odl-test-form {
   display: grid;
   gap: 20px;
+}
+
+.odl-test-instructions-list {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 44px;
+  padding: 0;
+  list-style: none;
+  color: var(--odl-test-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.odl-test-instructions-list li {
+  padding: 12px 16px;
+  border-left: 3px solid var(--odl-test-blue-600);
+  border-radius: 4px;
+  background: var(--odl-test-blue-50);
 }
 
 .odl-test-field {

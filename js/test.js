@@ -12,9 +12,11 @@ const quizError = document.querySelector('#quizError');
 const selectionView = document.querySelector('#selectionView');
 const testSelectionGrid = document.querySelector('#testSelectionGrid');
 const startView = document.querySelector('#startView');
+const instructionsView = document.querySelector('#instructionsView');
 const quizView = document.querySelector('#quizView');
 const resultView = document.querySelector('#resultView');
 const startForm = document.querySelector('#testStartForm');
+const startQuizButton = document.querySelector('#startQuizButton');
 const testTitle = document.querySelector('#testTitle');
 const testDescription = document.querySelector('#testDescription');
 const quizDescription = document.querySelector('#quizDescription');
@@ -29,7 +31,7 @@ let selectedTest;
 let quizQuestions = [];
 let selectedAnswers = new Map();
 let currentPage = 0;
-let participant = { name: '', email: '' };
+let participant = { name: '', surname: '', email: '', phone: '' };
 
 export const fisherYates = (items) => {
   const shuffledItems = [...items];
@@ -221,7 +223,7 @@ const calculateResult = () => {
 
 const showResults = () => {
   const result = calculateResult();
-  document.querySelector('#resultName').textContent = participant.name;
+  document.querySelector('#resultName').textContent = `${participant.name} ${participant.surname}`;
   document.querySelector('#resultTest').textContent = selectedTest.nombre;
   document.querySelector('#resultScore').textContent = `${result.correctAnswers} / ${TOTAL_PREGUNTAS} aciertos`;
   document.querySelector('#resultPercentage').textContent = `${result.percentage}%`;
@@ -267,7 +269,7 @@ if (!selectedTest) {
   document.title = `${selectedTest.nombre} | On Demand Languages`;
   testTitle.textContent = selectedTest.nombre;
   quizTitle.textContent = selectedTest.nombre;
-  quizDescription.textContent = 'Lee cada pregunta con atención, sólo hay una respuesta correcta. ¡Tranquilo! No hay límite de tiempo. Al finalizar, recibirás un resultado orientativo de tu nivel.';
+  quizDescription.textContent = 'Lee cada pregunta con atención, recuerda que sólo hay una respuesta correcta.';
   testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completa el test para obtener una estimación orientativa de tu nivel.`;
 }
 
@@ -279,7 +281,9 @@ startForm.addEventListener('submit', async (event) => {
 
   const formData = new FormData(startForm);
   const name = String(formData.get('name') || '').trim();
+  const surname = String(formData.get('surname') || '').trim();
   const email = String(formData.get('email') || '').trim();
+  const phone = String(formData.get('phone') || '').trim();
   const privacyAccepted = formData.get('privacyConsent') === 'on';
   let isValid = true;
 
@@ -288,8 +292,18 @@ startForm.addEventListener('submit', async (event) => {
     isValid = false;
   }
 
+  if (!surname) {
+    showFieldError('surname', 'Introduce tu apellido.');
+    isValid = false;
+  }
+
   if (!email || !startForm.elements.email.checkValidity()) {
     showFieldError('email', 'Introduce un email válido.');
+    isValid = false;
+  }
+
+  if (!phone) {
+    showFieldError('phone', 'Introduce tu número de teléfono.');
     isValid = false;
   }
 
@@ -300,7 +314,15 @@ startForm.addEventListener('submit', async (event) => {
 
   if (!isValid) return;
 
-  participant = { name, email };
+  participant = { name, surname, email, phone };
+  startView.hidden = true;
+  instructionsView.hidden = false;
+  document.querySelector('#instructionsDescription').textContent = `Estás a punto de comenzar el test de ${selectedTest.nombre}.`;
+  window.scrollTo({ top: 0, behavior: 'auto' });
+});
+
+startQuizButton.addEventListener('click', async () => {
+  instructionsView.hidden = true;
   await startQuiz();
 });
 

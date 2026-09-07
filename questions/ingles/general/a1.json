@@ -1,27 +1,277 @@
 [
-  { "id": "a1-001", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-002", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-003", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-004", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-005", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-006", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-007", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-008", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-009", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-010", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-011", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-012", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-013", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-014", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-015", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-016", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-017", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-018", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-019", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-020", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-021", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-022", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-023", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-024", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "a1-025", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 }
+  {
+    "id": "IG-A1-01",
+    "question": "Anna ___ tired.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-02",
+    "question": "Anna ___ at a hospital.",
+    "options": [
+      "work",
+      "working",
+      "bought",
+      "works"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-03",
+    "question": "Anna can ___ at a restaurant.",
+    "options": [
+      "working",
+      "bought",
+      "work",
+      "works"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-04",
+    "question": "Choose the correct article before \"umbrella\".",
+    "options": [
+      "some",
+      "an",
+      "a",
+      "the"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-05",
+    "question": "The station is ___ the city centre.",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "from"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-06",
+    "question": "My brother ___ available.",
+    "options": [
+      "are",
+      "am",
+      "be",
+      "is"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-07",
+    "question": "My brother ___ English every evening.",
+    "options": [
+      "studying",
+      "saw",
+      "studies",
+      "study"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-08",
+    "question": "My brother can ___ English.",
+    "options": [
+      "saw",
+      "study",
+      "studies",
+      "studying"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-09",
+    "question": "Choose the correct article before \"hotel\".",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "some"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-10",
+    "question": "The store is ___ the city centre.",
+    "options": [
+      "on",
+      "for",
+      "from",
+      "in"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-11",
+    "question": "While playing with scissors, The children ___ careful.",
+    "options": [
+      "am",
+      "be",
+      "are",
+      "is"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-12",
+    "question": "At a sports club, The children ___ football after school.",
+    "options": [
+      "took",
+      "plays",
+      "play",
+      "playing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-13",
+    "question": "During school breaks, children can ___ football.",
+    "options": [
+      "play",
+      "plays",
+      "playing",
+      "took"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-14",
+    "question": "Choose the correct article before \"orange\".",
+    "options": [
+      "a",
+      "the",
+      "some",
+      "an"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-15",
+    "question": "The café is ___ the city centre.",
+    "options": [
+      "for",
+      "from",
+      "next to",
+      "on"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-16",
+    "question": "When testing us, Our teacher ___ confident that we will pass.",
+    "options": [
+      "be",
+      "is",
+      "are",
+      "am"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-17",
+    "question": "During a museum visit, Our teacher ___ films our behaviour.",
+    "options": [
+      "watches",
+      "watch",
+      "watching",
+      "wrote"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-18",
+    "question": "Our teacher can ___ films.",
+    "options": [
+      "watches",
+      "watching",
+      "wrote",
+      "watch"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-19",
+    "question": "Choose the correct article before \"university\".",
+    "options": [
+      "the",
+      "some",
+      "a",
+      "an"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-20",
+    "question": "The library is ___ to the city hall.",
+    "options": [
+      "from",
+      "opposite",
+      "on",
+      "for"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-21",
+    "question": "I ___ patient.",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-A1-22",
+    "question": "I ___ to the gym by bus.",
+    "options": [
+      "goes",
+      "going",
+      "left",
+      "go"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-A1-23",
+    "question": "While comparing two products, I can ___ based on price.",
+    "options": [
+      "write",
+      "are",
+      "choose",
+      "like"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-A1-24",
+    "question": "Choose the correct article before \"hour\".",
+    "options": [
+      "some",
+      "an",
+      "a",
+      "the"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-A1-25",
+    "question": "The park is ___ the city hospital.",
+    "options": [
+      "behind",
+      "on",
+      "for",
+      "from"
+    ],
+    "correctAnswer": 0
+  }
 ]

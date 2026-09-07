@@ -1,27 +1,277 @@
 [
-  { "id": "b2-001", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-002", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-003", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-004", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-005", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-006", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-007", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-008", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-009", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-010", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-011", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-012", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-013", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-014", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-015", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-016", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-017", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-018", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-019", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-020", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-021", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-022", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-023", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-024", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "b2-025", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 }
+  {
+    "id": "IG-B2-01",
+    "question": "If anna had followed the laws, her imprisonment ___.",
+    "options": [
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided",
+      "had avoided"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-02",
+    "question": "The document is missing; anna ___ it at home.",
+    "options": [
+      "must leave",
+      "should leave",
+      "would be leaving",
+      "must have left"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-03",
+    "question": "Not only ___ the task, but anna also explained the result.",
+    "options": [
+      "has anna complete",
+      "was anna completed",
+      "did anna complete",
+      "anna completed"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-04",
+    "question": "Anna had the document ___ before the deadline.",
+    "options": [
+      "to review",
+      "reviewed",
+      "review",
+      "reviewing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-05",
+    "question": "The new plan is expected to ___ a significant improvement.",
+    "options": [
+      "bring about",
+      "bring up",
+      "bring in",
+      "bring over"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-06",
+    "question": "If my brother had checked the details, the problem ___.",
+    "options": [
+      "will be avoided",
+      "would be avoided",
+      "had avoided",
+      "would have been avoided"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-07",
+    "question": "The keys are missing; my brother ___ them at home.",
+    "options": [
+      "should leave",
+      "would be leaving",
+      "must have left",
+      "must leave"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-08",
+    "question": "During a family meal, Not only ___ his research , but he also explained the result.",
+    "options": [
+      "was my brother completed",
+      "did my brother complete",
+      "my brother completed",
+      "has my brother complete"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-09",
+    "question": "My brother had his homework ___ before the deadline.",
+    "options": [
+      "done",
+      "did",
+      "do",
+      "had done"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-10",
+    "question": "The technology is expected to ___ a significant improvement.",
+    "options": [
+      "bring up",
+      "bring in",
+      "bring over",
+      "bring about"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-11",
+    "question": "If my employee had checked the details, the problems in the contract ___.",
+    "options": [
+      "would be avoided",
+      "had avoided",
+      "would have been avoided",
+      "will be avoided"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-12",
+    "question": "The information is missing; the IT manager ___ it.",
+    "options": [
+      "would be deleting",
+      "must have deleted",
+      "must delete",
+      "should delete"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-13",
+    "question": "Not only ___ their homework, but the children also played at the park all afternoon.",
+    "options": [
+      "did the children complete",
+      "the children completed",
+      "has the children complete",
+      "was the children completed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-14",
+    "question": "In a neighbourhood café, The group of friends had their arguments ___ regarding who was going to held the next party.",
+    "options": [
+      "present",
+      "presented",
+      "had present",
+      "had presented"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-15",
+    "question": "While organizing each person's room when moving to a new place, the new house is expected to ___ a significant increase in space for everyone.",
+    "options": [
+      "bring in",
+      "bring over",
+      "bring about",
+      "bring up"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-16",
+    "question": "If the doctor had organized his agenda better, the delay ___.",
+    "options": [
+      "had avoided",
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-17",
+    "question": "During a museum visit, we ended up being locked in; even the security guard ___.",
+    "options": [
+      "must have left",
+      "must leave",
+      "should leave",
+      "would be leaving"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-18",
+    "question": "Not only ___ us homework, but our teacher also presented the results of the exam.",
+    "options": [
+      "our teacher gave",
+      "has our teacher given",
+      "was our teacher gave",
+      "did our teacher give"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-19",
+    "question": "While discussing about tv shows, we had all new Netflix series ___ before the end of our sushi party.",
+    "options": [
+      "reviewing",
+      "to review",
+      "reviewed",
+      "review"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-20",
+    "question": "The new system is expected to ___ a significant efficiency improvement for every process in the company.",
+    "options": [
+      "bring over",
+      "bring about",
+      "bring up",
+      "bring in"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-21",
+    "question": "During my first loan, If i had checked the details, the problem of not being able to pay in time ___.",
+    "options": [
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided",
+      "had avoided"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-B2-22",
+    "question": "My dog is missing; i ___ my back door open and he ran away.",
+    "options": [
+      "must leave",
+      "should leave",
+      "would be leaving",
+      "must have left"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-B2-23",
+    "question": "While comparing two products, Not only ___ the price, but i also to the amount contained in each package.",
+    "options": [
+      "has I pay attention",
+      "was I payed attention",
+      "did I pay",
+      "I payed"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-B2-24",
+    "question": "At an airport check point, I had my document ___ before the entering to the free shop.",
+    "options": [
+      "to check",
+      "checked",
+      "check",
+      "checking"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-B2-25",
+    "question": "During a sports event, The match is expected to ___ on time.",
+    "options": [
+      "start",
+      "will start",
+      "is going to start",
+      "will have started"
+    ],
+    "correctAnswer": 0
+  }
 ]

@@ -1,27 +1,277 @@
 [
-  { "id": "c1-001", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-002", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-003", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-004", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-005", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-006", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-007", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-008", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-009", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-010", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-011", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-012", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-013", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-014", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-015", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-016", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-017", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-018", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-019", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-020", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-021", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-022", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-023", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-024", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 },
-  { "id": "c1-025", "question": "", "options": ["", "", "", ""], "correctAnswer": 0 }
+  {
+    "id": "IG-C1-01",
+    "question": "Scarcely ___ the announcement when questions began.",
+    "options": [
+      "had anna finished",
+      "has anna finished",
+      "anna finished",
+      "did anna finish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-02",
+    "question": "On the morning meeting, It is essential that anna ___ present.",
+    "options": [
+      "is",
+      "was",
+      "will be",
+      "be"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-03",
+    "question": "___ all the available evidence, anna revised the conclusion.",
+    "options": [
+      "To considering",
+      "Has considered",
+      "Having considered",
+      "Considered"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-04",
+    "question": "___ the apparent simplicity, the issue requires careful analysis.",
+    "options": [
+      "Unless",
+      "Notwithstanding",
+      "Although",
+      "Because"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-05",
+    "question": "The explanation was so ___ that it resolved even the most subtle ambiguity.",
+    "options": [
+      "cogent",
+      "casual",
+      "tentative",
+      "peripheral"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-06",
+    "question": "While planning a trip, Scarcely ___ mentioning his final destination when my parents started complaning agains it.",
+    "options": [
+      "has my brother finished",
+      "my brother finished",
+      "did my brother finish",
+      "had my brother finished"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-07",
+    "question": "When making important decisions in the company, it is essential that my boss ___ present.",
+    "options": [
+      "was",
+      "will be",
+      "be",
+      "is"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-08",
+    "question": "After the police came, ___ all the available evidence in the crime scene, the detective came to a conclusion.",
+    "options": [
+      "Has considered",
+      "Having considered",
+      "Considered",
+      "To considering"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-09",
+    "question": "At the train station, ___ the scheduled arrival time, people should be patient.",
+    "options": [
+      "Notwithstanding",
+      "Although",
+      "Because",
+      "Unless"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-10",
+    "question": "In an online booking, The steps were so ___ that even people with no technical knowledge can book their holidays easily.",
+    "options": [
+      "casual",
+      "tentative",
+      "peripheral",
+      "cogent"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-11",
+    "question": "Scarcely ___ the decision of moving abroad when my mother started crying.",
+    "options": [
+      "I made",
+      "did I made",
+      "had I made",
+      "has I made"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-12",
+    "question": "At a sports club, It is essential that the coach ___ present.",
+    "options": [
+      "will be",
+      "be",
+      "is",
+      "was"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-13",
+    "question": "During a phone conversation, ___ all that my ex girlfriend had said during the call, I was happy to have broken up with her.",
+    "options": [
+      "Having considered",
+      "Considered",
+      "To considering",
+      "Has considered"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-14",
+    "question": "In a neighbourhood café, ___ the apparent simplicity, there was a very misterious person sitting there and observing everyone's move.",
+    "options": [
+      "Although",
+      "Because",
+      "Unless",
+      "Notwithstanding"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-15",
+    "question": "While organizing an investors meeting, The presentation was so ___ that most people present in the room wanted to be part of that business.",
+    "options": [
+      "tentative",
+      "peripheral",
+      "cogent",
+      "casual"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-16",
+    "question": "When telling the good news to my family, Scarcely ___ the announcement that I was going to be a mother that my mum cried in joy.",
+    "options": [
+      "did I finish",
+      "had I finished",
+      "has I finished",
+      "I finished"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-17",
+    "question": "During a museum visit, It is essential that our teacher ___ present as the organizer of the tour.",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "will be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-18",
+    "question": "In this weather update, ___ all the available evidence, we can expect a huge storm coming the following days",
+    "options": [
+      "Considered",
+      "To considering",
+      "Has considered",
+      "Having considered"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-19",
+    "question": "While discussing my new hobby, ___ the apparent simplicity of chess, the game requires careful analysis before moving a single piece.",
+    "options": [
+      "Because",
+      "Unless",
+      "Notwithstanding",
+      "Although"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-20",
+    "question": "During the president's presentation, the explanation was so ___ that it resolved even the most subtle ambiguity.",
+    "options": [
+      "peripheral",
+      "cogent",
+      "casual",
+      "tentative"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-21",
+    "question": "During a university orientation, Scarcely ___ his explanation of every step to be carried out in our first weeks as students, when questions from every single applicant started.",
+    "options": [
+      "had the teacher finished",
+      "has the teacher finished",
+      "the teacher finished",
+      "did the teacher finish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "IG-C1-22",
+    "question": "In my birthday party, It is essential that i ___ present.",
+    "options": [
+      "is",
+      "was",
+      "will be",
+      "be"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "IG-C1-23",
+    "question": "While comparing two products, ___ all the pros and cons, I arrived to a conclusion.",
+    "options": [
+      "To considering",
+      "Has considered",
+      "Having considered",
+      "Considered"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "IG-C1-24",
+    "question": "___ the appearance of the suspect,all the evidence pointed to him as the murderer.",
+    "options": [
+      "Unless",
+      "Notwithstanding",
+      "Although",
+      "Because"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "IG-C1-25",
+    "question": "All the presentation was that ___ that I couldn't believe I was being introduced to such an incredible advance in science.",
+    "options": [
+      "cogent",
+      "casual",
+      "tentative",
+      "peripheral"
+    ],
+    "correctAnswer": 0
+  }
 ]

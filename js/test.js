@@ -2,7 +2,8 @@ import {
   NIVELES,
   PREGUNTAS_DISPONIBLES_POR_NIVEL,
   PREGUNTAS_POR_NIVEL,
-  TESTS
+  TESTS,
+  GOOGLE_SHEETS_WEBHOOK_URL
 } from './config.js';
 
 const TOTAL_PREGUNTAS = NIVELES.length * PREGUNTAS_POR_NIVEL;
@@ -272,6 +273,88 @@ const calculateResult = () => {
   return { correctAnswers, level: calcularNivel(correctAnswers) };
 };
 
+const saveTestResultToGoogleSheets = async (result) => {
+  if (!GOOGLE_SHEETS_WEBHOOK_URL) {
+    console.info('Google Sheets: URL no configurada en js/config.js. Se omite el guardado.');
+    return;
+  }
+
+  try {
+    // 1. Desglose de aciertos por nivel
+    const breakdown = {};
+    NIVELES.forEach((lvl) => {
+      breakdown[lvl] = { total: 0, correct: 0 };
+    });
+
+    // 2. Detalle de preguntas y respuestas
+    const detailLines = [];
+
+    quizQuestions.forEach((q) => {
+      const chosenIndex = selectedAnswers.get(q.id);
+      const isCorrect = chosenIndex === q.correctAnswer;
+      const chosenText = (chosenIndex !== undefined && q.options && q.options[chosenIndex] !== undefined)
+        ? q.options[chosenIndex]
+        : 'Sin respuesta';
+      const correctText = (q.options && q.options[q.correctAnswer] !== undefined)
+        ? q.options[q.correctAnswer]
+        : '';
+
+      if (q.level && breakdown[q.level]) {
+        breakdown[q.level].total += 1;
+        if (isCorrect) breakdown[q.level].correct += 1;
+      }
+
+      if (isCorrect) {
+        detailLines.push(`${q.id}: ✓`);
+      } else {
+        detailLines.push(`${q.id}: ✗ ("${chosenText}" → "${correctText}")`);
+      }
+    });
+
+    const desgloseTexto = NIVELES.map((lvl) => (
+      `${lvl.toUpperCase()}: ${breakdown[lvl]?.correct || 0}/${breakdown[lvl]?.total || 0}`
+    )).join(' | ');
+
+    const now = new Date();
+    const fechaHora = now.toLocaleString('es-ES', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+
+    const payload = {
+      fecha: fechaHora,
+      nombre: participant.name,
+      apellidos: participant.surname,
+      email: participant.email,
+      telefono: participant.phone,
+      idioma: selectedTest.idioma,
+      tipo: selectedTest.tipo,
+      testNombre: selectedTest.nombre, // Define el nombre de la pestaña en Google Sheets
+      puntuacion: `${result.correctAnswers} / ${TOTAL_PREGUNTAS}`,
+      nivel: result.level,
+      desglose: desgloseTexto,
+      detalleRespuestas: detailLines.join(' | ')
+    };
+
+    await fetch(GOOGLE_SHEETS_WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    console.info('Google Sheets: resultado enviado exitosamente.');
+  } catch (error) {
+    console.warn('Google Sheets: no se pudo guardar el resultado.', error);
+  }
+};
+
 const showResults = () => {
   const result = calculateResult();
   const explicacion = getExplicacionNivel(result.level);
@@ -388,6 +471,9 @@ const showResults = () => {
       scoreBarFill.style.width = `${(result.correctAnswers / TOTAL_PREGUNTAS) * 100}%`;
     }, 200);
   });
+
+  // — Enviar resultados a Google Sheets en segundo plano —
+  saveTestResultToGoogleSheets(result);
 };
 
 const startQuiz = async () => {

@@ -53,12 +53,16 @@ export const seleccionarPreguntas = (questions, amount = PREGUNTAS_POR_NIVEL) =>
 };
 
 export const calcularNivel = (correctAnswers) => {
-  if (correctAnswers >= 25) return 'C1';
-  if (correctAnswers >= 20) return 'B2';
-  if (correctAnswers >= 15) return 'B1';
-  if (correctAnswers >= 10) return 'A2';
-  if (correctAnswers >= 5) return 'A1';
-  return 'Sin nivel / inferior a A1';
+  if (correctAnswers >= 22) return 'C1';
+  if (correctAnswers >= 20) return 'B2+';
+  if (correctAnswers >= 17) return 'B2';
+  if (correctAnswers >= 15) return 'B1+';
+  if (correctAnswers >= 12) return 'B1';
+  if (correctAnswers >= 10) return 'A2+';
+  if (correctAnswers >= 7) return 'A2';
+  if (correctAnswers >= 5) return 'A1+';
+  if (correctAnswers >= 3) return 'A1';
+  return 'A1 inicial';
 };
 
 const showError = (message) => {
@@ -212,25 +216,178 @@ const renderQuestions = () => {
 
 const hasAnsweredCurrentPage = () => getCurrentPageQuestions().every((question) => selectedAnswers.has(question.id));
 
+
+const getExplicacionNivel = (level) => {
+  const explicaciones = {
+    'A1 inicial': 'Estás dando tus primeros pasos en el idioma. Puedes reconocer algunas palabras básicas y expresiones muy sencillas, pero aún necesitas construir una base sólida de vocabulario y gramática fundamental.',
+    'A1': 'Puedes comprender y utilizar expresiones cotidianas muy básicas. Eres capaz de presentarte y responder preguntas sencillas sobre datos personales como dónde vives o qué cosas tienes.',
+    'A1+': 'Tienes una base sólida del nivel inicial. Manejas bien las expresiones básicas y comienzas a comunicarte en situaciones sencillas del día a día con mayor confianza.',
+    'A2': 'Puedes comunicarte en tareas simples y cotidianas. Entiendes frases y expresiones frecuentes relacionadas con tu entorno inmediato: información personal, compras, lugares de interés y trabajo.',
+    'A2+': 'Dominas bien las situaciones cotidianas y empiezas a desenvolverte con mayor soltura. Puedes describir aspectos de tu pasado y tu entorno, y comunicar necesidades inmediatas con cierta fluidez.',
+    'B1': 'Puedes desenvolverte en la mayoría de situaciones que surgen durante un viaje. Eres capaz de producir textos sencillos y coherentes sobre temas que te son familiares o de interés personal.',
+    'B1+': 'Tienes un nivel intermedio consolidado. Puedes participar en conversaciones sobre temas cotidianos con bastante fluidez y expresar opiniones y planes de forma clara.',
+    'B2': 'Puedes entender las ideas principales de textos complejos. Te relacionas con hablantes nativos con un grado suficiente de fluidez y naturalidad, de modo que la comunicación se realiza sin esfuerzo por ambas partes.',
+    'B2+': 'Tu nivel es intermedio-alto avanzado. Comprendes textos extensos y exigentes, y puedes expresarte de forma fluida y espontánea. Estás muy cerca del nivel avanzado.',
+    'C1': 'Puedes comprender una amplia variedad de textos extensos y exigentes, y reconocer significados implícitos. Te expresas de forma fluida y espontánea sin muestras evidentes de esfuerzo para encontrar la expresión adecuada.'
+  };
+  return explicaciones[level] || '';
+};
+
+const getRecomendacion = (idioma, tipo, level, score) => {
+  const idiomaLower = idioma.toLowerCase();
+  const recomendaciones = [];
+
+  if (score <= 6) {
+    recomendaciones.push(`Te recomendamos comenzar con un curso de ${idiomaLower} desde nivel inicial para construir una base sólida.`);
+    recomendaciones.push(`Enfócate en vocabulario esencial, gramática básica y práctica de comprensión auditiva.`);
+    recomendaciones.push(`Nuestros cursos de ${idiomaLower} ${tipo.toLowerCase()} incluyen material diseñado específicamente para este nivel.`);
+  } else if (score <= 11) {
+    recomendaciones.push(`Tienes una base que puedes fortalecer. Te sugerimos un curso de ${idiomaLower} nivel pre-intermedio.`);
+    recomendaciones.push(`Trabaja en ampliar tu vocabulario, mejorar la fluidez oral y practicar estructuras gramaticales intermedias.`);
+    recomendaciones.push(`La práctica regular de conversación te ayudará a ganar confianza rápidamente.`);
+  } else if (score <= 16) {
+    recomendaciones.push(`Tienes un buen nivel intermedio. Te recomendamos un curso de ${idiomaLower} de nivel B1-B2 para seguir progresando.`);
+    recomendaciones.push(`Enfócate en mejorar tu expresión escrita, comprensión de textos más complejos y fluidez en debates.`);
+    recomendaciones.push(`Considera prepararte para una certificación oficial de nivel intermedio-alto.`);
+  } else if (score <= 21) {
+    recomendaciones.push(`Tu nivel es avanzado. Te sugerimos un curso de ${idiomaLower} enfocado en perfeccionamiento y especialización.`);
+    recomendaciones.push(`Trabaja en matices del idioma, expresiones idiomáticas y habilidades de comunicación profesional.`);
+    recomendaciones.push(`Es un excelente momento para preparar una certificación oficial de nivel B2 o superior.`);
+  } else {
+    recomendaciones.push(`¡Enhorabuena! Tienes un nivel avanzado de ${idiomaLower}. Te recomendamos un curso de perfeccionamiento C1.`);
+    recomendaciones.push(`Enfócate en el uso sofisticado del idioma: registro formal, redacción académica y comprensión de textos especializados.`);
+    recomendaciones.push(`Considera prepararte para la certificación C1 o C2 oficial.`);
+  }
+
+  return recomendaciones;
+};
+
+
+
 const calculateResult = () => {
   const correctAnswers = quizQuestions.reduce((total, question) => (
     total + (selectedAnswers.get(question.id) === question.correctAnswer ? 1 : 0)
   ), 0);
-  const percentage = Math.round((correctAnswers / TOTAL_PREGUNTAS) * 100);
 
-  return { correctAnswers, percentage, level: calcularNivel(correctAnswers) };
+  return { correctAnswers, level: calcularNivel(correctAnswers) };
 };
 
 const showResults = () => {
   const result = calculateResult();
-  document.querySelector('#resultName').textContent = `${participant.name} ${participant.surname}`;
-  document.querySelector('#resultTest').textContent = selectedTest.nombre;
-  document.querySelector('#resultScore').textContent = `${result.correctAnswers} / ${TOTAL_PREGUNTAS} aciertos`;
-  document.querySelector('#resultPercentage').textContent = `${result.percentage}%`;
-  document.querySelector('#resultLevel').textContent = result.level;
+  const explicacion = getExplicacionNivel(result.level);
+  const recomendaciones = getRecomendacion(
+    selectedTest.idioma,
+    selectedTest.tipo,
+    result.level,
+    result.correctAnswers
+  );
+
+  resultView.replaceChildren();
+
+  // — Header —
+  const eyebrow = document.createElement('span');
+  eyebrow.className = 'odl-test-eyebrow';
+  eyebrow.textContent = 'Resultado de la evaluación';
+
+  const heading = document.createElement('h1');
+  heading.id = 'resultTitle';
+  heading.textContent = '¡Test completado!';
+
+  const participantInfo = document.createElement('p');
+  participantInfo.className = 'odl-test-result-participant';
+  participantInfo.textContent = `${participant.name} ${participant.surname} · ${selectedTest.nombre}`;
+
+  // — Level Card —
+  const levelCard = document.createElement('div');
+  levelCard.className = 'odl-test-result-level-card';
+
+  const levelLabel = document.createElement('span');
+  levelLabel.className = 'odl-test-result-level-label';
+  levelLabel.textContent = 'Tu nivel estimado';
+
+  const levelValue = document.createElement('strong');
+  levelValue.className = 'odl-test-result-level-value';
+  levelValue.textContent = result.level;
+
+  const scoreText = document.createElement('span');
+  scoreText.className = 'odl-test-result-score-text';
+  scoreText.textContent = `${result.correctAnswers} / ${TOTAL_PREGUNTAS} aciertos`;
+
+  const scoreBar = document.createElement('div');
+  scoreBar.className = 'odl-test-result-score-bar';
+  const scoreBarFill = document.createElement('div');
+  scoreBarFill.className = 'odl-test-result-score-bar-fill';
+  scoreBarFill.style.width = '0%';
+  scoreBar.append(scoreBarFill);
+
+  levelCard.append(levelLabel, levelValue, scoreText, scoreBar);
+
+
+
+  // — Level Explanation —
+  const explainSection = document.createElement('div');
+  explainSection.className = 'odl-test-result-section odl-test-result-explain-card';
+
+  const explainTitle = document.createElement('h2');
+  explainTitle.className = 'odl-test-result-section-title';
+  explainTitle.innerHTML = '<span class="odl-test-result-icon">📖</span> ¿Qué significa tu nivel?';
+
+  const explainText = document.createElement('p');
+  explainText.className = 'odl-test-result-explain';
+  explainText.textContent = explicacion;
+
+  explainSection.append(explainTitle, explainText);
+
+  // — Recommendations —
+  const recoSection = document.createElement('div');
+  recoSection.className = 'odl-test-result-section odl-test-result-reco-card';
+
+  const recoTitle = document.createElement('h2');
+  recoTitle.className = 'odl-test-result-section-title';
+  recoTitle.innerHTML = '<span class="odl-test-result-icon">🚀</span> Próximos pasos recomendados';
+
+  const recoList = document.createElement('ul');
+  recoList.className = 'odl-test-result-reco-list';
+  recomendaciones.forEach((reco) => {
+    const li = document.createElement('li');
+    li.textContent = reco;
+    recoList.append(li);
+  });
+
+  recoSection.append(recoTitle, recoList);
+
+  // — Disclaimer —
+  const disclaimer = document.createElement('div');
+  disclaimer.className = 'odl-test-result-disclaimer';
+  disclaimer.innerHTML = '<strong>⚠️ Aviso importante</strong><p>Este resultado es orientativo. No constituye una certificación oficial ni reemplaza una evaluación docente integral.</p>';
+
+  // — Action Buttons —
+  const actions = document.createElement('div');
+  actions.className = 'odl-test-result-actions';
+
+  const homeButton = document.createElement('a');
+  homeButton.className = 'odl-test-button';
+  homeButton.href = '../index.html';
+  homeButton.textContent = 'Volver a la web';
+
+  actions.append(homeButton);
+
+  // — Assemble —
+  resultView.append(
+    eyebrow, heading, participantInfo,
+    levelCard, explainSection, recoSection, disclaimer, actions
+  );
+
   quizView.hidden = true;
   resultView.hidden = false;
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // — Animate score bar —
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      scoreBarFill.style.width = `${(result.correctAnswers / TOTAL_PREGUNTAS) * 100}%`;
+    }, 200);
+  });
 };
 
 const startQuiz = async () => {
@@ -293,7 +450,7 @@ startForm.addEventListener('submit', async (event) => {
   }
 
   if (!surname) {
-    showFieldError('surname', 'Introduce tu apellido.');
+    showFieldError('surname', 'Introduce tus apellidos.');
     isValid = false;
   }
 

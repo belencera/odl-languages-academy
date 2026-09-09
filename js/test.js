@@ -273,7 +273,7 @@ const calculateResult = () => {
   return { correctAnswers, level: calcularNivel(correctAnswers) };
 };
 
-const saveTestResultToGoogleSheets = async (result) => {
+const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones) => {
   if (!GOOGLE_SHEETS_WEBHOOK_URL) {
     console.info('Google Sheets: URL no configurada en js/config.js. Se omite el guardado.');
     return;
@@ -337,7 +337,9 @@ const saveTestResultToGoogleSheets = async (result) => {
       puntuacion: `${result.correctAnswers} / ${TOTAL_PREGUNTAS}`,
       nivel: result.level,
       desglose: desgloseTexto,
-      detalleRespuestas: detailLines.join(' | ')
+      detalleRespuestas: detailLines.join(' | '),
+      explicacion: explicacion || '',
+      recomendaciones: recomendaciones || []
     };
 
     await fetch(GOOGLE_SHEETS_WEBHOOK_URL, {
@@ -473,7 +475,7 @@ const showResults = () => {
   });
 
   // — Enviar resultados a Google Sheets en segundo plano —
-  saveTestResultToGoogleSheets(result);
+  saveTestResultToGoogleSheets(result, explicacion, recomendaciones);
 };
 
 const startQuiz = async () => {

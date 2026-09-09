@@ -83,7 +83,7 @@ const initLandingPage = () => {
 
       } catch (error) {
         console.error('Error:', error);
-        btn.textContent = 'Error - Inténtalo de nuevo';
+        btn.textContent = 'Error - Intentá de nuevo';
         btn.classList.add('btn--error');
 
         // Resetear botón después de 3 segundos

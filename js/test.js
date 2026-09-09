@@ -220,16 +220,16 @@ const hasAnsweredCurrentPage = () => getCurrentPageQuestions().every((question) 
 
 const getExplicacionNivel = (level) => {
   const explicaciones = {
-    'A1 inicial': 'Estás dando tus primeros pasos en el idioma. Puedes reconocer algunas palabras básicas y expresiones muy sencillas, pero aún necesitas construir una base sólida de vocabulario y gramática fundamental.',
-    'A1': 'Puedes comprender y utilizar expresiones cotidianas muy básicas. Eres capaz de presentarte y responder preguntas sencillas sobre datos personales como dónde vives o qué cosas tienes.',
-    'A1+': 'Tienes una base sólida del nivel inicial. Manejas bien las expresiones básicas y comienzas a comunicarte en situaciones sencillas del día a día con mayor confianza.',
-    'A2': 'Puedes comunicarte en tareas simples y cotidianas. Entiendes frases y expresiones frecuentes relacionadas con tu entorno inmediato: información personal, compras, lugares de interés y trabajo.',
-    'A2+': 'Dominas bien las situaciones cotidianas y empiezas a desenvolverte con mayor soltura. Puedes describir aspectos de tu pasado y tu entorno, y comunicar necesidades inmediatas con cierta fluidez.',
-    'B1': 'Puedes desenvolverte en la mayoría de situaciones que surgen durante un viaje. Eres capaz de producir textos sencillos y coherentes sobre temas que te son familiares o de interés personal.',
-    'B1+': 'Tienes un nivel intermedio consolidado. Puedes participar en conversaciones sobre temas cotidianos con bastante fluidez y expresar opiniones y planes de forma clara.',
-    'B2': 'Puedes entender las ideas principales de textos complejos. Te relacionas con hablantes nativos con un grado suficiente de fluidez y naturalidad, de modo que la comunicación se realiza sin esfuerzo por ambas partes.',
-    'B2+': 'Tu nivel es intermedio-alto avanzado. Comprendes textos extensos y exigentes, y puedes expresarte de forma fluida y espontánea. Estás muy cerca del nivel avanzado.',
-    'C1': 'Puedes comprender una amplia variedad de textos extensos y exigentes, y reconocer significados implícitos. Te expresas de forma fluida y espontánea sin muestras evidentes de esfuerzo para encontrar la expresión adecuada.'
+    'A1 inicial': 'Estás dando tus primeros pasos en el idioma. Podés reconocer algunas palabras básicas y expresiones muy sencillas, pero todavía necesitás construir una base sólida de vocabulario y gramática fundamental.',
+    'A1': 'Podés comprender y utilizar expresiones cotidianas muy básicas. Sos capaz de presentarte y responder preguntas sencillas sobre datos personales como dónde vivís o qué cosas tenés.',
+    'A1+': 'Tenés una base sólida del nivel inicial. Manejás bien las expresiones básicas y empezás a comunicarte en situaciones sencillas del día a día con mayor confianza.',
+    'A2': 'Podés comunicarte en tareas simples y cotidianas. Entendés frases y expresiones frecuentes relacionadas con tu entorno inmediato: información personal, compras, lugares de interés y trabajo.',
+    'A2+': 'Dominás bien las situaciones cotidianas y empezás a desenvolverte con mayor soltura. Podés describir aspectos de tu pasado y tu entorno, y comunicar necesidades inmediatas con cierta fluidez.',
+    'B1': 'Podés desenvolverte en la mayoría de las situaciones que surgen durante un viaje. Sos capaz de producir textos sencillos y coherentes sobre temas que te resultan familiares o de interés personal.',
+    'B1+': 'Tenés un nivel intermedio consolidado. Podés participar en conversaciones sobre temas cotidianos con bastante fluidez y expresar opiniones y planes de forma clara.',
+    'B2': 'Podés entender las ideas principales de textos complejos. Te relacionás con hablantes nativos con un grado suficiente de fluidez y naturalidad, de modo que la comunicación se realiza sin esfuerzo por ambas partes.',
+    'B2+': 'Tu nivel es intermedio-alto avanzado. Comprendés textos extensos y exigentes, y podés expresarte de forma fluida y espontánea. Estás muy cerca del nivel avanzado.',
+    'C1': 'Podés comprender una amplia variedad de textos extensos y exigentes, y reconocer significados implícitos. Te expresás de forma fluida y espontánea sin muestras evidentes de esfuerzo para encontrar la expresión adecuada.'
   };
   return explicaciones[level] || '';
 };
@@ -240,24 +240,24 @@ const getRecomendacion = (idioma, tipo, level, score) => {
 
   if (score <= 6) {
     recomendaciones.push(`Te recomendamos comenzar con un curso de ${idiomaLower} desde nivel inicial para construir una base sólida.`);
-    recomendaciones.push(`Enfócate en vocabulario esencial, gramática básica y práctica de comprensión auditiva.`);
+    recomendaciones.push(`Enfocate en vocabulario esencial, gramática básica y práctica de comprensión auditiva.`);
     recomendaciones.push(`Nuestros cursos de ${idiomaLower} ${tipo.toLowerCase()} incluyen material diseñado específicamente para este nivel.`);
   } else if (score <= 11) {
-    recomendaciones.push(`Tienes una base que puedes fortalecer. Te sugerimos un curso de ${idiomaLower} nivel pre-intermedio.`);
-    recomendaciones.push(`Trabaja en ampliar tu vocabulario, mejorar la fluidez oral y practicar estructuras gramaticales intermedias.`);
-    recomendaciones.push(`La práctica regular de conversación te ayudará a ganar confianza rápidamente.`);
+    recomendaciones.push(`Tenés una base que podés fortalecer. Te sugerimos un curso de ${idiomaLower} nivel pre-intermedio.`);
+    recomendaciones.push(`Trabajá en ampliar tu vocabulario, mejorar la fluidez oral y practicar estructuras gramaticales intermedias.`);
+    recomendaciones.push(`La práctica regular de conversación te va a ayudar a ganar confianza rápidamente.`);
   } else if (score <= 16) {
-    recomendaciones.push(`Tienes un buen nivel intermedio. Te recomendamos un curso de ${idiomaLower} de nivel B1-B2 para seguir progresando.`);
-    recomendaciones.push(`Enfócate en mejorar tu expresión escrita, comprensión de textos más complejos y fluidez en debates.`);
-    recomendaciones.push(`Considera prepararte para una certificación oficial de nivel intermedio-alto.`);
+    recomendaciones.push(`Tenés un buen nivel intermedio. Te recomendamos un curso de ${idiomaLower} de nivel B1-B2 para seguir progresando.`);
+    recomendaciones.push(`Enfocate en mejorar tu expresión escrita, comprensión de textos más complejos y fluidez en debates.`);
+    recomendaciones.push(`Considerá prepararte para una certificación oficial de nivel intermedio-alto.`);
   } else if (score <= 21) {
     recomendaciones.push(`Tu nivel es avanzado. Te sugerimos un curso de ${idiomaLower} enfocado en perfeccionamiento y especialización.`);
-    recomendaciones.push(`Trabaja en matices del idioma, expresiones idiomáticas y habilidades de comunicación profesional.`);
+    recomendaciones.push(`Trabajá en matices del idioma, expresiones idiomáticas y habilidades de comunicación profesional.`);
     recomendaciones.push(`Es un excelente momento para preparar una certificación oficial de nivel B2 o superior.`);
   } else {
-    recomendaciones.push(`¡Enhorabuena! Tienes un nivel avanzado de ${idiomaLower}. Te recomendamos un curso de perfeccionamiento C1.`);
-    recomendaciones.push(`Enfócate en el uso sofisticado del idioma: registro formal, redacción académica y comprensión de textos especializados.`);
-    recomendaciones.push(`Considera prepararte para la certificación C1 o C2 oficial.`);
+    recomendaciones.push(`¡Felicitaciones! Tenés un nivel avanzado de ${idiomaLower}. Te recomendamos un curso de perfeccionamiento C1.`);
+    recomendaciones.push(`Enfocate en el uso sofisticado del idioma: registro formal, redacción académica y comprensión de textos especializados.`);
+    recomendaciones.push(`Considerá prepararte para la certificación oficial C1 o C2.`);
   }
 
   return recomendaciones;
@@ -316,7 +316,7 @@ const saveTestResultToGoogleSheets = async (result) => {
     )).join(' | ');
 
     const now = new Date();
-    const fechaHora = now.toLocaleString('es-ES', {
+    const fechaHora = now.toLocaleString('es-AR', {
       day: '2-digit',
       month: '2-digit',
       year: 'numeric',
@@ -490,7 +490,7 @@ const startQuiz = async () => {
     renderQuestions();
     window.scrollTo({ top: 0, behavior: 'auto' });
   } catch (error) {
-    showError(error.message || 'No se pudo preparar el test. Inténtalo de nuevo más tarde.');
+    showError(error.message || 'No se pudo preparar el test. Intentá de nuevo más tarde.');
   } finally {
     nextButton.disabled = false;
   }
@@ -501,7 +501,7 @@ selectedTest = getSelectedTest();
 if (!selectedTest) {
   const hasTestParameter = new URLSearchParams(window.location.search).has('test');
   if (hasTestParameter) {
-    showError('No se ha encontrado el test solicitado. Comprueba el enlace e inténtalo de nuevo.');
+    showError('No se encontró el test solicitado. Revisá el enlace e intentá de nuevo.');
   } else {
     renderTestSelection();
     selectionView.hidden = false;
@@ -512,8 +512,8 @@ if (!selectedTest) {
   document.title = `${selectedTest.nombre} | On Demand Languages`;
   testTitle.textContent = selectedTest.nombre;
   quizTitle.textContent = selectedTest.nombre;
-  quizDescription.textContent = 'Lee cada pregunta con atención, recuerda que sólo hay una respuesta correcta.';
-  testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completa el test para obtener una estimación orientativa de tu nivel.`;
+  quizDescription.textContent = 'Leé cada pregunta con atención, recordá que solo hay una respuesta correcta.';
+  testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completá el test para obtener una estimación orientativa de tu nivel.`;
 }
 
 startForm.addEventListener('submit', async (event) => {
@@ -531,27 +531,27 @@ startForm.addEventListener('submit', async (event) => {
   let isValid = true;
 
   if (!name) {
-    showFieldError('name', 'Introduce tu nombre.');
+    showFieldError('name', 'Ingresá tu nombre.');
     isValid = false;
   }
 
   if (!surname) {
-    showFieldError('surname', 'Introduce tus apellidos.');
+    showFieldError('surname', 'Ingresá tu apellido.');
     isValid = false;
   }
 
   if (!email || !startForm.elements.email.checkValidity()) {
-    showFieldError('email', 'Introduce un email válido.');
+    showFieldError('email', 'Ingresá un email válido.');
     isValid = false;
   }
 
   if (!phone) {
-    showFieldError('phone', 'Introduce tu número de teléfono.');
+    showFieldError('phone', 'Ingresá tu número de teléfono.');
     isValid = false;
   }
 
   if (!privacyAccepted) {
-    showFieldError('privacy', 'Debes aceptar el uso de los datos para continuar.');
+    showFieldError('privacy', 'Tenés que aceptar el uso de los datos para continuar.');
     isValid = false;
   }
 
@@ -578,7 +578,7 @@ previousButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
   if (!hasAnsweredCurrentPage()) {
-    showQuizError('Selecciona una respuesta para cada pregunta antes de continuar.');
+    showQuizError('Seleccioná una respuesta para cada pregunta antes de continuar.');
     return;
   }
 

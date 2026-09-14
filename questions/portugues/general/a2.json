@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PG-A2-01",
+    "question": "Mensagem: “Cheguei ao consultório, mas o médico está atrasado.” O que aconteceu?",
+    "options": [
+      "A pessoa chegou e ainda está esperando.",
+      "A consulta já terminou.",
+      "O médico chegou cedo.",
+      "A pessoa cancelou a consulta."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-02",
+    "question": "Você não ouviu uma informação. Qual pedido é mais adequado?",
+    "options": [
+      "Repita ontem, por favor.",
+      "Você repetiu amanhã?",
+      "Pode repetindo isso?",
+      "Pode repetir, por favor?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-03",
+    "question": "Complete: “No fim de semana passado, nós ___ uma trilha.”",
+    "options": [
+      "faremos",
+      "fazíamos sempre",
+      "fizemos",
+      "fazemos"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-04",
+    "question": "Você quer marcar uma consulta médica. O que pergunta?",
+    "options": [
+      "Qual horário foi disponível sempre?",
+      "Há algum horário disponível para sexta-feira?",
+      "Você disponível sexta?",
+      "Houve sexta amanhã?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-05",
+    "question": "“Este caminho é mais curto, mas tem muito trânsito.” Qual vantagem ele tem?",
+    "options": [
+      "A distância é menor.",
+      "O trânsito é menor.",
+      "Não há carros.",
+      "A viagem é gratuita."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-06",
+    "question": "João perdeu o guarda-chuva. Complete: “Ele não sabe onde o ___.”",
+    "options": [
+      "deixa",
+      "deixará",
+      "deixando",
+      "perdeu"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-07",
+    "question": "Dois amigos combinam viajar para Curitiba. “Nós ___ as passagens amanhã.”",
+    "options": [
+      "compraríamos antes",
+      "tínhamos comprado",
+      "vamos comprar",
+      "compramos ontem"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-08",
+    "question": "Em Curitiba, alguém compara os trajetos: “O metrô é ___ que o ônibus no horário de pico.”",
+    "options": [
+      "o rápido",
+      "mais rápido",
+      "tão rápido de",
+      "muito mais rápido de"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-09",
+    "question": "No restaurante, a salada chegou frio. Qual reclamação é educada?",
+    "options": [
+      "Desculpe, poderia aquecer este prato?",
+      "Esquente porque eu mando.",
+      "Este prato aquecia amanhã.",
+      "Você fria minha comida."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-10",
+    "question": "A previsão para Curitiba diz: “Leve um casaco porque a temperatura vai cair à noite.” O que deve fazer?",
+    "options": [
+      "Comprar comida.",
+      "Cancelar a viagem obrigatoriamente.",
+      "Sair sem bagagem.",
+      "Preparar-se para o frio."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-11",
+    "question": "Camila perdeu a carteira. Complete: “Ela não sabe onde o ___.”",
+    "options": [
+      "deixará",
+      "deixando",
+      "deixou",
+      "deixa"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-12",
+    "question": "Dois amigos combinam viajar para Salvador. “Nós ___ as passagens amanhã.”",
+    "options": [
+      "tínhamos comprado",
+      "vamos comprar",
+      "compramos ontem",
+      "compraríamos antes"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-13",
+    "question": "Em Salvador, alguém compara os trajetos: “O metrô é ___ que o ônibus no horário de pico.”",
+    "options": [
+      "mais rápido",
+      "tão rápido de",
+      "muito mais rápido de",
+      "o rápido"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-14",
+    "question": "No hotel, o quarto está muito barulhento. O que você diria educadamente?",
+    "options": [
+      "Faça silêncio agora.",
+      "Vocês podem resolver isso?",
+      "Eu quero outro quarto imediatamente.",
+      "Com licença, seria possível trocar de quarto?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-15",
+    "question": "A previsão para Salvador diz: “Leve um casaco porque a temperatura vai cair à noite.” O que deve fazer?",
+    "options": [
+      "Cancelar a viagem obrigatoriamente.",
+      "Sair sem bagagem.",
+      "Preparar-se para o frio.",
+      "Comprar comida."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-16",
+    "question": "Pedro perdeu as chaves. Complete: “Ele não sabe onde o ___.”",
+    "options": [
+      "deixando",
+      "deixou",
+      "deixa",
+      "deixará"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-17",
+    "question": "Dois amigos combinam viajar para Brasília. “Nós ___ as passagens amanhã.”",
+    "options": [
+      "vamos comprar",
+      "compramos ontem",
+      "compraríamos antes",
+      "tínhamos comprado"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-18",
+    "question": "Em Brasília, alguém compara os trajetos: “O metrô é ___ que o ônibus no horário de pico.”",
+    "options": [
+      "tão rápido de",
+      "muito mais rápido de",
+      "o rápido",
+      "mais rápido"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-19",
+    "question": "No restaurante, o arroz chegou frio. Qual reclamação é educada?",
+    "options": [
+      "Este prato aquecia amanhã.",
+      "Você fria minha comida.",
+      "Desculpe, poderia aquecer este prato?",
+      "Esquente porque eu mando."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-20",
+    "question": "A previsão para Brasília diz: “Leve um casaco porque a temperatura vai cair à noite.” O que deve fazer?",
+    "options": [
+      "Sair sem bagagem.",
+      "Preparar-se para o frio.",
+      "Comprar comida.",
+      "Cancelar a viagem obrigatoriamente."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-21",
+    "question": "Luísa perdeu os óculos. Complete: “Ela não sabe onde as ___.”",
+    "options": [
+      "deixou",
+      "deixa",
+      "deixará",
+      "deixando"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A2-22",
+    "question": "Dois amigos combinam viajar para Porto Alegre. “Nós ___ as passagens amanhã.”",
+    "options": [
+      "compramos ontem",
+      "compraríamos antes",
+      "tínhamos comprado",
+      "vamos comprar"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A2-23",
+    "question": "Em Porto Alegre, alguém compara os trajetos: “O metrô é ___ que o ônibus no horário de pico.”",
+    "options": [
+      "muito mais rápido de",
+      "o rápido",
+      "mais rápido",
+      "tão rápido de"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A2-24",
+    "question": "No restaurante, o bolo de cenoura chegou frio. Qual reclamação é educada?",
+    "options": [
+      "Você fria minha comida.",
+      "Desculpe, poderia aquecer este prato?",
+      "Esquente porque eu mando.",
+      "Este prato aquecia amanhã."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A2-25",
+    "question": "A previsão para Porto Alegre diz: “Leve um casaco porque a temperatura vai cair à noite.” O que deve fazer?",
+    "options": [
+      "Preparar-se para o frio.",
+      "Comprar comida.",
+      "Cancelar a viagem obrigatoriamente.",
+      "Sair sem bagagem."
+    ],
+    "correctAnswer": 0
+  }
+]

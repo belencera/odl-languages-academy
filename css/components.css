@@ -550,7 +550,8 @@
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .navbar__menu,
-  .navbar__actions {
+  .navbar__actions,
+  .navbar__test-link {
     display: none;
   }
   

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PG-B2-01",
+    "question": "Após ler avaliações contraditórias de um hotel, qual conclusão é mais equilibrada?",
+    "options": [
+      "As experiências variam; convém verificar comentários recentes e critérios relevantes.",
+      "Todas as avaliações positivas são falsas.",
+      "Uma única crítica prova que o hotel é ruim.",
+      "O preço determina sozinho a qualidade."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-02",
+    "question": "“Eu até iria ao evento, não fosse o compromisso que assumi.” A pessoa:",
+    "options": [
+      "já participou do evento.",
+      "não recebeu convite.",
+      "considera o evento obrigatório.",
+      "gostaria de ir, mas tem outro compromisso."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-03",
+    "question": "Qual reformulação mantém o sentido de “Mal cheguei, começou a chover”?",
+    "options": [
+      "Embora chovesse, eu não cheguei.",
+      "Cheguei porque a chuva parou.",
+      "Assim que cheguei, começou a chover.",
+      "Antes de eu chegar, a chuva terminou."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-04",
+    "question": "Em uma discussão, qual resposta discorda sem ser agressiva?",
+    "options": [
+      "Não vou ouvir sua opinião.",
+      "Entendo seu ponto, mas interpreto os dados de outra forma.",
+      "Isso não faz o menor sentido.",
+      "Você está completamente errado."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-05",
+    "question": "Texto: “A medida aliviou o problema, embora não o tenha resolvido por completo.” O resultado foi:",
+    "options": [
+      "positivo, porém parcial.",
+      "totalmente negativo.",
+      "definitivo e completo.",
+      "impossível de avaliar."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-06",
+    "question": "Complete o comentário de João: “Se eu tivesse recebido o aviso, ___ meus planos.”",
+    "options": [
+      "mudarei",
+      "mudava sempre",
+      "tenho mudado amanhã",
+      "teria mudado"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-07",
+    "question": "Qual frase João poderia usar para solicitar uma exceção com registro adequado?",
+    "options": [
+      "Você vai ter que aceitar.",
+      "Quero prazo e pronto.",
+      "Seria possível reconsiderar o prazo diante dessas circunstâncias?",
+      "Mude o prazo agora."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-08",
+    "question": "João disse que “acabou deixando a decisão para depois”. Isso sugere que ela:",
+    "options": [
+      "delegou a decisão por obrigação legal.",
+      "adiou a decisão, possivelmente sem planejar fazê-lo.",
+      "tomou a decisão imediatamente.",
+      "cancelou qualquer possibilidade futura."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-09",
+    "question": "Na conversa de João, qual conector completa: “A proposta é interessante; ___, exige um investimento alto.”",
+    "options": [
+      "contudo",
+      "portanto",
+      "porque",
+      "logo que"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-10",
+    "question": "Um artigo recomendado por João afirma: “A tecnologia aproxima quem está longe, mas pode afastar quem está perto.” A ideia central é:",
+    "options": [
+      "a tecnologia sempre destrói relações.",
+      "a distância deixou de existir.",
+      "relações presenciais não têm valor.",
+      "o impacto da tecnologia nas relações é ambivalente."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-11",
+    "question": "Complete o comentário de Camila: “Se eu tivesse recebido o aviso, ___ meus planos.”",
+    "options": [
+      "mudava sempre",
+      "tenho mudado amanhã",
+      "teria mudado",
+      "mudarei"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-12",
+    "question": "Qual frase Camila poderia usar para solicitar uma exceção com registro adequado?",
+    "options": [
+      "Quero prazo e pronto.",
+      "Seria possível reconsiderar o prazo diante dessas circunstâncias?",
+      "Mude o prazo agora.",
+      "Você vai ter que aceitar."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-13",
+    "question": "Camila disse que “acabou deixando a decisão para depois”. Isso sugere que ela:",
+    "options": [
+      "adiou a decisão, possivelmente sem planejar fazê-lo.",
+      "tomou a decisão imediatamente.",
+      "cancelou qualquer possibilidade futura.",
+      "delegou a decisão por obrigação legal."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-14",
+    "question": "Na conversa de Camila, qual conector completa: “A proposta é interessante; ___, exige um investimento alto.”",
+    "options": [
+      "portanto",
+      "porque",
+      "logo que",
+      "contudo"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-15",
+    "question": "Um artigo recomendado por Camila afirma: “A tecnologia aproxima quem está longe, mas pode afastar quem está perto.” A ideia central é:",
+    "options": [
+      "a distância deixou de existir.",
+      "relações presenciais não têm valor.",
+      "o impacto da tecnologia nas relações é ambivalente.",
+      "a tecnologia sempre destrói relações."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-16",
+    "question": "Complete o comentário de Pedro: “Se eu tivesse recebido o aviso, ___ meus planos.”",
+    "options": [
+      "tenho mudado amanhã",
+      "teria mudado",
+      "mudarei",
+      "mudava sempre"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-17",
+    "question": "Qual frase Pedro poderia usar para solicitar uma exceção com registro adequado?",
+    "options": [
+      "Seria possível reconsiderar o prazo diante dessas circunstâncias?",
+      "Mude o prazo agora.",
+      "Você vai ter que aceitar.",
+      "Quero prazo e pronto."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-18",
+    "question": "Pedro disse que “acabou deixando a decisão para depois”. Isso sugere que ela:",
+    "options": [
+      "tomou a decisão imediatamente.",
+      "cancelou qualquer possibilidade futura.",
+      "delegou a decisão por obrigação legal.",
+      "adiou a decisão, possivelmente sem planejar fazê-lo."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-19",
+    "question": "Na conversa de Pedro, qual conector completa: “A proposta é interessante; ___, exige um investimento alto.”",
+    "options": [
+      "porque",
+      "logo que",
+      "contudo",
+      "portanto"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-20",
+    "question": "Um artigo recomendado por Pedro afirma: “A tecnologia aproxima quem está longe, mas pode afastar quem está perto.” A ideia central é:",
+    "options": [
+      "relações presenciais não têm valor.",
+      "o impacto da tecnologia nas relações é ambivalente.",
+      "a tecnologia sempre destrói relações.",
+      "a distância deixou de existir."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-21",
+    "question": "Complete o comentário de Luísa: “Se eu tivesse recebido o aviso, ___ meus planos.”",
+    "options": [
+      "teria mudado",
+      "mudarei",
+      "mudava sempre",
+      "tenho mudado amanhã"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-B2-22",
+    "question": "Qual frase Luísa poderia usar para solicitar uma exceção com registro adequado?",
+    "options": [
+      "Mude o prazo agora.",
+      "Você vai ter que aceitar.",
+      "Quero prazo e pronto.",
+      "Seria possível reconsiderar o prazo diante dessas circunstâncias?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-B2-23",
+    "question": "Luísa disse que “acabou deixando a decisão para depois”. Isso sugere que ela:",
+    "options": [
+      "cancelou qualquer possibilidade futura.",
+      "delegou a decisão por obrigação legal.",
+      "adiou a decisão, possivelmente sem planejar fazê-lo.",
+      "tomou a decisão imediatamente."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-B2-24",
+    "question": "Na conversa de Luísa, qual conector completa: “A proposta é interessante; ___, exige um investimento alto.”",
+    "options": [
+      "logo que",
+      "contudo",
+      "portanto",
+      "porque"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-B2-25",
+    "question": "Um artigo recomendado por Luísa afirma: “A tecnologia aproxima quem está longe, mas pode afastar quem está perto.” A ideia central é:",
+    "options": [
+      "o impacto da tecnologia nas relações é ambivalente.",
+      "a tecnologia sempre destrói relações.",
+      "a distância deixou de existir.",
+      "relações presenciais não têm valor."
+    ],
+    "correctAnswer": 0
+  }
+]

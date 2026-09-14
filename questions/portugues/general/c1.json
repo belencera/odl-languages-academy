@@ -1,3 +1,277 @@
 [
-  {"id":"c1-001","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-002","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-003","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-004","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-005","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-006","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-007","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-008","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-009","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-010","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-011","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-012","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-013","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-014","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-015","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-016","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-017","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-018","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-019","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-020","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-021","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-022","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-023","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-024","question":"","options":["","","",""],"correctAnswer":0},{"id":"c1-025","question":"","options":["","","",""],"correctAnswer":0}
+  {
+    "id": "PG-C1-01",
+    "question": "Qual formulação expressa uma crítica firme, mas intelectualmente cautelosa?",
+    "options": [
+      "A conclusão parece precipitada, pois os dados disponíveis não sustentam tamanha generalização.",
+      "A conclusão é absurda e ponto final.",
+      "Os dados provam tudo, ainda que não existam.",
+      "Não concordo porque não gosto."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-02",
+    "question": "“Por mais que se esforçasse, não conseguia desvencilhar-se daquela impressão.” A frase indica:",
+    "options": [
+      "uma decisão tomada sem dificuldade.",
+      "uma impressão que desapareceu imediatamente.",
+      "falta completa de tentativa.",
+      "um esforço persistente que não produziu o efeito desejado."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-03",
+    "question": "Qual alternativa preserva a nuance de “Ele não deixou de reconhecer o mérito da proposta”?",
+    "options": [
+      "Ele rejeitou a proposta sem avaliá-la.",
+      "Ele reconheceria o mérito somente no futuro.",
+      "Ele reconheceu o mérito, apesar de possíveis ressalvas.",
+      "Ele ignorou completamente o mérito."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-04",
+    "question": "Complete: “Caso se ___ novas evidências, a hipótese deverá ser revista.”",
+    "options": [
+      "apresentaram sempre",
+      "apresentem",
+      "apresentam",
+      "apresentariam ontem"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-05",
+    "question": "Em “A decisão foi sensata, ainda que impopular”, “ainda que” introduz:",
+    "options": [
+      "uma concessão.",
+      "uma causa.",
+      "uma consequência.",
+      "uma finalidade."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-06",
+    "question": "O comentário de João foi “lacônico”. Isso significa que foi:",
+    "options": [
+      "excessivamente emotivo.",
+      "deliberadamente falso.",
+      "difícil de ouvir.",
+      "muito breve e conciso."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-07",
+    "question": "Entre as frases avaliadas por João, qual apresenta uma inferência, e não uma certeza?",
+    "options": [
+      "O documento confirma a razão exata.",
+      "Não existe qualquer dúvida sobre o motivo.",
+      "Tudo indica que a mudança tenha sido motivada por razões econômicas.",
+      "A mudança ocorreu em 3 de maio."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-08",
+    "question": "No texto lido por João, escolha a opção mais natural: “A autora ___ uma distinção importante entre intenção e impacto.”",
+    "options": [
+      "derruba",
+      "estabelece",
+      "fabrica",
+      "empurra"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-09",
+    "question": "Ao comentar uma ideia de João, lê-se: “Não se trata de rejeitar a inovação, mas de submetê-la a critérios claros.” O argumento busca:",
+    "options": [
+      "evitar uma oposição simplista e propor avaliação crítica.",
+      "proibir toda inovação.",
+      "aceitar qualquer novidade sem análise.",
+      "substituir critérios por preferências pessoais."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-10",
+    "question": "Qual versão sobre a proposta discutida por João é mais coesa?",
+    "options": [
+      "A proposta é viável, contudo porque recursos.",
+      "Viável a proposta, recursos então embora.",
+      "A proposta resta e saber recursos contudo executá-la se.",
+      "A proposta é viável; resta saber, contudo, se haverá recursos para executá-la."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-11",
+    "question": "O comentário de Camila foi “lacônico”. Isso significa que foi:",
+    "options": [
+      "deliberadamente falso.",
+      "difícil de ouvir.",
+      "muito breve e conciso.",
+      "excessivamente emotivo."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-12",
+    "question": "Entre as frases avaliadas por Camila, qual apresenta uma inferência, e não uma certeza?",
+    "options": [
+      "Não existe qualquer dúvida sobre o motivo.",
+      "Tudo indica que a mudança tenha sido motivada por razões econômicas.",
+      "A mudança ocorreu em 3 de maio.",
+      "O documento confirma a razão exata."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-13",
+    "question": "No texto lido por Camila, escolha a opção mais natural: “A autora ___ uma distinção importante entre intenção e impacto.”",
+    "options": [
+      "estabelece",
+      "fabrica",
+      "empurra",
+      "derruba"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-14",
+    "question": "Ao comentar uma ideia de Camila, lê-se: “Não se trata de rejeitar a inovação, mas de submetê-la a critérios claros.” O argumento busca:",
+    "options": [
+      "proibir toda inovação.",
+      "aceitar qualquer novidade sem análise.",
+      "substituir critérios por preferências pessoais.",
+      "evitar uma oposição simplista e propor avaliação crítica."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-15",
+    "question": "Qual versão sobre a proposta discutida por Camila é mais coesa?",
+    "options": [
+      "Viável a proposta, recursos então embora.",
+      "A proposta resta e saber recursos contudo executá-la se.",
+      "A proposta é viável; resta saber, contudo, se haverá recursos para executá-la.",
+      "A proposta é viável, contudo porque recursos."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-16",
+    "question": "O comentário de Pedro foi “lacônico”. Isso significa que foi:",
+    "options": [
+      "difícil de ouvir.",
+      "muito breve e conciso.",
+      "excessivamente emotivo.",
+      "deliberadamente falso."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-17",
+    "question": "Entre as frases avaliadas por Pedro, qual apresenta uma inferência, e não uma certeza?",
+    "options": [
+      "Tudo indica que a mudança tenha sido motivada por razões econômicas.",
+      "A mudança ocorreu em 3 de maio.",
+      "O documento confirma a razão exata.",
+      "Não existe qualquer dúvida sobre o motivo."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-18",
+    "question": "No texto lido por Pedro, escolha a opção mais natural: “A autora ___ uma distinção importante entre intenção e impacto.”",
+    "options": [
+      "fabrica",
+      "empurra",
+      "derruba",
+      "estabelece"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-19",
+    "question": "Ao comentar uma ideia de Pedro, lê-se: “Não se trata de rejeitar a inovação, mas de submetê-la a critérios claros.” O argumento busca:",
+    "options": [
+      "aceitar qualquer novidade sem análise.",
+      "substituir critérios por preferências pessoais.",
+      "evitar uma oposição simplista e propor avaliação crítica.",
+      "proibir toda inovação."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-20",
+    "question": "Qual versão sobre a proposta discutida por Pedro é mais coesa?",
+    "options": [
+      "A proposta resta e saber recursos contudo executá-la se.",
+      "A proposta é viável; resta saber, contudo, se haverá recursos para executá-la.",
+      "A proposta é viável, contudo porque recursos.",
+      "Viável a proposta, recursos então embora."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-21",
+    "question": "O comentário de Luísa foi “lacônico”. Isso significa que foi:",
+    "options": [
+      "muito breve e conciso.",
+      "excessivamente emotivo.",
+      "deliberadamente falso.",
+      "difícil de ouvir."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-C1-22",
+    "question": "Entre as frases avaliadas por Luísa, qual apresenta uma inferência, e não uma certeza?",
+    "options": [
+      "A mudança ocorreu em 3 de maio.",
+      "O documento confirma a razão exata.",
+      "Não existe qualquer dúvida sobre o motivo.",
+      "Tudo indica que a mudança tenha sido motivada por razões econômicas."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-C1-23",
+    "question": "No texto lido por Luísa, escolha a opção mais natural: “A autora ___ uma distinção importante entre intenção e impacto.”",
+    "options": [
+      "empurra",
+      "derruba",
+      "estabelece",
+      "fabrica"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-C1-24",
+    "question": "Ao comentar uma ideia de Luísa, lê-se: “Não se trata de rejeitar a inovação, mas de submetê-la a critérios claros.” O argumento busca:",
+    "options": [
+      "substituir critérios por preferências pessoais.",
+      "evitar uma oposição simplista e propor avaliação crítica.",
+      "proibir toda inovação.",
+      "aceitar qualquer novidade sem análise."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-C1-25",
+    "question": "Qual versão sobre a proposta discutida por Luísa é mais coesa?",
+    "options": [
+      "A proposta é viável; resta saber, contudo, se haverá recursos para executá-la.",
+      "A proposta é viável, contudo porque recursos.",
+      "Viável a proposta, recursos então embora.",
+      "A proposta resta e saber recursos contudo executá-la se."
+    ],
+    "correctAnswer": 0
+  }
 ]

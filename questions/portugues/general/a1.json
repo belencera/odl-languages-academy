@@ -1,3 +1,277 @@
 [
-  {"id":"a1-001","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-002","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-003","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-004","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-005","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-006","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-007","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-008","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-009","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-010","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-011","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-012","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-013","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-014","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-015","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-016","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-017","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-018","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-019","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-020","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-021","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-022","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-023","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-024","question":"","options":["","","",""],"correctAnswer":0},{"id":"a1-025","question":"","options":["","","",""],"correctAnswer":0}
+  {
+    "id": "PG-A1-01",
+    "question": "Você encontra uma pessoa pela primeira vez. O que diz?",
+    "options": [
+      "Prazer em conhecer você.",
+      "Até ontem.",
+      "Não tenho fome.",
+      "São três horas."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-02",
+    "question": "No café, você quer pedir uma bebida sem açúcar. Qual frase funciona?",
+    "options": [
+      "O café está fechado ontem.",
+      "Eu açúcar café.",
+      "Sem favor um café.",
+      "Um café sem açúcar, por favor."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-03",
+    "question": "No ônibus, alguém pergunta: “Este lugar está livre?” Qual resposta é adequada?",
+    "options": [
+      "Custa dez reais.",
+      "É muito tarde.",
+      "Sim, pode sentar.",
+      "Eu moro perto."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A1-04",
+    "question": "Complete a apresentação: “Meu nome ___ Beatriz.”",
+    "options": [
+      "tenho",
+      "é",
+      "sou",
+      "está"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-05",
+    "question": "Uma placa diz “Não estacionar”. O que ela proíbe?",
+    "options": [
+      "Deixar o carro nesse local.",
+      "Atravessar a rua.",
+      "Entrar a pé.",
+      "Esperar o ônibus."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-06",
+    "question": "João fala da rotina: “Eu ___ às sete e tomo café.”",
+    "options": [
+      "acorda",
+      "acordei",
+      "acordando",
+      "acordo"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-07",
+    "question": "Na padaria, como perguntar o preço da salada?",
+    "options": [
+      "Quem é o salada?",
+      "Quando fica o salada?",
+      "Quanto custa a salada?",
+      "Onde custa o salada?"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A1-08",
+    "question": "Você quer chegar ao centro de Curitiba. Qual pergunta é natural?",
+    "options": [
+      "Por que centro é?",
+      "Como faço para chegar ao centro?",
+      "Quanto centro você tem?",
+      "Quem chega o centro?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-09",
+    "question": "João diz: “Gosto de pedalar.” Qual pergunta combina com a resposta?",
+    "options": [
+      "O que você gosta de fazer?",
+      "Qual é o seu endereço?",
+      "Quanto custa isso?",
+      "Que horas você chegou?"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-10",
+    "question": "Você procura seu guarda-chuva. Complete: “Você viu ___ guarda-chuva?”",
+    "options": [
+      "minha",
+      "meus",
+      "nossa",
+      "meu"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-11",
+    "question": "Camila fala da rotina: “Eu ___ às sete e tomo café.”",
+    "options": [
+      "acordei",
+      "acordando",
+      "acordo",
+      "acorda"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A1-12",
+    "question": "Na padaria, como perguntar o preço da sopa?",
+    "options": [
+      "Quando fica o sopa?",
+      "Quanto custa a sopa?",
+      "Onde custa o sopa?",
+      "Quem é o sopa?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-13",
+    "question": "Você quer chegar ao centro de Salvador. Qual pergunta é natural?",
+    "options": [
+      "Como faço para chegar ao centro?",
+      "Quanto centro você tem?",
+      "Quem chega o centro?",
+      "Por que centro é?"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-14",
+    "question": "Camila diz: “Gosto de fotografar.” Qual pergunta combina com a resposta?",
+    "options": [
+      "Qual é o seu endereço?",
+      "Quanto custa isso?",
+      "Que horas você chegou?",
+      "O que você gosta de fazer?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-15",
+    "question": "Você procura sua carteira. Complete: “Você viu ___ carteira?”",
+    "options": [
+      "meus",
+      "nossa",
+      "meu",
+      "minha"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-16",
+    "question": "Pedro fala da rotina: “Eu ___ às sete e tomo café.”",
+    "options": [
+      "acordando",
+      "acordo",
+      "acorda",
+      "acordei"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-17",
+    "question": "Na padaria, como perguntar o preço do arroz?",
+    "options": [
+      "Quanto custa o arroz?",
+      "Onde custa o arroz?",
+      "Quem é o arroz?",
+      "Quando fica o arroz?"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-18",
+    "question": "Você quer chegar ao centro de Brasília. Qual pergunta é natural?",
+    "options": [
+      "Quanto centro você tem?",
+      "Quem chega o centro?",
+      "Por que centro é?",
+      "Como faço para chegar ao centro?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-19",
+    "question": "Pedro diz: “Gosto de dançar.” Qual pergunta combina com a resposta?",
+    "options": [
+      "Quanto custa isso?",
+      "Que horas você chegou?",
+      "O que você gosta de fazer?",
+      "Qual é o seu endereço?"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A1-20",
+    "question": "Você procura suas chaves. Complete: “Você viu ___ chaves?”",
+    "options": [
+      "nossa",
+      "meu",
+      "minha",
+      "meus"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-21",
+    "question": "Luísa fala da rotina: “Eu ___ às sete e tomo café.”",
+    "options": [
+      "acordo",
+      "acorda",
+      "acordei",
+      "acordando"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PG-A1-22",
+    "question": "Na padaria, como perguntar o preço do bolo de cenoura?",
+    "options": [
+      "Onde custa o bolo de cenoura?",
+      "Quem é o bolo de cenoura?",
+      "Quando fica o bolo de cenoura?",
+      "Quanto custa o bolo de cenoura?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PG-A1-23",
+    "question": "Você quer chegar ao centro de Porto Alegre. Qual pergunta é natural?",
+    "options": [
+      "Quem chega o centro?",
+      "Por que centro é?",
+      "Como faço para chegar ao centro?",
+      "Quanto centro você tem?"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PG-A1-24",
+    "question": "Luísa diz: “Gosto de ler romances.” Qual pergunta combina com a resposta?",
+    "options": [
+      "Que horas você chegou?",
+      "O que você gosta de fazer?",
+      "Qual é o seu endereço?",
+      "Quanto custa isso?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PG-A1-25",
+    "question": "Você procura seus óculos. Complete: “Você viu ___ óculos?”",
+    "options": [
+      "meu",
+      "minha",
+      "meus",
+      "nossa"
+    ],
+    "correctAnswer": 2
+  }
 ]

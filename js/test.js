@@ -3,11 +3,21 @@ import {
   PREGUNTAS_DISPONIBLES_POR_NIVEL,
   PREGUNTAS_POR_NIVEL,
   TESTS,
-  GOOGLE_SHEETS_WEBHOOK_URL
+  GOOGLE_SHEETS_WEBHOOK_URL,
+  GOOGLE_SHEETS_BUSINESS_WEBHOOK_URL
 } from './config.js';
 
 const TOTAL_PREGUNTAS = NIVELES.length * PREGUNTAS_POR_NIVEL;
 const TOTAL_PAGINAS = Math.ceil(TOTAL_PREGUNTAS / PREGUNTAS_POR_NIVEL);
+
+// ─── DOM Elements ───
+const loadingView = document.querySelector('#loadingView');
+const errorView = document.querySelector('#errorView');
+const errorTitle = document.querySelector('#errorTitle');
+const errorMessage = document.querySelector('#errorMessage');
+const companyBanner = document.querySelector('#companyBanner');
+const companyNameEl = document.querySelector('#companyName');
+
 const testError = document.querySelector('#testError');
 const quizError = document.querySelector('#quizError');
 const selectionView = document.querySelector('#selectionView');
@@ -28,6 +38,8 @@ const quizProgressBar = document.querySelector('#quizProgressBar');
 const previousButton = document.querySelector('#previousButton');
 const nextButton = document.querySelector('#nextButton');
 
+// ─── State ───
+let tokenData = null;
 let selectedTest;
 let quizQuestions = [];
 let selectedAnswers = new Map();
@@ -90,40 +102,61 @@ const showFieldError = (name, message) => {
   element.hidden = false;
 };
 
+const showTokenError = (type) => {
+  if (loadingView) loadingView.hidden = true;
+  if (selectionView) selectionView.hidden = true;
+  if (startView) startView.hidden = true;
+
+  if (type === 'expired') {
+    if (errorTitle) errorTitle.textContent = 'Enlace expirado';
+    if (errorMessage) errorMessage.textContent = 'El período de acceso a este test ha finalizado. Si necesitás realizar la evaluación, contactá con On Demand Languages.';
+  } else if (type === 'missing') {
+    if (errorTitle) errorTitle.textContent = 'Acceso empresarial requerido';
+    if (errorMessage) errorMessage.textContent = 'Este test es exclusivo para empresas y requiere un enlace con código de acceso único. Si sos empleado de una empresa asociada, utilizá el enlace provisto por tu empresa o contactá con On Demand Languages.';
+  } else {
+    if (errorTitle) errorTitle.textContent = 'Enlace no válido';
+    if (errorMessage) errorMessage.textContent = 'Este enlace no es válido. Verificá que el link sea correcto o contactá con On Demand Languages.';
+  }
+
+  if (errorView) errorView.hidden = false;
+};
+
 const getSelectedTest = () => {
   const testId = new URLSearchParams(window.location.search).get('test');
   return testId && TESTS[testId] ? { id: testId, ...TESTS[testId] } : null;
 };
 
 const renderTestSelection = () => {
-  Object.entries(TESTS).forEach(([testId, test]) => {
-    const card = document.createElement('a');
-    card.className = 'odl-test-selection-card';
-    card.href = `test.html?test=${testId}`;
+  Object.entries(TESTS)
+    .filter(([_, test]) => !test.esBusiness)
+    .forEach(([testId, test]) => {
+      const card = document.createElement('a');
+      card.className = 'odl-test-selection-card';
+      card.href = `test.html?test=${testId}`;
 
-    const flag = document.createElement('img');
-    flag.src = test.idioma === 'Portugués' ? '../assets/flags/BR.png' : '../assets/flags/GB.png';
-    flag.alt = `Bandera de ${test.idioma}`;
-    flag.className = 'odl-test-selection-flag';
+      const flag = document.createElement('img');
+      flag.src = test.idioma === 'Portugués' ? '../assets/flags/BR.png' : '../assets/flags/GB.png';
+      flag.alt = `Bandera de ${test.idioma}`;
+      flag.className = 'odl-test-selection-flag';
 
-    const content = document.createElement('span');
-    content.className = 'odl-test-selection-content';
+      const content = document.createElement('span');
+      content.className = 'odl-test-selection-content';
 
-    const title = document.createElement('strong');
-    title.textContent = test.nombre;
+      const title = document.createElement('strong');
+      title.textContent = test.nombre;
 
-    const details = document.createElement('span');
-    details.textContent = `${test.idioma} · ${test.tipo}`;
+      const details = document.createElement('span');
+      details.textContent = `${test.idioma} · ${test.tipo}`;
 
-    const arrow = document.createElement('span');
-    arrow.className = 'odl-test-selection-arrow';
-    arrow.setAttribute('aria-hidden', 'true');
-    arrow.textContent = '→';
+      const arrow = document.createElement('span');
+      arrow.className = 'odl-test-selection-arrow';
+      arrow.setAttribute('aria-hidden', 'true');
+      arrow.textContent = '→';
 
-    content.append(title, details);
-    card.append(flag, content, arrow);
-    testSelectionGrid.append(card);
-  });
+      content.append(title, details);
+      card.append(flag, content, arrow);
+      testSelectionGrid.append(card);
+    });
 };
 
 const loadQuestions = async () => {
@@ -274,8 +307,11 @@ const calculateResult = () => {
 };
 
 const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones) => {
-  if (!GOOGLE_SHEETS_WEBHOOK_URL) {
-    console.info('Google Sheets: URL no configurada en js/config.js. Se omite el guardado.');
+  const isBusiness = Boolean(tokenData && tokenData.valid);
+  const webhookUrl = isBusiness ? GOOGLE_SHEETS_BUSINESS_WEBHOOK_URL : GOOGLE_SHEETS_WEBHOOK_URL;
+
+  if (!webhookUrl) {
+    console.info(`Google Sheets (${isBusiness ? 'Business' : 'General'}): URL no configurada en js/config.js. Se omite el guardado.`);
     return;
   }
 
@@ -325,7 +361,10 @@ const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones
       second: '2-digit'
     });
 
-    const payload = {
+    const payload = isBusiness ? {
+      action: 'saveBusinessResult',
+      token: tokenData.token,
+      empresa: tokenData.empresa,
       fecha: fechaHora,
       nombre: participant.name,
       apellidos: participant.surname,
@@ -333,7 +372,23 @@ const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones
       telefono: participant.phone,
       idioma: selectedTest.idioma,
       tipo: selectedTest.tipo,
-      testNombre: selectedTest.nombre, // Define el nombre de la pestaña en Google Sheets
+      testNombre: selectedTest.nombre,
+      testId: selectedTest.id,
+      puntuacion: `${result.correctAnswers} / ${TOTAL_PREGUNTAS}`,
+      nivel: result.level,
+      desglose: desgloseTexto,
+      detalleRespuestas: detailLines.join(' | '),
+      explicacion: explicacion || '',
+      recomendaciones: recomendaciones || []
+    } : {
+      fecha: fechaHora,
+      nombre: participant.name,
+      apellidos: participant.surname,
+      email: participant.email,
+      telefono: participant.phone,
+      idioma: selectedTest.idioma,
+      tipo: selectedTest.tipo,
+      testNombre: selectedTest.nombre,
       puntuacion: `${result.correctAnswers} / ${TOTAL_PREGUNTAS}`,
       nivel: result.level,
       desglose: desgloseTexto,
@@ -342,7 +397,12 @@ const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones
       recomendaciones: recomendaciones || []
     };
 
-    await fetch(GOOGLE_SHEETS_WEBHOOK_URL, {
+    if (isBusiness && tokenData.token && tokenData.token.startsWith('demo-')) {
+      console.info('Modo Demo: resultado simulado con éxito (no enviado a Google Sheets):', payload);
+      return;
+    }
+
+    await fetch(webhookUrl, {
       method: 'POST',
       mode: 'no-cors',
       headers: {
@@ -351,7 +411,7 @@ const saveTestResultToGoogleSheets = async (result, explicacion, recomendaciones
       body: JSON.stringify(payload)
     });
 
-    console.info('Google Sheets: resultado enviado exitosamente.');
+    console.info(`Google Sheets (${isBusiness ? 'Business' : 'General'}): resultado enviado exitosamente.`);
   } catch (error) {
     console.warn('Google Sheets: no se pudo guardar el resultado.', error);
   }
@@ -380,7 +440,8 @@ const showResults = () => {
 
   const participantInfo = document.createElement('p');
   participantInfo.className = 'odl-test-result-participant';
-  participantInfo.textContent = `${participant.name} ${participant.surname} · ${selectedTest.nombre}`;
+  const empresaTexto = tokenData?.empresa ? ` · ${tokenData.empresa}` : '';
+  participantInfo.textContent = `${participant.name} ${participant.surname}${empresaTexto} · ${selectedTest.nombre}`;
 
   // — Level Card —
   const levelCard = document.createElement('div');
@@ -458,6 +519,17 @@ const showResults = () => {
   actions.append(homeButton);
 
   // — Assemble —
+  if (tokenData) {
+    const emailNotice = document.createElement('p');
+    emailNotice.className = 'odl-test-result-explain';
+    emailNotice.style.textAlign = 'center';
+    emailNotice.style.fontSize = '0.95rem';
+    emailNotice.style.color = 'var(--odl-test-muted)';
+    emailNotice.style.marginTop = '16px';
+    emailNotice.textContent = '📄 Enviamos tu informe completo con el resultado en PDF a tu correo electrónico.';
+    actions.before(emailNotice);
+  }
+
   resultView.append(
     eyebrow, heading, participantInfo,
     levelCard, explainSection, recoSection, disclaimer, actions
@@ -497,26 +569,6 @@ const startQuiz = async () => {
     nextButton.disabled = false;
   }
 };
-
-selectedTest = getSelectedTest();
-
-if (!selectedTest) {
-  const hasTestParameter = new URLSearchParams(window.location.search).has('test');
-  if (hasTestParameter) {
-    showError('No se encontró el test solicitado. Revisá el enlace e intentá de nuevo.');
-  } else {
-    renderTestSelection();
-    selectionView.hidden = false;
-  }
-  startView.hidden = true;
-} else {
-  selectionView.hidden = true;
-  document.title = `${selectedTest.nombre} | On Demand Languages`;
-  testTitle.textContent = selectedTest.nombre;
-  quizTitle.textContent = selectedTest.nombre;
-  quizDescription.textContent = 'Leé cada pregunta con atención, recordá que solo hay una respuesta correcta.';
-  testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completá el test para obtener una estimación orientativa de tu nivel.`;
-}
 
 startForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -593,3 +645,124 @@ nextButton.addEventListener('click', () => {
   renderQuestions();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// ─── Initialization ───
+
+const init = async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get('token');
+  const isBusinessRoute = urlParams.has('business') || window.location.pathname.includes('test-business');
+
+  // Si intenta entrar por ruta business sin token, bloqueamos y mostramos error corporativo
+  if (isBusinessRoute && !token) {
+    showTokenError('missing');
+    return;
+  }
+
+  if (token) {
+    // ─── Business Flow (acceso por token de empresa) ───
+    if (selectionView) selectionView.hidden = true;
+    if (startView) startView.hidden = true;
+    if (loadingView) loadingView.hidden = false;
+
+    // ─── Modo Demo / Pruebas Locales (sin necesidad de Apps Script) ───
+    if (token.startsWith('demo-') || token === 'demo') {
+      await new Promise((resolve) => setTimeout(resolve, 350));
+
+      if (token === 'demo-expirado') {
+        showTokenError('expired');
+        return;
+      }
+
+      const isPt = token.includes('pt') || token.includes('portugues');
+      const mockData = isPt ? {
+        valid: true,
+        empresa: 'GlobalCo Brasil (Demo)',
+        testId: 'portugues_business',
+        idioma: 'Portugués'
+      } : {
+        valid: true,
+        empresa: 'Acme Corp (Demo)',
+        testId: 'ingles_business',
+        idioma: 'Inglés'
+      };
+
+      tokenData = { ...mockData, token };
+      selectedTest = { id: mockData.testId, ...TESTS[mockData.testId] };
+
+      if (loadingView) loadingView.hidden = true;
+      if (companyNameEl) companyNameEl.textContent = mockData.empresa;
+      if (companyBanner) companyBanner.hidden = false;
+
+      document.title = `${selectedTest.nombre} — ${mockData.empresa} | On Demand Languages`;
+      if (testTitle) testTitle.textContent = selectedTest.nombre;
+      if (quizTitle) quizTitle.textContent = `${selectedTest.nombre} · ${mockData.empresa}`;
+      if (quizDescription) quizDescription.textContent = 'Leé cada pregunta con atención, recordá que solo hay una respuesta correcta.';
+      if (testDescription) testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()} para ${mockData.empresa}. Completá tus datos para comenzar.`;
+
+      if (startView) startView.hidden = false;
+      return;
+    }
+
+    if (!GOOGLE_SHEETS_BUSINESS_WEBHOOK_URL) {
+      console.error('Business webhook URL no configurada en js/config.js');
+      showTokenError('not_found');
+      return;
+    }
+
+    try {
+      const url = `${GOOGLE_SHEETS_BUSINESS_WEBHOOK_URL}?action=validateBusiness&token=${encodeURIComponent(token)}`;
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+
+      if (!data.valid) {
+        showTokenError(data.error || 'invalid');
+        return;
+      }
+
+      tokenData = { ...data, token };
+      selectedTest = { id: data.testId, ...TESTS[data.testId] };
+
+      if (loadingView) loadingView.hidden = true;
+      if (companyNameEl) companyNameEl.textContent = data.empresa;
+      if (companyBanner) companyBanner.hidden = false;
+
+      document.title = `${selectedTest.nombre} — ${data.empresa} | On Demand Languages`;
+      if (testTitle) testTitle.textContent = selectedTest.nombre;
+      if (quizTitle) quizTitle.textContent = `${selectedTest.nombre} · ${data.empresa}`;
+      if (quizDescription) quizDescription.textContent = 'Leé cada pregunta con atención, recordá que solo hay una respuesta correcta.';
+      if (testDescription) testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()} para ${data.empresa}. Completá tus datos para comenzar.`;
+
+      if (startView) startView.hidden = false;
+    } catch (error) {
+      console.error('Error validando token:', error);
+      showTokenError('not_found');
+    }
+  } else {
+    // ─── General Flow (sin token) ───
+    selectedTest = getSelectedTest();
+
+    if (!selectedTest) {
+      const hasTestParameter = new URLSearchParams(window.location.search).has('test');
+      if (hasTestParameter) {
+        showError('No se encontró el test solicitado. Revisá el enlace e intentá de nuevo.');
+      } else {
+        renderTestSelection();
+        if (selectionView) selectionView.hidden = false;
+      }
+      if (startView) startView.hidden = true;
+    } else {
+      if (selectionView) selectionView.hidden = true;
+      document.title = `${selectedTest.nombre} | On Demand Languages`;
+      if (testTitle) testTitle.textContent = selectedTest.nombre;
+      if (quizTitle) quizTitle.textContent = selectedTest.nombre;
+      if (quizDescription) quizDescription.textContent = 'Leé cada pregunta con atención, recordá que solo hay una respuesta correcta.';
+      if (testDescription) testDescription.textContent = `Evaluación de ${selectedTest.idioma.toLowerCase()}. Completá el test para obtener una estimación orientativa de tu nivel.`;
+      if (startView) startView.hidden = false;
+    }
+  }
+};
+
+init();
+

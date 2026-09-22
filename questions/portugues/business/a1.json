@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PN-A1-01",
+    "question": "Você recebe um cliente na empresa. Qual saudação é adequada?",
+    "options": [
+      "Bom dia. Como posso ajudar?",
+      "Até ontem.",
+      "Eu sou preço.",
+      "Fechado almoço."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-02",
+    "question": "No e-mail, “Segue o relatório mensal em anexo” significa que:",
+    "options": [
+      "o arquivo será impresso amanhã.",
+      "a mensagem foi cancelada.",
+      "não existe documento.",
+      "o arquivo acompanha a mensagem."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-03",
+    "question": "Complete: “A reunião ___ às dez horas.”",
+    "options": [
+      "são",
+      "estar",
+      "é",
+      "sou"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-04",
+    "question": "O cliente pergunta o preço. Qual resposta é clara?",
+    "options": [
+      "O preço estar serviço.",
+      "O serviço custa quinhentos reais.",
+      "O serviço custam quinhentos.",
+      "Quinhentos serviço custa eles."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-05",
+    "question": "Qual assunto de e-mail combina com o envio de um orçamento?",
+    "options": [
+      "Orçamento solicitado",
+      "Férias de infância",
+      "Receita de bolo",
+      "Jogo de domingo"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-06",
+    "question": "Na Nexo, analista financeiro diz: “Eu ___ com clientes.”",
+    "options": [
+      "trabalha",
+      "trabalham",
+      "trabalhar",
+      "trabalho"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-07",
+    "question": "Qual frase pede o relatório mensal de forma educada?",
+    "options": [
+      "Documento pode foi?",
+      "Por favor enviado eu.",
+      "Pode enviar o relatório mensal, por favor?",
+      "Envia você documento ontem."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-08",
+    "question": "Complete: “Nós precisamos ___ revisar os valores.”",
+    "options": [
+      "com o",
+      "_____",
+      "em",
+      "para o"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-09",
+    "question": "Na Nexo, o aviso diz “Reunião cancelada”. O que aconteceu?",
+    "options": [
+      "A reunião não vai acontecer.",
+      "A reunião começou cedo.",
+      "A sala mudou de andar.",
+      "Todos já participaram."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-10",
+    "question": "A analista financeiro diz “Obrigado pela ajuda”. Qual resposta é adequada?",
+    "options": [
+      "Sem reunião.",
+      "Eu custo isso.",
+      "Até o relatório.",
+      "De nada."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-11",
+    "question": "Na Horizonte, coordenadora de projetos diz: “Eu ___ com clientes.”",
+    "options": [
+      "trabalham",
+      "trabalhar",
+      "trabalho",
+      "trabalha"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-12",
+    "question": "Qual frase pede o contrato de forma educada?",
+    "options": [
+      "Por favor enviado eu.",
+      "Pode enviar o contrato, por favor?",
+      "Envia você documento ontem.",
+      "Documento pode foi?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-13",
+    "question": "Complete: “Nós precisamos ___ agendar uma reunião.”",
+    "options": [
+      "______",
+      "em",
+      "para o",
+      "com o"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-14",
+    "question": "Na Horizonte, o aviso diz “Reunião cancelada”. O que aconteceu?",
+    "options": [
+      "A reunião começou cedo.",
+      "A sala mudou de andar.",
+      "Todos já participaram.",
+      "A reunião não vai acontecer."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-15",
+    "question": "A coordenadora de projetos diz “Obrigado pela ajuda”. Qual resposta é adequada?",
+    "options": [
+      "Eu custo isso.",
+      "Até o relatório.",
+      "De nada.",
+      "Sem reunião."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-16",
+    "question": "Na Vértice, responsável de compras diz: “Eu ___ com clientes.”",
+    "options": [
+      "trabalhar",
+      "trabalho",
+      "trabalha",
+      "trabalham"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-17",
+    "question": "Qual frase pede a nota fiscal de forma educada?",
+    "options": [
+      "Pode enviar a nota fiscal, por favor?",
+      "Envia você documento ontem.",
+      "Documento pode foi?",
+      "Por favor enviado eu."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-18",
+    "question": "Complete: “Nós precisamos ___ enviar os documentos.”",
+    "options": [
+      "em",
+      "para o",
+      "com o",
+      "_____"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-19",
+    "question": "Na Vértice, o aviso diz “Reunião cancelada”. O que aconteceu?",
+    "options": [
+      "A sala mudou de andar.",
+      "Todos já participaram.",
+      "A reunião não vai acontecer.",
+      "A reunião começou cedo."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-20",
+    "question": "A responsável de compras diz “Obrigado pela ajuda”. Qual resposta é adequada?",
+    "options": [
+      "Até o relatório.",
+      "De nada.",
+      "Sem reunião.",
+      "Eu custo isso."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-21",
+    "question": "Na Ponte, consultora diz: “Eu ___ com clientes.”",
+    "options": [
+      "trabalho",
+      "trabalha",
+      "trabalham",
+      "trabalhar"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A1-22",
+    "question": "Qual frase pede o cronograma de forma educada?",
+    "options": [
+      "Envia você documento ontem.",
+      "Documento pode foi?",
+      "Por favor enviado eu.",
+      "Pode enviar o cronograma, por favor?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A1-23",
+    "question": "Complete: “Nós precisamos ___ resolver a pendência.”",
+    "options": [
+      "para o",
+      "com o",
+      "_____",
+      "em"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A1-24",
+    "question": "Na Ponte, o aviso diz “Reunião cancelada”. O que aconteceu?",
+    "options": [
+      "Todos já participaram.",
+      "A reunião não vai acontecer.",
+      "A reunião começou cedo.",
+      "A sala mudou de andar."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A1-25",
+    "question": "A consultora diz “Obrigado pela ajuda”. Qual resposta é adequada?",
+    "options": [
+      "De nada.",
+      "Sem reunião.",
+      "Eu custo isso.",
+      "Até o relatório."
+    ],
+    "correctAnswer": 0
+  }
+]

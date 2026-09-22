@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PN-B2-01",
+    "question": "O cliente rejeita o preço, mas valoriza a solução. Qual resposta abre espaço para negociar?",
+    "options": [
+      "Podemos rever o escopo e buscar uma configuração que preserve os resultados prioritários.",
+      "O preço é esse e não há o que discutir.",
+      "Retiraremos todos os serviços sem análise.",
+      "Aceitaremos qualquer valor imediatamente."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-02",
+    "question": "Complete: “Se tivéssemos detectado o risco antes, ___ o atraso.”",
+    "options": [
+      "evitaremos",
+      "evitávamos",
+      "temos evitado amanhã",
+      "teríamos evitado"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-03",
+    "question": "“Embora o faturamento tenha crescido, o fluxo de caixa permanece pressionado.” O texto alerta que:",
+    "options": [
+      "o caixa melhorou na mesma proporção.",
+      "faturamento e caixa são sinônimos.",
+      "crescimento de receita não eliminou a restrição financeira.",
+      "a empresa não teve receita."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-04",
+    "question": "Qual e-mail solicita ação sem soar autoritário?",
+    "options": [
+      "Quero isso agora, sem perguntas.",
+      "Para mantermos o cronograma, você poderia confirmar os dados até quarta-feira?",
+      "Confirme hoje porque eu mandei.",
+      "Se não responder, a culpa será sua."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-05",
+    "question": "Em “A medida trouxe ganhos pontuais, mas ficou aquém do esperado”, o resultado foi:",
+    "options": [
+      "positivo, porém insuficiente.",
+      "totalmente satisfatório.",
+      "sem qualquer benefício.",
+      "superior a todas as metas."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-06",
+    "question": "A Nexo decidiu postergar a decisão, ___ ainda faltavam dados confiáveis.",
+    "options": [
+      "ainda que",
+      "portanto",
+      "contudo",
+      "uma vez que"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-07",
+    "question": "Ao comentar o relatório mensal da Nexo, qual reformulação é mais diplomática?",
+    "options": [
+      "Vocês não entenderam nada.",
+      "Esses pressupostos são ridículos.",
+      "Talvez seja conveniente reconsiderar alguns pressupostos da proposta.",
+      "A proposta está obviamente errada."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-08",
+    "question": "O relatório da Nexo recomenda “mitigar a dependência de um único fornecedor”. Isso implica:",
+    "options": [
+      "eliminar controles de estoque.",
+      "diversificar fontes de abastecimento ou criar alternativas.",
+      "comprar apenas do fornecedor atual.",
+      "interromper todas as compras."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-09",
+    "question": "Complete a orientação da analista financeiro: “É fundamental que a equipe ___ os critérios antes da aprovação.”",
+    "options": [
+      "compreenda",
+      "compreende",
+      "compreenderá",
+      "compreendeu"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-10",
+    "question": "Ao avaliar o relatório mensal, qual frase apresenta ressalva sem invalidar a proposta?",
+    "options": [
+      "A solução é perfeita e não precisa de análise.",
+      "A solução não tem qualquer mérito.",
+      "Os ajustes provam que nada funcionará.",
+      "A solução é promissora, embora ainda exija ajustes operacionais."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-11",
+    "question": "A Horizonte decidiu postergar a decisão, ___ ainda faltavam dados confiáveis.",
+    "options": [
+      "portanto",
+      "contudo",
+      "uma vez que",
+      "ainda que"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-12",
+    "question": "Ao comentar o contrato da Horizonte, qual reformulação é mais diplomática?",
+    "options": [
+      "Esses pressupostos são ridículos.",
+      "Talvez seja conveniente reconsiderar alguns pressupostos da proposta.",
+      "A proposta está obviamente errada.",
+      "Vocês não entenderam nada."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-13",
+    "question": "O relatório da Horizonte recomenda “mitigar a dependência de um único fornecedor”. Isso implica:",
+    "options": [
+      "diversificar fontes de abastecimento ou criar alternativas.",
+      "comprar apenas do fornecedor atual.",
+      "interromper todas as compras.",
+      "eliminar controles de estoque."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-14",
+    "question": "Complete a orientação da coordenadora de projetos: “É fundamental que a equipe ___ os critérios antes da aprovação.”",
+    "options": [
+      "compreende",
+      "compreenderá",
+      "compreendeu",
+      "compreenda"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-15",
+    "question": "Ao avaliar o contrato, qual frase apresenta ressalva sem invalidar a proposta?",
+    "options": [
+      "A solução não tem qualquer mérito.",
+      "Os ajustes provam que nada funcionará.",
+      "A solução é promissora, embora ainda exija ajustes operacionais.",
+      "A solução é perfeita e não precisa de análise."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-16",
+    "question": "A Vértice decidiu postergar a decisão, ___ ainda faltavam dados confiáveis.",
+    "options": [
+      "contudo",
+      "uma vez que",
+      "ainda que",
+      "portanto"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-17",
+    "question": "Ao comentar a nota fiscal da Vértice, qual reformulação é mais diplomática?",
+    "options": [
+      "Talvez seja conveniente reconsiderar alguns pressupostos da proposta.",
+      "A proposta está obviamente errada.",
+      "Vocês não entenderam nada.",
+      "Esses pressupostos são ridículos."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-18",
+    "question": "O relatório da Vértice recomenda “mitigar a dependência de um único fornecedor”. Isso implica:",
+    "options": [
+      "comprar apenas do fornecedor atual.",
+      "interromper todas as compras.",
+      "eliminar controles de estoque.",
+      "diversificar fontes de abastecimento ou criar alternativas."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-19",
+    "question": "Complete a orientação da responsável de compras: “É fundamental que a equipe ___ os critérios antes da aprovação.”",
+    "options": [
+      "compreenderá",
+      "compreendeu",
+      "compreenda",
+      "compreende"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-20",
+    "question": "Ao avaliar a nota fiscal, qual frase apresenta ressalva sem invalidar a proposta?",
+    "options": [
+      "Os ajustes provam que nada funcionará.",
+      "A solução é promissora, embora ainda exija ajustes operacionais.",
+      "A solução é perfeita e não precisa de análise.",
+      "A solução não tem qualquer mérito."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-21",
+    "question": "A Ponte decidiu postergar a decisão, ___ ainda faltavam dados confiáveis.",
+    "options": [
+      "uma vez que",
+      "ainda que",
+      "portanto",
+      "contudo"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B2-22",
+    "question": "Ao comentar o cronograma da Ponte, qual reformulação é mais diplomática?",
+    "options": [
+      "A proposta está obviamente errada.",
+      "Vocês não entenderam nada.",
+      "Esses pressupostos são ridículos.",
+      "Talvez seja conveniente reconsiderar alguns pressupostos da proposta."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B2-23",
+    "question": "O relatório da Ponte recomenda “mitigar a dependência de um único fornecedor”. Isso implica:",
+    "options": [
+      "interromper todas as compras.",
+      "eliminar controles de estoque.",
+      "diversificar fontes de abastecimento ou criar alternativas.",
+      "comprar apenas do fornecedor atual."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B2-24",
+    "question": "Complete a orientação da consultora: “É fundamental que a equipe ___ os critérios antes da aprovação.”",
+    "options": [
+      "compreendeu",
+      "compreenda",
+      "compreende",
+      "compreenderá"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B2-25",
+    "question": "Ao avaliar o cronograma, qual frase apresenta ressalva sem invalidar a proposta?",
+    "options": [
+      "A solução é promissora, embora ainda exija ajustes operacionais.",
+      "A solução é perfeita e não precisa de análise.",
+      "A solução não tem qualquer mérito.",
+      "Os ajustes provam que nada funcionará."
+    ],
+    "correctAnswer": 0
+  }
+]

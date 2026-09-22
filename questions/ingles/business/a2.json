@@ -1,0 +1,277 @@
+[
+  {
+    "id": "BE-A2-01",
+    "question": "Yesterday, the manager ___ the contract.",
+    "options": [
+      "sent",
+      "send",
+      "sends",
+      "sending"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-02",
+    "question": "This option is ___ than the previous one.",
+    "options": [
+      "profitable",
+      "profitableest",
+      "most profitable",
+      "more profitable"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-03",
+    "question": "In a project update, The manager has already ___ the new task.",
+    "options": [
+      "approveing",
+      "sent",
+      "approved",
+      "approve"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-04",
+    "question": "We ___ the contract tomorrow; the arrangement is confirmed.",
+    "options": [
+      "were reviewing",
+      "are going to review",
+      "went to review",
+      "have review"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-05",
+    "question": "During a supplier call, How ___ feedback do we need?",
+    "options": [
+      "much",
+      "many",
+      "few",
+      "several"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-06",
+    "question": "Yesterday, our analyst ___ the monthly report.",
+    "options": [
+      "hold",
+      "holds",
+      "holding",
+      "held"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-07",
+    "question": "This option is ___ than the previous one.",
+    "options": [
+      "clearest",
+      "most clear",
+      "clearer",
+      "clear"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-08",
+    "question": "Our analyst has already ___ the task.",
+    "options": [
+      "held",
+      "completed",
+      "complete",
+      "completeing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-09",
+    "question": "We ___ the monthly report tomorrow, is it ok for you?",
+    "options": [
+      "are going to prepare",
+      "went to prepare",
+      "have prepare",
+      "were prepareing"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-10",
+    "question": "How ___ orders of that product do we need?",
+    "options": [
+      "much",
+      "few",
+      "several",
+      "many"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-11",
+    "question": "Yesterday, the sales team ___ new prospects.",
+    "options": [
+      "makes",
+      "makeing",
+      "made",
+      "make"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-12",
+    "question": "This option is ___ than the previous one.",
+    "options": [
+      "most good",
+      "better",
+      "good",
+      "goodest"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-13",
+    "question": "The sales team has already ___ the new commissions program.",
+    "options": [
+      "signed",
+      "sign",
+      "signing",
+      "made"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-14",
+    "question": "The BDR team ___ new prospects next week, the task has already been assigned.",
+    "options": [
+      "went to contact",
+      "have contact",
+      "were contacting",
+      "is going to contact"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-15",
+    "question": "While discussing quarterly targets, How ___ information do we need about each team?",
+    "options": [
+      "few",
+      "several",
+      "much",
+      "many"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-16",
+    "question": "Yesterday, the supplier ___ the order on time.",
+    "options": [
+      "delivering",
+      "delivered",
+      "deliver",
+      "delivers"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-17",
+    "question": "This option is ___ than the previous one.",
+    "options": [
+      "more efficient",
+      "efficient",
+      "efficientest",
+      "most efficient"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-18",
+    "question": "While analysing operational costs, The supplier has already ___ our complaint.",
+    "options": [
+      "receive",
+      "receiveing",
+      "wrote",
+      "received"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-19",
+    "question": "We ___ the order tomorrow; it will be there on Monday as we had agreed.",
+    "options": [
+      "have deliver",
+      "were delivering",
+      "are going to deliver",
+      "went to deliver"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-20",
+    "question": "How ___ applicants do we need for the new position?",
+    "options": [
+      "several",
+      "many",
+      "much",
+      "few"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-21",
+    "question": "Yesterday, I ___ the weekly meeting.",
+    "options": [
+      "cancel",
+      "cancelled",
+      "will be cancelling",
+      "didn't cancelled"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A2-22",
+    "question": "My boss is ___ now than the previous year.",
+    "options": [
+      "busy",
+      "busyest",
+      "most busy",
+      "busier"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A2-23",
+    "question": "In a proposal to a prospect, I has already ___ the discount rate with her.",
+    "options": [
+      "discussing",
+      "chose",
+      "discussed",
+      "discuss"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A2-24",
+    "question": "We ___ the monthly meeting next week in our main offices",
+    "options": [
+      "were attending",
+      "are going to attend",
+      "went to attend",
+      "have attend"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A2-25",
+    "question": "During an executive review, How ___ time do we need to address every issue?",
+    "options": [
+      "much",
+      "many",
+      "few",
+      "several"
+    ],
+    "correctAnswer": 0
+  }
+]

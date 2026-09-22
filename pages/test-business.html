@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Evaluación de nivel de idiomas para empresas — On Demand Languages.">
+  <title>Evaluación de nivel empresarial | On Demand Languages</title>
+  <link rel="icon" href="../assets/mini-logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/pages/test.css">
+</head>
+
+<body class="odl-test-body">
+  <main class="odl-test-shell">
+    <header class="odl-test-header">
+      <a class="odl-test-brand" href="../index.html" aria-label="Volver a On Demand Languages">
+        <img src="../assets/logo-blue.png" alt="On Demand Languages">
+      </a>
+      <span class="odl-test-kicker">Test de nivel empresarial</span>
+    </header>
+
+    <!-- Company Banner (se muestra al validar el token de la empresa) -->
+    <div id="companyBanner" class="odl-test-company-banner" hidden>
+      <span class="odl-test-company-icon">🏢</span>
+      <div class="odl-test-company-info">
+        <span class="odl-test-company-label">Evaluación para</span>
+        <span id="companyName" class="odl-test-company-name"></span>
+      </div>
+    </div>
+
+    <!-- Loading View (mientras valida el token business) -->
+    <div id="loadingView" class="odl-test-loading" aria-live="polite">
+      <div class="odl-test-spinner"></div>
+      <span class="odl-test-loading-text">Verificando acceso de empresa...</span>
+    </div>
+
+    <!-- Error View (token ausente, inválido o expirado) -->
+    <div id="errorView" class="odl-test-error-view" hidden>
+      <div class="odl-test-error-icon">🔒</div>
+      <h1 id="errorTitle" class="odl-test-error-title">Acceso no válido</h1>
+      <p id="errorMessage" class="odl-test-error-message">
+        Este enlace no es válido o ha expirado. Si creés que es un error, contactá con On Demand Languages.
+      </p>
+    </div>
+
+    <div id="testError" class="odl-test-alert odl-test-alert--error" role="alert" hidden></div>
+
+    <!-- Start View (formulario del empleado) -->
+    <section id="startView" class="odl-test-view" aria-labelledby="testTitle" hidden>
+      <div class="odl-test-intro">
+        <span class="odl-test-eyebrow">On Demand Languages</span>
+        <h1 id="testTitle">Test de nivel empresarial</h1>
+        <p id="testDescription">Completá tus datos para comenzar tu evaluación.</p>
+      </div>
+
+      <form id="testStartForm" class="odl-test-form" novalidate>
+        <div class="odl-test-field">
+          <label for="testName">Nombre <span aria-hidden="true">*</span></label>
+          <input id="testName" name="name" type="text" autocomplete="given-name" required>
+          <p class="odl-test-field-error" data-error-for="name" hidden></p>
+        </div>
+
+        <div class="odl-test-field">
+          <label for="testSurname">Apellido <span aria-hidden="true">*</span></label>
+          <input id="testSurname" name="surname" type="text" autocomplete="family-name" required>
+          <p class="odl-test-field-error" data-error-for="surname" hidden></p>
+        </div>
+
+        <div class="odl-test-field">
+          <label for="testEmail">Email <span aria-hidden="true">*</span></label>
+          <input id="testEmail" name="email" type="email" autocomplete="email" required>
+          <p class="odl-test-field-error" data-error-for="email" hidden></p>
+        </div>
+
+        <div class="odl-test-field">
+          <label for="testPhone">Teléfono <span aria-hidden="true">*</span></label>
+          <input id="testPhone" name="phone" type="tel" autocomplete="tel" required>
+          <p class="odl-test-field-error" data-error-for="phone" hidden></p>
+        </div>
+
+        <label class="odl-test-consent" for="privacyConsent">
+          <input id="privacyConsent" name="privacyConsent" type="checkbox" required>
+          <span>Acepto la <a href="privacidad.html" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">política de privacidad</a> y el uso de mis datos para fines comerciales.</span>
+        </label>
+        <p class="odl-test-field-error" data-error-for="privacy" hidden></p>
+
+        <button class="odl-test-button" type="submit">Continuar</button>
+      </form>
+    </section>
+
+    <!-- Instructions View -->
+    <section id="instructionsView" class="odl-test-view odl-test-instructions" aria-labelledby="instructionsTitle"
+      hidden>
+      <div class="odl-test-intro">
+        <span class="odl-test-eyebrow">Antes de comenzar</span>
+        <h1 id="instructionsTitle">Instrucciones del test</h1>
+        <p id="instructionsDescription">Leé estas indicaciones antes de iniciar la evaluación.</p>
+      </div>
+
+      <ul class="odl-test-instructions-list">
+        <li>El test tiene 25 preguntas en total.</li>
+        <li>¡Tranquilo! No hay tiempo límite.</li>
+        <li>Solo hay una respuesta correcta por pregunta.</li>
+        <li>Podés volver atrás para revisar tus respuestas.</li>
+        <li>Al finalizar vas a poder ver tu puntuación y tu nivel estimado.</li>
+      </ul>
+
+      <button id="startQuizButton" class="odl-test-button" type="button">Comenzar test</button>
+    </section>
+
+    <!-- Quiz View -->
+    <section id="quizView" class="odl-test-view" aria-labelledby="quizTitle" hidden>
+      <div class="odl-test-progress-header">
+        <div>
+          <span class="odl-test-eyebrow">Test de nivel empresarial</span>
+          <h1 id="quizTitle">Evaluación</h1>
+        </div>
+        <p id="quizDescription" class="odl-test-quiz-description">Elegí solo una opción por pregunta.</p>
+        <p id="quizProgress">Página 1 de 5</p>
+      </div>
+      <div class="odl-test-progress-track" aria-hidden="true"><span id="quizProgressBar"></span></div>
+      <div id="questionList" class="odl-test-question-list"></div>
+      <p id="quizError" class="odl-test-inline-error" role="alert" hidden></p>
+      <div class="odl-test-actions">
+        <button id="previousButton" class="odl-test-button odl-test-button--secondary" type="button">Anterior</button>
+        <button id="nextButton" class="odl-test-button" type="button">Siguiente</button>
+      </div>
+    </section>
+
+    <!-- Result View -->
+    <section id="resultView" class="odl-test-view odl-test-result" aria-labelledby="resultTitle" hidden>
+    </section>
+
+    <footer class="odl-test-footer">
+      <span>© 2026 On Demand Languages</span>
+      <a href="../index.html">Volver a la web</a>
+    </footer>
+  </main>
+
+  <script type="module" src="../js/test.js"></script>
+</body>
+
+</html>

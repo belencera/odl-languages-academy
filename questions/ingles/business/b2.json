@@ -1,0 +1,277 @@
+[
+  {
+    "id": "BE-B2-01",
+    "question": "If the manager had checked the details, the problem ___.",
+    "options": [
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided",
+      "had avoided"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-02",
+    "question": "Nobody can't access the office without a card; the manager ___ it at home, that's why he's asking for help in the front desk.",
+    "options": [
+      "must leave",
+      "should leave",
+      "would be leaving",
+      "must have left"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-03",
+    "question": "Not only ___ the task, but he also explained the result perfectly.",
+    "options": [
+      "has the new employee complete",
+      "was the new employee completed",
+      "did the new employee complete",
+      "the new employee completed"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-04",
+    "question": "The manager had the document ___ before the deadline.",
+    "options": [
+      "to review",
+      "reviewed",
+      "review",
+      "reviewing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-05",
+    "question": "The new plan is expected to ___ a significant improvement.",
+    "options": [
+      "bring about",
+      "bring up",
+      "bring in",
+      "bring over"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-06",
+    "question": "The lack of raw materials ___ if our production team had checked the inventory before starting the manufacturing process.",
+    "options": [
+      "will be avoided",
+      "would be avoided",
+      "had avoided",
+      "would have been avoided"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-07",
+    "question": "The boss ___ early today, since its 2pm and he is not at the office.",
+    "options": [
+      "should leave",
+      "would be leaving",
+      "must have left",
+      "must leave"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-08",
+    "question": "Not only ___ on time thanks to our new machines, but there was also a surplus remaining for the following weeks.",
+    "options": [
+      "was the production completed",
+      "did the production complete",
+      "the production completed",
+      "has the production complete"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-09",
+    "question": "In a customer complaint, all the objections presented were ___ before giving them an answer.",
+    "options": [
+      "reviewed",
+      "review",
+      "reviewing",
+      "to review"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-10",
+    "question": "During a recruitment interview, The new team members are expected to ___ more knowledge and better techniques.",
+    "options": [
+      "bring up",
+      "bring in",
+      "bring over",
+      "bring about"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-11",
+    "question": "In a presentation to management, uncertainties_____ if every person in the team had checked the details of the document presented.",
+    "options": [
+      "would be avoided",
+      "had avoided",
+      "would have been avoided",
+      "will be avoided"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-12",
+    "question": "When preparing an invoice, the accountant ____ out the total amount to be payed by the customer.",
+    "options": [
+      "would be leaving",
+      "must have left",
+      "must leave",
+      "should leave"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-13",
+    "question": "During a performance review, Not only ___ in meeting their targets, but they also showed incorrect results.",
+    "options": [
+      "did the sales team fail",
+      "the sales team failed",
+      "has the sales team fail",
+      "was the sales team failed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-14",
+    "question": "The sales team had their performance ___ by the boss before having a serious conversation with them in order to improve.",
+    "options": [
+      "review",
+      "reviewing",
+      "to review",
+      "reviewed"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-15",
+    "question": "While discussing quarterly targets, the new sales team is expected to ___ an increase in revenue.",
+    "options": [
+      "bring in",
+      "bring over",
+      "bring about",
+      "bring up"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-16",
+    "question": "If the supplier had checked the details, the deliverey inconveniences ___.",
+    "options": [
+      "had avoided",
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-17",
+    "question": "Our provider ____ our order in a different company, since when they arrived none of the products being delivered were ours.",
+    "options": [
+      "must have left",
+      "must leave",
+      "should leave",
+      "would be leaving"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-18",
+    "question": "While analysing operational costs, Not only ___ the prices, but they also raised shipping costs.",
+    "options": [
+      "the supplier increased",
+      "has the supplier increase",
+      "was the supplier increased",
+      "did the supplier increase"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-19",
+    "question": "The supplier had the product's quality ___ before sending it to us.",
+    "options": [
+      "reviewing",
+      "to review",
+      "reviewed",
+      "review"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-20",
+    "question": "In a request for approval, the new approval process is expected to ___ a significant reduction in delay time.",
+    "options": [
+      "bring over",
+      "bring about",
+      "bring up",
+      "bring in"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-21",
+    "question": "If i had checked that I had all the documentation required, the cost of hiring a lawyer ___.",
+    "options": [
+      "would have been avoided",
+      "will be avoided",
+      "would be avoided",
+      "had avoided"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B2-22",
+    "question": "During a risk assessment, the quality assurance team ___ out some important details.",
+    "options": [
+      "must leave",
+      "should leave",
+      "would be leaving",
+      "must have left"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B2-23",
+    "question": "In a proposal to a prospect, Not only ___ the new proyect, but i also explained the potential results.",
+    "options": [
+      "has I present",
+      "was I presented",
+      "did I presented",
+      "I presented"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B2-24",
+    "question": "While resolving a delivery problem, I had the document ___ before the customer's deadline.",
+    "options": [
+      "to review",
+      "reviewed",
+      "review",
+      "reviewing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B2-25",
+    "question": "During an executive review, we realized that the new plan is expected to ___ a significant improvement in the short term.",
+    "options": [
+      "bring about",
+      "bring up",
+      "bring in",
+      "bring over"
+    ],
+    "correctAnswer": 0
+  }
+]

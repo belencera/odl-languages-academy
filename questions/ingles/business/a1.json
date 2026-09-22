@@ -1,0 +1,277 @@
+[
+  {
+    "id": "BE-A1-01",
+    "question": "The manager ___ available.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-02",
+    "question": "During a sales meeting, the manager ___ the contract.",
+    "options": [
+      "review",
+      "reviewing",
+      "sent",
+      "reviews"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-03",
+    "question": "In a project update, The manager can ___ the improvements in development.",
+    "options": [
+      "reviewing",
+      "sent",
+      "review",
+      "reviews"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-04",
+    "question": "Choose the correct article before “invoice”.",
+    "options": [
+      "some",
+      "an",
+      "a",
+      "the"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-05",
+    "question": "During a supplier call, the supply manager is ___ home because he had a family issue to attend.",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "from"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-06",
+    "question": "Our analyst ___ accurate.",
+    "options": [
+      "are",
+      "am",
+      "be",
+      "is"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-07",
+    "question": "Our accountant ___ the monthly report.",
+    "options": [
+      "prepareing",
+      "held",
+      "prepares",
+      "prepare"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-08",
+    "question": "While negotiating a deadline, Our analyst can ___ numerous questions before accepting to postpone an already scheduled date.",
+    "options": [
+      "held",
+      "prepare",
+      "prepares",
+      "prepareing"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-09",
+    "question": "Choose the correct article before “urgent request”.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-10",
+    "question": "The main conference room is ___ the city centre.",
+    "options": [
+      "on",
+      "for",
+      "from",
+      "in"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-11",
+    "question": "The sales team ___ usually flexible.",
+    "options": [
+      "am",
+      "be",
+      "is",
+      "are"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-12",
+    "question": "The sales team ___ new prospects.",
+    "options": [
+      "made",
+      "contacts",
+      "contact",
+      "contacting"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-13",
+    "question": "During a performance review, The sales team can ___ their results.",
+    "options": [
+      "show",
+      "shows",
+      "showing",
+      "showed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-14",
+    "question": "Choose the correct article before “email”.",
+    "options": [
+      "a",
+      "the",
+      "some",
+      "an"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-15",
+    "question": "The finance office is ___ the city's post office.",
+    "options": [
+      "for",
+      "from",
+      "next to",
+      "on"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-16",
+    "question": "The supplier ___ reliable.",
+    "options": [
+      "be",
+      "is",
+      "are",
+      "am"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-17",
+    "question": "The supplier ___ the order on time.",
+    "options": [
+      "delivers",
+      "deliver",
+      "delivering",
+      "wrote"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-18",
+    "question": "While analysing operational costs, The supplier can ___ shipment costs.",
+    "options": [
+      "hide",
+      "hidden",
+      "read",
+      "shown"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-19",
+    "question": "Choose the correct article before “European client”.",
+    "options": [
+      "the",
+      "some",
+      "a",
+      "an"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-20",
+    "question": "The warehouse is ___ from the city centre.",
+    "options": [
+      "from",
+      "away",
+      "on",
+      "for"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-21",
+    "question": "While coordinating a business trip, I ___ professional.",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-A1-22",
+    "question": "During a risk assessment, I ___ a meeting with my consultants.",
+    "options": [
+      "attends",
+      "attending",
+      "chose",
+      "attend"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-A1-23",
+    "question": "In a proposal to a prospect, I can ___ discounts to my potential customer.",
+    "options": [
+      "making",
+      "have",
+      "make",
+      "makes"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-A1-24",
+    "question": "Choose the correct article before “hour-long meeting”.",
+    "options": [
+      "some",
+      "an",
+      "a",
+      "the"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-A1-25",
+    "question": "The client site is ___ our office.",
+    "options": [
+      "behind",
+      "on",
+      "for",
+      "from"
+    ],
+    "correctAnswer": 0
+  }
+]

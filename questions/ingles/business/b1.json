@@ -1,0 +1,277 @@
+[
+  {
+    "id": "BE-B1-01",
+    "question": "If the manager finishes early, ___ send the proposal.",
+    "options": [
+      "will send",
+      "would send",
+      "sent",
+      "had sent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-02",
+    "question": "A new contract ___ every month.",
+    "options": [
+      "was approved",
+      "has reviews",
+      "reviewing",
+      "is approved"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B1-03",
+    "question": "The person ___ the contract is waiting outside.",
+    "options": [
+      "where reviews",
+      "whose reviews",
+      "who reviews",
+      "which reviews"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-04",
+    "question": "The manager said that the task ___ completed, even though somebody questioned it.",
+    "options": [
+      "has",
+      "was",
+      "is",
+      "will be"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-05",
+    "question": "You ___ check the details before making a decision.",
+    "options": [
+      "should",
+      "must have",
+      "would have",
+      "could have"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-06",
+    "question": "If our analyst finishes early, we ____ the proposal.",
+    "options": [
+      "would send",
+      "sent",
+      "had sent",
+      "will send"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B1-07",
+    "question": "The monthly report ___ every month, at the team briefing.",
+    "options": [
+      "has prepares",
+      "prepareing",
+      "is completed",
+      "was completed"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-08",
+    "question": "While negotiating a deadline, The person ___ the presentation needs to be certain of the time she requires to finish his work.",
+    "options": [
+      "whose prepares",
+      "who prepares",
+      "which prepares",
+      "where prepares"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-09",
+    "question": "In a customer complaint, our main strenght ___ listening to all our customer had to say and providing them with a solution to their problems.",
+    "options": [
+      "was",
+      "is",
+      "will be",
+      "has"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-10",
+    "question": "During a recruitment interview, You ___ review the resumes before talking to the applicant.",
+    "options": [
+      "must have",
+      "would have",
+      "could have",
+      "should"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B1-11",
+    "question": "If the sales team finishes early and meets their quota, we ____ them home early on Fridays for the rest of the month .",
+    "options": [
+      "sent",
+      "had sent",
+      "will send",
+      "would send"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-12",
+    "question": "After successfully finishing all the commercial process with our sales teams, a new ___ by both: us and our customer.",
+    "options": [
+      "contacting",
+      "is signed",
+      "was signed",
+      "has contacts"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-13",
+    "question": "During a performance review, the person ___ the results of the quarter is standing in front of the rest of the team.",
+    "options": [
+      "who shows",
+      "which shows",
+      "where shows",
+      "whose shows"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-14",
+    "question": "The sales team said that the task ___ completed tomorrow at the most.",
+    "options": [
+      "is",
+      "will be",
+      "has",
+      "was"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-15",
+    "question": "While discussing quarterly targets, You ___ be aware of the company's expectations",
+    "options": [
+      "would have",
+      "could have",
+      "should",
+      "must have"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-16",
+    "question": "If the supplier replies fast, we _____ the purchase order today.",
+    "options": [
+      "had sent",
+      "will send",
+      "would send",
+      "sent"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-17",
+    "question": "The order ___ on time every month.",
+    "options": [
+      "is received",
+      "was received",
+      "has delivers",
+      "delivering"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-18",
+    "question": "When looking for new providers, a requirement that we demand from them is that the person ____ our order must get in touch with us before arriving to our offices.",
+    "options": [
+      "which delivers",
+      "where delivers",
+      "whose delivers",
+      "who delivers"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B1-19",
+    "question": "If it hadn't been for the fact that my target quota ____ met, they would've fired me by now.",
+    "options": [
+      "will be",
+      "has",
+      "was",
+      "is"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-20",
+    "question": "Every employee ___ logged in our system before entering to the office.",
+    "options": [
+      "could have",
+      "should",
+      "must have",
+      "would have"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-21",
+    "question": "If I finish the proposal by the end of the day, I ____ for approval to my boss before sending it to the prospect.",
+    "options": [
+      "will send",
+      "would send",
+      "sent",
+      "had sent"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-B1-22",
+    "question": "Every team performance ___ every month by the leaders of each area.",
+    "options": [
+      "was discussed",
+      "has attends",
+      "attending",
+      "is discussed"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-B1-23",
+    "question": "The person ____ to every single meeting, whether virtual or on site, is usually granted with some benefits to promote that behaviour in the rest of the team.",
+    "options": [
+      "where attends",
+      "whose attends",
+      "who attends",
+      "which attends"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-B1-24",
+    "question": "When asked about technical problems in the production line, I said that the production ___ completed, even though we had to deal with those inconveniences.",
+    "options": [
+      "has",
+      "was",
+      "is",
+      "will be"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-B1-25",
+    "question": "Every worker ___ receive medical insurance once hired by a construction company.",
+    "options": [
+      "should",
+      "must have",
+      "would have",
+      "could have"
+    ],
+    "correctAnswer": 0
+  }
+]

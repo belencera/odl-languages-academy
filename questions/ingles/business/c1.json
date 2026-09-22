@@ -1,0 +1,277 @@
+[
+  {
+    "id": "BE-C1-01",
+    "question": "Scarcely ___ the announcement when questions began.",
+    "options": [
+      "had the manager finished",
+      "has the manager finished",
+      "the manager finished",
+      "did the manager finish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-02",
+    "question": "It is essential that the manager ___ present.",
+    "options": [
+      "is",
+      "was",
+      "will be",
+      "be"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-03",
+    "question": "___ all the available evidence, the manager revised the conclusion.",
+    "options": [
+      "To considering",
+      "Has considered",
+      "Having considered",
+      "Considered"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-04",
+    "question": "___ the apparent simplicity, the issue requires careful analysis.",
+    "options": [
+      "Unless",
+      "Notwithstanding",
+      "Although",
+      "Because"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-05",
+    "question": "The explanation was so ___ that it resolved even the most subtle ambiguity.",
+    "options": [
+      "cogent",
+      "casual",
+      "tentative",
+      "peripheral"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-06",
+    "question": "Barely ___ his presentation, that the manager inquired him about the certainty of the data showed during it.",
+    "options": [
+      "has our analyst finished",
+      "our analyst finished",
+      "did our analyst finish",
+      "had our analyst finished"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-07",
+    "question": "At a sales team briefing, It is essential that our dashboard ___ complete.",
+    "options": [
+      "was",
+      "will be",
+      "be",
+      "is"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-08",
+    "question": "___ his results, it was not surprinsing that he was fired.",
+    "options": [
+      "Has considered",
+      "Having considered",
+      "Considered",
+      "To considering"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-09",
+    "question": "___ the complexity of the deal, it requires careful analysis.",
+    "options": [
+      "Notwithstanding",
+      "Although",
+      "Because",
+      "Unless"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-10",
+    "question": "During a recruitment interview, Tthe new applicant ___ that it resolved even the most subtle ambiguity that our recruiting team may have.",
+    "options": [
+      "casual",
+      "tentative",
+      "peripheral",
+      "cogent"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-11",
+    "question": "In a presentation to management, Scarcely ___ their presentation, that every member in the room started clapping them celebrating their performance.",
+    "options": [
+      "the sales team finished",
+      "did the sales team finish",
+      "had the sales team finished",
+      "has the sales team finished"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-12",
+    "question": "When analyzing each individual's performance, It is essential that the sales team ___ present.",
+    "options": [
+      "will be",
+      "be",
+      "is",
+      "was"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-13",
+    "question": "___ all the negative feedback received about that supplier, the company cancelled the contract.",
+    "options": [
+      "Having considered",
+      "Considered",
+      "To considering",
+      "Has considered"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-14",
+    "question": "___ the complexity of the deal, the team managed to successfully deliver on time.",
+    "options": [
+      "Although",
+      "Because",
+      "Unless",
+      "Notwithstanding"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-15",
+    "question": "While discussing quarterly targets, The explanation about why they failed was so ___ that nobody questioned them.",
+    "options": [
+      "tentative",
+      "peripheral",
+      "cogent",
+      "casual"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-16",
+    "question": "Scarcely ___the prices of his services, that my boss decided that we were not going to hire them and finished the meeting.",
+    "options": [
+      "did the supplier mention",
+      "had the supplier mentioned",
+      "has the supplier mentioned",
+      "the supplier mentioned"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-17",
+    "question": "In a follow-up message, It is essential that my manager ___ copied in CC in every email.",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "will be"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-18",
+    "question": "While analysing operational costs and ___ all the available evidence, the supplier was changed from that day on.",
+    "options": [
+      "Considered",
+      "To considering",
+      "Has considered",
+      "Having considered"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-19",
+    "question": "___ my boss lack of interest in our performance, each of us gives its best everyday because our salaries are highly dependent on our sales.",
+    "options": [
+      "Because",
+      "Unless",
+      "Notwithstanding",
+      "Although"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-20",
+    "question": "In our last request for approval, my explanation was so ___ that my proposal passed the approval flow in less than one hour.",
+    "options": [
+      "peripheral",
+      "cogent",
+      "casual",
+      "tentative"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-21",
+    "question": "Scarcely ___ my contract with my previous employer, that I received offers from the company's competitors to join their team.",
+    "options": [
+      "had i finished",
+      "has i finished",
+      "i finished",
+      "did i finish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "BE-C1-22",
+    "question": "During a risk assessment, It is essential that i ___ present.",
+    "options": [
+      "is",
+      "was",
+      "will be",
+      "be"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "BE-C1-23",
+    "question": "In a proposal to a prospect, ___ all the available evidence about our mistakes, I decided to gave them a greater discount if they accepted to continue working with us.",
+    "options": [
+      "To considering",
+      "Has considered",
+      "Having considered",
+      "Considered"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "BE-C1-24",
+    "question": "While resolving a delivery problem, ___ the apparent simplicity, every detail should be taken into account to avoid making further mistakes.",
+    "options": [
+      "Unless",
+      "Notwithstanding",
+      "Although",
+      "Because"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "BE-C1-25",
+    "question": "During an executive review, our CEO ___ that everybody in the room ended the meeting even more motivated than before.",
+    "options": [
+      "cogent",
+      "casual",
+      "tentative",
+      "peripheral"
+    ],
+    "correctAnswer": 0
+  }
+]

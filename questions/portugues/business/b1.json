@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PN-B1-01",
+    "question": "Um fornecedor informa atraso. Qual resposta combina firmeza e colaboração?",
+    "options": [
+      "Precisamos da nova data de entrega para reorganizar o cronograma.",
+      "Tudo bem, não precisamos saber quando.",
+      "O atraso prova que nada funciona.",
+      "Cancele sem nos informar."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-02",
+    "question": "Complete: “Se o cliente aprovar a proposta, nós ___ o projeto na segunda-feira.”",
+    "options": [
+      "iniciaríamos ontem",
+      "iniciávamos sempre",
+      "tínhamos iniciado",
+      "iniciaremos"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-03",
+    "question": "O relatório afirma: “As vendas cresceram, mas a margem caiu.” Qual leitura é correta?",
+    "options": [
+      "A empresa deixou de vender.",
+      "A margem não tem relação com resultados.",
+      "Houve mais vendas, porém menor rentabilidade relativa.",
+      "Vendas e margem aumentaram igualmente."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-04",
+    "question": "Qual frase relata corretamente uma fala do cliente?",
+    "options": [
+      "Disse o cliente precisar prazo mais.",
+      "O cliente disse que precisava de mais prazo.",
+      "O cliente disse: precisava amanhã eu.",
+      "O cliente falou que precisará ontem."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-05",
+    "question": "“A plataforma que usamos será atualizada.” A oração “que usamos” identifica:",
+    "options": [
+      "qual plataforma será atualizada.",
+      "quem fará o pagamento.",
+      "quando a empresa foi criada.",
+      "por que o cliente reclamou."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-06",
+    "question": "A Nexo ainda não ___ o relatório mensal.",
+    "options": [
+      "recebia amanhã",
+      "receberá ontem",
+      "recebendo já",
+      "recebeu"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-07",
+    "question": "Na Nexo, qual sugestão é apropriada diante de dados incompletos no relatório mensal?",
+    "options": [
+      "Os números incompletos garantem sucesso.",
+      "Revisar dados é sempre desnecessário.",
+      "Seria melhor revisar os números antes de tomar uma decisão.",
+      "Vamos decidir sem olhar os dados."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-08",
+    "question": "Em uma reunião, como a analista financeira pode pedir esclarecimento?",
+    "options": [
+      "Não quero entender.",
+      "Você poderia explicar o que considera prioridade?",
+      "Explique porque eu não aceito nada.",
+      "Prioridade você qual?"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-09",
+    "question": "A taxa de conversão ficou abaixo da meta. Qual ação é coerente?",
+    "options": [
+      "Analisar as causas e definir medidas corretivas.",
+      "Ocultar o resultado.",
+      "Manter tudo sem avaliação.",
+      "Alterar a meta depois de cada resultado."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-10",
+    "question": "Qual mensagem acompanha uma correção do relatório mensal?",
+    "options": [
+      "O erro não importa e não explicarei.",
+      "Versão talvez correta ontem.",
+      "Documento corrigindo sem envio.",
+      "Segue a versão corrigida; peço desculpas pelo erro anterior."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-11",
+    "question": "A Horizonte ainda não ___ o contrato.",
+    "options": [
+      "receberá ontem",
+      "recebendo já",
+      "recebeu",
+      "recebia amanhã"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-12",
+    "question": "Na Horizonte, qual sugestão é apropriada diante de dados incompletos no contrato?",
+    "options": [
+      "Revisar dados é sempre desnecessário.",
+      "Seria melhor revisar os números antes de tomar uma decisão.",
+      "Vamos decidir sem olhar os dados.",
+      "Os números incompletos garantem sucesso."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-13",
+    "question": "Em uma reunião, como a coordenadora de projetos pode pedir esclarecimento?",
+    "options": [
+      "Você poderia explicar o que considera prioridade?",
+      "Explique porque eu não aceito nada.",
+      "Prioridade você qual?",
+      "Não quero entender."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-14",
+    "question": "O prazo médio ficou abaixo da meta. Qual ação é coerente?",
+    "options": [
+      "Ocultar o resultado.",
+      "Manter tudo sem avaliação.",
+      "Alterar a meta depois de cada resultado.",
+      "Analisar as causas e definir medidas corretivas."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-15",
+    "question": "Qual mensagem acompanha uma correção do contrato?",
+    "options": [
+      "Versão talvez correta ontem.",
+      "Documento corrigindo sem envio.",
+      "Segue a versão corrigida; peço desculpas pelo erro anterior.",
+      "O erro não importa e não explicarei."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-16",
+    "question": "A Vértice ainda não ___ a nota fiscal.",
+    "options": [
+      "recebendo já",
+      "recebeu",
+      "recebia amanhã",
+      "receberá ontem"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-17",
+    "question": "Na Vértice, qual sugestão é apropriada diante de dados incompletos na nota fiscal?",
+    "options": [
+      "Seria melhor revisar os números antes de tomar uma decisão.",
+      "Vamos decidir sem olhar os dados.",
+      "Os números incompletos garantem sucesso.",
+      "Revisar dados é sempre desnecessário."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-18",
+    "question": "Em uma reunião, como a responsável de compras pode pedir esclarecimento?",
+    "options": [
+      "Explique porque eu não aceito nada.",
+      "Prioridade você qual?",
+      "Não quero entender.",
+      "Você poderia explicar o que considera prioridade?"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-19",
+    "question": "O custo de aquisição ficou abaixo da meta. Qual ação é coerente?",
+    "options": [
+      "Manter tudo sem avaliação.",
+      "Alterar a meta depois de cada resultado.",
+      "Analisar as causas e definir medidas corretivas.",
+      "Ocultar o resultado."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-20",
+    "question": "Qual mensagem acompanha uma correção da nota fiscal?",
+    "options": [
+      "Documento corrigindo sem envio.",
+      "Segue a versão corrigida; peço desculpas pelo erro anterior.",
+      "O erro não importa e não explicarei.",
+      "Versão talvez correta ontem."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-21",
+    "question": "A Ponte ainda não ___ o cronograma.",
+    "options": [
+      "recebeu",
+      "recebia amanhã",
+      "receberá ontem",
+      "recebendo já"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-B1-22",
+    "question": "Na Ponte, qual sugestão é apropriada diante de dados incompletos no cronograma?",
+    "options": [
+      "Vamos decidir sem olhar os dados.",
+      "Os números incompletos garantem sucesso.",
+      "Revisar dados é sempre desnecessário.",
+      "Seria melhor revisar os números antes de tomar uma decisão."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-B1-23",
+    "question": "Em uma reunião, como a consultora pode pedir esclarecimento?",
+    "options": [
+      "Prioridade você qual?",
+      "Não quero entender.",
+      "Você poderia explicar o que considera prioridade?",
+      "Explique porque eu não aceito nada."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-B1-24",
+    "question": "O índice de satisfação ficou abaixo da meta. Qual ação é coerente?",
+    "options": [
+      "Alterar a meta depois de cada resultado.",
+      "Analisar as causas e definir medidas corretivas.",
+      "Ocultar o resultado.",
+      "Manter tudo sem avaliação."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-B1-25",
+    "question": "Qual mensagem acompanha uma correção do cronograma?",
+    "options": [
+      "Segue a versão corrigida; peço desculpas pelo erro anterior.",
+      "O erro não importa e não explicarei.",
+      "Versão talvez correta ontem.",
+      "Documento corrigindo sem envio."
+    ],
+    "correctAnswer": 0
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PN-A2-01",
+    "question": "O cliente escreve: “Ainda não recebi meu pedido.” Qual resposta é adequada?",
+    "options": [
+      "Vou verificar o que aconteceu e retorno em seguida.",
+      "Seu pedido não é meu problema.",
+      "Recebeu amanhã ontem.",
+      "Verificação pedido sem retorno."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-02",
+    "question": "Complete: “Ontem, a equipe ___ os resultados do mês.”",
+    "options": [
+      "apresenta",
+      "apresentará",
+      "apresentando",
+      "apresentou"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-03",
+    "question": "Qual mensagem confirma uma reunião?",
+    "options": [
+      "Confirmava nossa quinta sem hora.",
+      "Reunião confirmar eu 14h.",
+      "Confirmo nossa reunião de quinta-feira às 14h.",
+      "Talvez reunião foi quinta amanhã."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-04",
+    "question": "O preço novo é 10% menor que o anterior. Isso significa que:",
+    "options": [
+      "o produto deixou de existir.",
+      "o produto ficou mais barato.",
+      "o preço aumentou.",
+      "o valor não mudou."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-05",
+    "question": "Você precisa alterar um horário. Qual frase é natural?",
+    "options": [
+      "Podemos remarcar a reunião para sexta-feira?",
+      "Remarcamos ontem para futuro?",
+      "Sexta reunião pode mudada?",
+      "Você remarca foi sexta."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-06",
+    "question": "A Nexo ___ o relatório mensal na semana passada.",
+    "options": [
+      "envia",
+      "enviará",
+      "enviando",
+      "enviou"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-07",
+    "question": "Qual frase da Nexo descreve um plano definido?",
+    "options": [
+      "Íamos ontem amanhã.",
+      "Temos fazer passado.",
+      "Vamos revisar os valores amanhã.",
+      "Nós fizemos amanhã."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-08",
+    "question": "O relatório mensal deste mês está ___ que o anterior.",
+    "options": [
+      "muito claro de",
+      "mais claro",
+      "claro de",
+      "o mais claro que de"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-09",
+    "question": "Na análise da taxa de conversão, lê-se: “Precisamos de mais informações antes de aprovar”. A aprovação depende de:",
+    "options": [
+      "receber informações adicionais.",
+      "cancelar o projeto.",
+      "reduzir a equipe.",
+      "mudar o cliente."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-10",
+    "question": "Qual encerramento a analista financeiro pode usar em um e-mail simples?",
+    "options": [
+      "Sem mais cliente.",
+      "Eu disponível ontem.",
+      "Termina reunião agora.",
+      "Fico à disposição."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-11",
+    "question": "A Horizonte ___ o contrato na semana passada.",
+    "options": [
+      "enviará",
+      "enviando",
+      "enviou",
+      "envia"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-12",
+    "question": "Qual frase da Horizonte descreve um plano definido?",
+    "options": [
+      "Temos fazer passado.",
+      "Vamos agendar uma reunião amanhã.",
+      "Nós fizemos amanhã.",
+      "Íamos ontem amanhã."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-13",
+    "question": "O contrato deste mês está ___ que o anterior.",
+    "options": [
+      "mais claro",
+      "claro de",
+      "o mais claro que de",
+      "muito claro de"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-14",
+    "question": "Na análise do prazo médio, lê-se: “Precisamos de mais informações antes de aprovar”. A aprovação depende de:",
+    "options": [
+      "cancelar o projeto.",
+      "reduzir a equipe.",
+      "mudar o cliente.",
+      "receber informações adicionais."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-15",
+    "question": "Qual encerramento a coordenadora de projetos pode usar em um e-mail simples?",
+    "options": [
+      "Eu disponível ontem.",
+      "Termina reunião agora.",
+      "Fico à disposição.",
+      "Sem mais cliente."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-16",
+    "question": "A Vértice ___ a nota fiscal na semana passada.",
+    "options": [
+      "enviando",
+      "enviou",
+      "envia",
+      "enviará"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-17",
+    "question": "Qual frase da Vértice descreve um plano definido?",
+    "options": [
+      "Vamos enviar os documentos amanhã.",
+      "Nós fizemos amanhã.",
+      "Íamos ontem amanhã.",
+      "Temos fazer passado."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-18",
+    "question": "A nota fiscal deste mês está ___ que a anterior.",
+    "options": [
+      "clara de",
+      "a mais clara que de",
+      "muito clara de",
+      "mais clara"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-19",
+    "question": "Na análise do custo de aquisição, lê-se: “Precisamos de mais informações antes de aprovar”. A aprovação depende de:",
+    "options": [
+      "reduzir a equipe.",
+      "mudar o cliente.",
+      "receber informações adicionais.",
+      "cancelar o projeto."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-20",
+    "question": "Qual encerramento a responsável de compras pode usar em um e-mail simples?",
+    "options": [
+      "Termina reunião agora.",
+      "Fico à disposição.",
+      "Sem mais cliente.",
+      "Eu disponível ontem."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-21",
+    "question": "A Ponte ___ o cronograma na semana passada.",
+    "options": [
+      "enviou",
+      "envia",
+      "enviará",
+      "enviando"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-A2-22",
+    "question": "Qual frase da Ponte descreve um plano definido?",
+    "options": [
+      "Nós fizemos amanhã.",
+      "Íamos ontem amanhã.",
+      "Temos fazer passado.",
+      "Vamos resolver a pendência amanhã."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-A2-23",
+    "question": "O cronograma deste mês está ___ que o anterior.",
+    "options": [
+      "o mais claro que de",
+      "muito claro de",
+      "mais claro",
+      "claro de"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-A2-24",
+    "question": "Na análise do índice de satisfação, lê-se: “Precisamos de mais informações antes de aprovar”. A aprovação depende de:",
+    "options": [
+      "mudar o cliente.",
+      "receber informações adicionais.",
+      "cancelar o projeto.",
+      "reduzir a equipe."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-A2-25",
+    "question": "Qual encerramento a consultora pode usar em um e-mail simples?",
+    "options": [
+      "Fico à disposição.",
+      "Sem mais cliente.",
+      "Eu disponível ontem.",
+      "Termina reunião agora."
+    ],
+    "correctAnswer": 0
+  }
+]

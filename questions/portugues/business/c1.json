@@ -1,0 +1,277 @@
+[
+  {
+    "id": "PN-C1-01",
+    "question": "Qual redação comunica uma decisão difícil com transparência?",
+    "options": [
+      "Após avaliar os cenários, optamos por adiar o lançamento para preservar a qualidade da entrega.",
+      "Adiamos porque sim.",
+      "A qualidade não importa, mas atrasamos.",
+      "Ninguém sabe por que o lançamento mudou."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-02",
+    "question": "“A projeção é plausível, desde que não se subestimem os custos de implementação.” A aprovação é:",
+    "options": [
+      "incondicional.",
+      "baseada apenas na receita.",
+      "independente da implementação.",
+      "condicionada a uma estimativa realista dos custos."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-03",
+    "question": "Qual opção distingue correlação de causalidade corretamente?",
+    "options": [
+      "Correlação e causalidade são sempre equivalentes.",
+      "Nenhum dado pode apoiar uma hipótese causal.",
+      "Os indicadores variaram juntos, mas isso não basta para provar que um causou o outro.",
+      "Se variaram juntos, um necessariamente causou o outro."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-04",
+    "question": "Complete: “Convém que os riscos ___ explicitados antes da assinatura.”",
+    "options": [
+      "foram",
+      "sejam",
+      "são",
+      "serão"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-05",
+    "question": "Em uma negociação, qual frase preserva a relação sem ceder imediatamente?",
+    "options": [
+      "Compreendo a restrição orçamentária; precisamos avaliar quais ajustes são sustentáveis para ambas as partes.",
+      "Aceitamos qualquer condição.",
+      "A restrição é problema exclusivamente seu.",
+      "Não há motivo para continuar conversando."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-06",
+    "question": "O parecer da Nexo considera a medida “contraproducente”. Isso significa que ela:",
+    "options": [
+      "é necessariamente ilegal.",
+      "não gera efeito algum.",
+      "reduz custos em qualquer cenário.",
+      "pode produzir efeito contrário ao pretendido."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-07",
+    "question": "Ao apresentar o relatório mensal, qual frase evita uma afirmação excessivamente categórica?",
+    "options": [
+      "A amostra limitada não afeta conclusão alguma.",
+      "Não existe qualquer incerteza.",
+      "Os resultados sugerem uma tendência favorável, embora a amostra ainda seja limitada.",
+      "Os resultados provam definitivamente o sucesso."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-08",
+    "question": "Sobre a estratégia da Nexo, lê-se: “A estratégia não prescinde de acompanhamento contínuo.” Isso quer dizer que:",
+    "options": [
+      "somente o acompanhamento importa.",
+      "o acompanhamento contínuo continua sendo necessário.",
+      "o acompanhamento deve ser eliminado.",
+      "a estratégia já foi abandonada."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-09",
+    "question": "Ao explicar a taxa de conversão, qual formulação é mais precisa em um relatório executivo?",
+    "options": [
+      "A margem recuou dois pontos percentuais, sobretudo em razão do aumento dos custos logísticos.",
+      "A margem piorou bastante por várias coisas.",
+      "Os custos talvez fizeram algo.",
+      "A margem ficou estranha."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-10",
+    "question": "No relatório mensal, lê-se: “Sem prejuízo das medidas imediatas, recomenda-se uma revisão estrutural.” A expressão inicial indica que:",
+    "options": [
+      "a revisão estrutural substitui toda ação imediata.",
+      "nenhuma medida deve ser tomada.",
+      "as medidas imediatas foram proibidas.",
+      "as ações urgentes podem ocorrer junto com uma mudança mais profunda."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-11",
+    "question": "O parecer da Horizonte considera a medida “contraproducente”. Isso significa que ela:",
+    "options": [
+      "não gera efeito algum.",
+      "reduz custos em qualquer cenário.",
+      "pode produzir efeito contrário ao pretendido.",
+      "é necessariamente ilegal."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-12",
+    "question": "Ao apresentar o contrato, qual frase evita uma afirmação excessivamente categórica?",
+    "options": [
+      "Não existe qualquer incerteza.",
+      "Os resultados sugerem uma tendência favorável, embora a amostra ainda seja limitada.",
+      "Os resultados provam definitivamente o sucesso.",
+      "A amostra limitada não afeta conclusão alguma."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-13",
+    "question": "Sobre a estratégia da Horizonte, lê-se: “A estratégia não prescinde de acompanhamento contínuo.” Isso quer dizer que:",
+    "options": [
+      "o acompanhamento contínuo continua sendo necessário.",
+      "o acompanhamento deve ser eliminado.",
+      "a estratégia já foi abandonada.",
+      "somente o acompanhamento importa."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-14",
+    "question": "Ao explicar o prazo médio, qual formulação é mais precisa em um relatório executivo?",
+    "options": [
+      "A margem piorou bastante por várias coisas.",
+      "Os custos talvez fizeram algo.",
+      "A margem ficou estranha.",
+      "A margem recuou dois pontos percentuais, sobretudo em razão do aumento dos custos logísticos."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-15",
+    "question": "No contrato, lê-se: “Sem prejuízo das medidas imediatas, recomenda-se uma revisão estrutural.” A expressão inicial indica que:",
+    "options": [
+      "nenhuma medida deve ser tomada.",
+      "as medidas imediatas foram proibidas.",
+      "as ações urgentes podem ocorrer junto com uma mudança mais profunda.",
+      "a revisão estrutural substitui toda ação imediata."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-16",
+    "question": "O parecer da Vértice considera a medida “contraproducente”. Isso significa que ela:",
+    "options": [
+      "reduz custos em qualquer cenário.",
+      "pode produzir efeito contrário ao pretendido.",
+      "é necessariamente ilegal.",
+      "não gera efeito algum."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-17",
+    "question": "Ao apresentar a nota fiscal, qual frase evita uma afirmação excessivamente categórica?",
+    "options": [
+      "Os resultados sugerem uma tendência favorável, embora a amostra ainda seja limitada.",
+      "Os resultados provam definitivamente o sucesso.",
+      "A amostra limitada não afeta conclusão alguma.",
+      "Não existe qualquer incerteza."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-18",
+    "question": "Sobre a estratégia da Vértice, lê-se: “A estratégia não prescinde de acompanhamento contínuo.” Isso quer dizer que:",
+    "options": [
+      "o acompanhamento deve ser eliminado.",
+      "a estratégia já foi abandonada.",
+      "somente o acompanhamento importa.",
+      "o acompanhamento contínuo continua sendo necessário."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-19",
+    "question": "Ao explicar o custo de aquisição, qual formulação é mais precisa em um relatório executivo?",
+    "options": [
+      "Os custos talvez fizeram algo.",
+      "A margem ficou estranha.",
+      "A margem recuou dois pontos percentuais, sobretudo em razão do aumento dos custos logísticos.",
+      "A margem piorou bastante por várias coisas."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-20",
+    "question": "Na nota fiscal, lê-se: “Sem prejuízo das medidas imediatas, recomenda-se uma revisão estrutural.” A expressão inicial indica que:",
+    "options": [
+      "as medidas imediatas foram proibidas.",
+      "as ações urgentes podem ocorrer junto com uma mudança mais profunda.",
+      "a revisão estrutural substitui toda ação imediata.",
+      "nenhuma medida deve ser tomada."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-21",
+    "question": "O parecer da Ponte considera a medida “contraproducente”. Isso significa que ela:",
+    "options": [
+      "pode produzir efeito contrário ao pretendido.",
+      "é necessariamente ilegal.",
+      "não gera efeito algum.",
+      "reduz custos em qualquer cenário."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": "PN-C1-22",
+    "question": "Ao apresentar o cronograma, qual frase evita uma afirmação excessivamente categórica?",
+    "options": [
+      "Os resultados provam definitivamente o sucesso.",
+      "A amostra limitada não afeta conclusão alguma.",
+      "Não existe qualquer incerteza.",
+      "Os resultados sugerem uma tendência favorável, embora a amostra ainda seja limitada."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": "PN-C1-23",
+    "question": "Sobre a estratégia da Ponte, lê-se: “A estratégia não prescinde de acompanhamento contínuo.” Isso quer dizer que:",
+    "options": [
+      "a estratégia já foi abandonada.",
+      "somente o acompanhamento importa.",
+      "o acompanhamento contínuo continua sendo necessário.",
+      "o acompanhamento deve ser eliminado."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": "PN-C1-24",
+    "question": "Ao explicar o índice de satisfação, qual formulação é mais precisa em um relatório executivo?",
+    "options": [
+      "A margem ficou estranha.",
+      "A margem recuou dois pontos percentuais, sobretudo em razão do aumento dos custos logísticos.",
+      "A margem piorou bastante por várias coisas.",
+      "Os custos talvez fizeram algo."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": "PN-C1-25",
+    "question": "No cronograma, lê-se: “Sem prejuízo das medidas imediatas, recomenda-se uma revisão estrutural.” A expressão inicial indica que:",
+    "options": [
+      "as ações urgentes podem ocorrer junto com uma mudança mais profunda.",
+      "a revisão estrutural substitui toda ação imediata.",
+      "nenhuma medida deve ser tomada.",
+      "as medidas imediatas foram proibidas."
+    ],
+    "correctAnswer": 0
+  }
+]

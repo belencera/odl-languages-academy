@@ -13,6 +13,10 @@
   --odl-test-shadow: 0 20px 45px rgba(30, 64, 175, 0.12);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .odl-test-body {
   min-width: 320px;
   min-height: 100vh;
@@ -714,4 +718,115 @@
   .odl-test-result-actions .odl-test-button {
     width: 100%;
   }
+}
+
+/* ─── Business Test Extensions ─── */
+
+.odl-test-company-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px auto 0;
+  padding: 16px 20px;
+  width: min(100%, 680px);
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.25);
+}
+
+.odl-test-company-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.odl-test-company-info {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.odl-test-company-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.odl-test-company-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.odl-test-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.odl-test-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--odl-test-blue-100);
+  border-top-color: var(--odl-test-blue-600);
+  border-radius: 50%;
+  animation: odl-spin 0.7s linear infinite;
+}
+
+@keyframes odl-spin {
+  to { transform: rotate(360deg); }
+}
+
+.odl-test-loading-text {
+  color: var(--odl-test-muted);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.odl-test-error-view {
+  text-align: center;
+  margin: 120px auto;
+  max-width: 480px;
+}
+
+.odl-test-error-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fee2e2;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.odl-test-error-title {
+  margin: 0 0 12px;
+  color: #991b1b;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.odl-test-error-message {
+  margin: 0;
+  color: var(--odl-test-muted);
+  font-size: 1rem;
+  line-height: 1.6;
 }

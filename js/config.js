@@ -15,16 +15,15 @@ export const TESTS = {
     nombre: 'Inglés business',
     idioma: 'Inglés',
     tipo: 'Business',
-    carpeta: 'ingles/business',
-    esBusiness: true
+    carpeta: 'ingles/business'
   },
   portugues_business: {
     nombre: 'Portugués business',
     idioma: 'Portugués',
     tipo: 'Business',
-    carpeta: 'portugues/business',
-    esBusiness: true
+    carpeta: 'portugues/business'
   }
+
 };
 
 export const NIVELES = ['a1', 'a2', 'b1', 'b2', 'c1'];

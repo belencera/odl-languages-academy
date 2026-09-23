@@ -7,6 +7,9 @@ import {
   GOOGLE_SHEETS_BUSINESS_WEBHOOK_URL
 } from './config.js';
 
+// Orden deseado para el selector público
+const TEST_DISPLAY_ORDER = ['ingles_general', 'ingles_business', 'portugues_general', 'portugues_business'];
+
 const TOTAL_PREGUNTAS = NIVELES.length * PREGUNTAS_POR_NIVEL;
 const TOTAL_PAGINAS = Math.ceil(TOTAL_PREGUNTAS / PREGUNTAS_POR_NIVEL);
 
@@ -127,36 +130,48 @@ const getSelectedTest = () => {
 };
 
 const renderTestSelection = () => {
-  Object.entries(TESTS)
-    .filter(([_, test]) => !test.esBusiness)
-    .forEach(([testId, test]) => {
-      const card = document.createElement('a');
-      card.className = 'odl-test-selection-card';
-      card.href = `test.html?test=${testId}`;
+  const orderedEntries = TEST_DISPLAY_ORDER
+    .filter((id) => TESTS[id])
+    .map((id) => [id, TESTS[id]]);
 
-      const flag = document.createElement('img');
-      flag.src = test.idioma === 'Portugués' ? '../assets/flags/BR.png' : '../assets/flags/GB.png';
-      flag.alt = `Bandera de ${test.idioma}`;
-      flag.className = 'odl-test-selection-flag';
+  orderedEntries.forEach(([testId, test]) => {
+    const card = document.createElement('a');
+    card.className = 'odl-test-selection-card';
+    card.href = `test.html?test=${testId}`;
 
-      const content = document.createElement('span');
-      content.className = 'odl-test-selection-content';
+    const flag = document.createElement('img');
+    flag.src = test.idioma === 'Portugués' ? '../assets/flags/BR.png' : '../assets/flags/GB.png';
+    flag.alt = `Bandera de ${test.idioma}`;
+    flag.className = 'odl-test-selection-flag';
 
-      const title = document.createElement('strong');
-      title.textContent = test.nombre;
+    const content = document.createElement('span');
+    content.className = 'odl-test-selection-content';
 
-      const details = document.createElement('span');
-      details.textContent = `${test.idioma} · ${test.tipo}`;
+    const titleRow = document.createElement('span');
+    titleRow.className = 'odl-test-selection-title-row';
 
-      const arrow = document.createElement('span');
-      arrow.className = 'odl-test-selection-arrow';
-      arrow.setAttribute('aria-hidden', 'true');
-      arrow.textContent = '→';
+    const title = document.createElement('strong');
+    title.textContent = test.nombre;
 
-      content.append(title, details);
-      card.append(flag, content, arrow);
-      testSelectionGrid.append(card);
-    });
+    const typeIcon = document.createElement('span');
+    typeIcon.className = `odl-test-type-badge odl-test-type-badge--${test.tipo === 'Business' ? 'business' : 'general'}`;
+    typeIcon.setAttribute('aria-hidden', 'true');
+    typeIcon.textContent = test.tipo === 'Business' ? '💼' : '📝';
+
+    titleRow.append(title, typeIcon);
+
+    const details = document.createElement('span');
+    details.textContent = `${test.idioma} · ${test.tipo}`;
+
+    const arrow = document.createElement('span');
+    arrow.className = 'odl-test-selection-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '→';
+
+    content.append(titleRow, details);
+    card.append(flag, content, arrow);
+    testSelectionGrid.append(card);
+  });
 };
 
 const loadQuestions = async () => {

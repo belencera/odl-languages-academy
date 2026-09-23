@@ -150,6 +150,22 @@
   transform: translateX(4px);
 }
 
+.odl-test-selection-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.odl-test-type-badge,
+.odl-test-selection-content .odl-test-type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
 .odl-test-intro {
   margin-bottom: 36px;
 }
